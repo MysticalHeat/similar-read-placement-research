@@ -1,0 +1,14 @@
+# Одна условная гипотеза
+H004 — PROPOSED / candidate v0.1, 2026-09-30; human approval PENDING, efficacy UNVERIFIED; не confirmatory/preregistered.
+Гипотеза: на нагрузке с повторяемыми чтениями, при управляемом размещении по независимым ресурсам и нескольких одновременно готовых запросах, обучаемый causal прогноз следующих reads с заблаговременным переносом страниц повысит useful demand-read MiB/s относительно обычного размещения с простым causal predictor после учёта переноса, GC и inference.
+Это направленный кандидат, а не следствие гарантированной предсказуемости: повторяемость/точность выбранной нагрузки и своевременность действий UNKNOWN; ANN не требуется по определению.
+Условия: допустимые physical mappings/commands/shared-bus constraints, одинаковые workload/arrivals/concurrency/scheduler/cache и заранее ограниченный action budget; прогноз не разрешает раннюю подачу будущих demand-запросов.
+Mechanism (INFERENCE): меньше конфликтов готовых reads может дать перекрытие service; миграция должна успеть и амортизироваться. C001/C004/S003 §§2.2,4.2 поддерживают лишь пространственные/временные условия той архитектуры, не H004.
+Outcome: T=успешно завершённые полезные demand bytes/2^20/completion makespan(s); сравнивать T_method−T_baseline по trace/workload при одинаковом cost horizon, не по internal NAND reads или inference speed.
+Null: net разница ≤0; practically useful δ и caps пока не заданы и требуют решения до любого теста, численного эффекта не предполагаем.
+Falsifier: достоверно неположительная net разница при соблюдении выбранных условий либо отсутствие увеличения concurrent service; недостаточная точность оценки оставляет неопределённость. Gain без overlap не поддерживает заявленный механизм.
+Rivals/controls для возможной будущей проверки: cache/scheduler/queue depth, простая непрогнозная группировка, unequal budgets; тот же прогноз без migration и простая causal migration при равных action caps, baseline last-address/stride/transition. Сейчас тестов нет.
+Контрпример: последовательные зависимые чтения, непредсказуемый случайный поток или затраты extra writes/GC/inference выше экономии — универсальная версия гипотезы неверна.
+Ограничения evidence: C014/E001 — только структурный profile локальных W-файлов, не predictor/throughput outcome; C006/C010/S013 — next-write pointers/serial timing; C015/S016 — документация публичной schema, не проверенная реальная read trace.
+Нужно позже определить workload/target/page units, causal history, simple baseline, concurrent timing model, correctness, migration horizon/caps и полезный δ. Все эффекты UNVERIFIED; новизна не установлена.
+По текущему few-minute scope training plan отложен; synthetic sanity check не подтверждает H004 на реальном SSD. Новых runs/моделей/протоколов или approvals от имени пользователя нет.
