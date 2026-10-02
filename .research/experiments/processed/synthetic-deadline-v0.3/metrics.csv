@@ -1,0 +1,9 @@
+case,split,row_kind,N,cold,warm,hot,Z_macro_f1,D_macro_f1,A_macro_f1,X_macro_f1,X-Z,X-A,A-Z,source_E005
+phase_cycle,val,score,480,160,160,160,0.0,0.16666666666666666,1.0,1.0,,,,phase_cycle.val.score.json
+phase_cycle,test,score,672,224,224,224,0.0,0.16666666666666666,1.0,1.0,,,,phase_cycle.test.score.json
+independent_negative,val,score,480,154,173,153,0.32643845850191977,0.1619348054679285,0.2506353861192571,0.25938304614775204,,,,independent_negative.val.score.json
+independent_negative,test,score,672,216,227,229,0.33057187622405015,0.16216216216216217,0.24845898530109056,0.2736797647518438,,,,independent_negative.test.score.json
+phase_cycle,val,delta,480,160,160,160,,,,,1.0,0.0,1.0,phase_cycle.val.score.json
+phase_cycle,test,delta,672,224,224,224,,,,,1.0,0.0,1.0,phase_cycle.test.score.json
+independent_negative,val,delta,480,154,173,153,,,,,-0.06705541235416773,0.008747660028494919,-0.07580307238266265,independent_negative.val.score.json
+independent_negative,test,delta,672,216,227,229,,,,,-0.05689211147220635,0.02522077945075324,-0.08211289092295959,independent_negative.test.score.json

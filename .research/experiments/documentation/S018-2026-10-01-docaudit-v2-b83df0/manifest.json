@@ -1,0 +1,350 @@
+{
+  "child_enforcement_before_network": {
+    "actual_before_exec": {
+      "RLIMIT_AS": [
+        201326592,
+        201326592
+      ],
+      "RLIMIT_CORE": [
+        0,
+        0
+      ],
+      "RLIMIT_CPU": [
+        20,
+        20
+      ],
+      "RLIMIT_FSIZE": [
+        1048576,
+        1048576
+      ],
+      "RLIMIT_NPROC": [
+        0,
+        0
+      ]
+    },
+    "inherited": {
+      "RLIMIT_AS": [
+        67108864,
+        201326592
+      ],
+      "RLIMIT_CORE": [
+        0,
+        0
+      ],
+      "RLIMIT_CPU": [
+        8,
+        20
+      ],
+      "RLIMIT_FSIZE": [
+        1048576,
+        1048576
+      ],
+      "RLIMIT_NPROC": [
+        124368,
+        124368
+      ]
+    },
+    "no_new_privs": 1,
+    "parent_death_signal": "SIGKILL",
+    "seccomp_mode": 2
+  },
+  "children_usage_including_inherited_waited_children_if_any": {
+    "involuntary_context_switches": 3,
+    "major_faults": 12,
+    "maxrss_kib_linux": 20068,
+    "minor_faults": 2287,
+    "system_cpu_s": 0.012176,
+    "user_cpu_s": 0.013392999999999999,
+    "voluntary_context_switches": 24
+  },
+  "code_commit": null,
+  "commands": [
+    [
+      "/home/linuxbrew/.linuxbrew/bin/python3",
+      "-I",
+      "-S",
+      "-B",
+      "/home/nomli/workspace/bdss_lab/research1/.research/experiments/scripts/inspect_spc_doc_v2.py"
+    ],
+    [
+      "/usr/bin/pdftotext",
+      "-layout",
+      "-enc",
+      "UTF-8",
+      "-eol",
+      "unix",
+      "-",
+      "-"
+    ]
+  ],
+  "config": {
+    "all_old_new_document_and_script_cap_bytes": 5242880,
+    "ca_file": "/etc/ssl/certs/ca-certificates.crt",
+    "child_as_soft_hard": [
+      201326592,
+      201326592
+    ],
+    "child_command": [
+      "/usr/bin/pdftotext",
+      "-layout",
+      "-enc",
+      "UTF-8",
+      "-eol",
+      "unix",
+      "-",
+      "-"
+    ],
+    "child_cpu_soft_hard": [
+      20,
+      20
+    ],
+    "child_environment": {
+      "HOME": "/nonexistent",
+      "LANG": "C",
+      "LC_ALL": "C",
+      "OMP_NUM_THREADS": "1",
+      "PATH": "/usr/bin:/bin",
+      "TMPDIR": "/nonexistent",
+      "XDG_CACHE_HOME": "/nonexistent"
+    },
+    "child_nproc_soft_hard": [
+      0,
+      0
+    ],
+    "core_soft_hard": [
+      0,
+      0
+    ],
+    "independent_unit": null,
+    "kind": "DOCUMENT_ONLY_NOT_EXPERIMENT",
+    "log_cap_bytes": 8192,
+    "manifest_cap_bytes": 32768,
+    "max_source_attempts": 1,
+    "operation_watchdog_s": 45,
+    "parent_as_soft_hard": [
+      67108864,
+      201326592
+    ],
+    "parent_child_fsize_soft_hard": [
+      1048576,
+      1048576
+    ],
+    "parent_cpu_soft_hard": [
+      8,
+      20
+    ],
+    "pdf_body_cap_bytes": 1048576,
+    "prior_inventory_cpu_ceiling_s": 2,
+    "prior_inventory_wall_ceiling_s": 5,
+    "proxy": false,
+    "redirect": false,
+    "remaining_cpu_budget_s": 28,
+    "repetitions": null,
+    "retry": false,
+    "seed": null,
+    "shell_timeout_s": 55,
+    "socket_timeout_s": 10,
+    "stderr_cap_bytes": 16384,
+    "text_cap_bytes": 1048576,
+    "total_watchdog_s": 50,
+    "url": "https://skulddata.cs.umass.edu/traces/storage/SPC-Traces.pdf",
+    "version": "S018-document-audit-v2",
+    "warmup": null,
+    "workload_split_model": null
+  },
+  "config_sha256": "617d916257ad8d0bc7b43d8820b8dcaa3c4fb0ed8755cc7d3adfb2a2c3250918",
+  "current_process_tree_cpu_s_before_final_writes": 0.091954,
+  "dependency_lock": null,
+  "document_audit_id": "S018-2026-10-01-docaudit-v2-b83df0",
+  "download_body_bytes": 127256,
+  "download_complete": true,
+  "download_wall_s": 3.3218730930020683,
+  "ended_at": "2026-10-01T05:37:52.451682+00:00",
+  "environment": {
+    "hardware_model": null,
+    "load_average_before": [
+      0.6982421875,
+      1.00634765625,
+      1.18896484375
+    ],
+    "logical_cpu_count": 22,
+    "no_git_commands": true,
+    "no_installs": true,
+    "openssl": "OpenSSL 3.6.3 9 Jun 2026",
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [GCC 13.3.0]",
+    "uname": [
+      "Linux",
+      "nomli-ThinkBook-16-G6-IMH",
+      "7.0.0-34-generic",
+      "#34-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep  2 14:29:37 UTC 2026",
+      "x86_64"
+    ]
+  },
+  "exit_code": 0,
+  "experiment_id": null,
+  "extraction_complete": true,
+  "extraction_wall_s": 0.012340401000983547,
+  "extractor": {
+    "bytes": 64104,
+    "path": "/usr/bin/pdftotext",
+    "sha256": "5bc8817737f5a4c94240e3f642943ec085669e22b85af33bae22786a45c8d49e"
+  },
+  "extractor_exit_code": 0,
+  "extractor_pid": 849193,
+  "extractor_pipe_bytes": {
+    "stderr": 0,
+    "stdin": 127256,
+    "stdout": 10383
+  },
+  "extractor_version": null,
+  "http": {
+    "content_encoding": "identity",
+    "content_length": 127256,
+    "content_type": "application/pdf",
+    "status": 200
+  },
+  "initial_parent_rlimits": {
+    "RLIMIT_AS": [
+      -1,
+      -1
+    ],
+    "RLIMIT_CORE": [
+      0,
+      -1
+    ],
+    "RLIMIT_CPU": [
+      -1,
+      -1
+    ],
+    "RLIMIT_FSIZE": [
+      -1,
+      -1
+    ]
+  },
+  "inspection_record": "/home/nomli/workspace/bdss_lab/research1/.research/experiments/documentation/S018-2026-10-01-docaudit-v2-b83df0/INSPECTION-RESULT.md",
+  "network_attempts": 1,
+  "notes": [
+    "RLIMIT_AS is virtual address space, not RSS/cgroup enforcement.",
+    "Parent64MiB + child192MiB address-space soft caps sum256MiB; parent hard192MiB is inherited ceiling, never used to raise parent soft.",
+    "CPU limits use OS scheduling granularity; actual aggregate CPU incl prior shell children reported where available.",
+    "Seccomp denylist/minimal env/no descendants, not complete OS/filesystem-read sandbox; installed Poppler/libs trusted.",
+    "No credentials/proxies forwarded. Wire/TLS/header/DNS bytes are unmeasured; cap is HTTP application body.",
+    "Versioned stdlib config and exact binary hashes; no installed dependency source audit/full shared-library lock.",
+    "Outer hard timeout/SIGXCPU/OOM can prevent final metadata; preserve partial files.",
+    "No seed/warmup/model/split/experimental unit; documentary extraction only."
+  ],
+  "old_docs_v1_script_plus_new_docs_v2_script_bytes_before_manifest": 205993,
+  "outputs": {
+    "INSPECTION-RESULT.md": {
+      "bytes": 3993,
+      "sha256": "085dea0052f53f83c75b45135b3c6f01378667f1d31136fb5bac42444e390e6e"
+    },
+    "NOTES.md": {
+      "bytes": 3530,
+      "sha256": "0e0be21e43b93768cd9485b461a6ce7b52384e6ece80c355869e6d5764d4f944"
+    },
+    "audit.log": {
+      "bytes": 446,
+      "sha256": "35baf1abd8a3d36766ae857520ca9e0d1ea73144c981347e84151f722be4cc5c"
+    },
+    "config.json": {
+      "bytes": 1547,
+      "sha256": "617d916257ad8d0bc7b43d8820b8dcaa3c4fb0ed8755cc7d3adfb2a2c3250918"
+    },
+    "extracted.txt": {
+      "bytes": 10383,
+      "sha256": "46f6ce13476746a7d753b7bdd365310f56e8e1dac49f0406ebd7881b7cba9ddf"
+    },
+    "extractor.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source.pdf": {
+      "bytes": 127256,
+      "sha256": "442b3c6c64fec10ebcc7221b088640925f0ca3cc3f6e2c6e9f30acf7e9c9ae06"
+    }
+  },
+  "parent_actual_rlimits_before_network": {
+    "RLIMIT_AS": [
+      67108864,
+      201326592
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_CPU": [
+      8,
+      20
+    ],
+    "RLIMIT_FSIZE": [
+      1048576,
+      1048576
+    ],
+    "RLIMIT_NPROC": [
+      124368,
+      124368
+    ]
+  },
+  "parent_as_soft_never_raised_after_configuration": true,
+  "parent_usage": {
+    "involuntary_context_switches": 1,
+    "major_faults": 186,
+    "maxrss_kib_linux": 1111816,
+    "minor_faults": 5003,
+    "system_cpu_s": 0.020745,
+    "user_cpu_s": 0.04564,
+    "voluntary_context_switches": 365
+  },
+  "preparation_deviation": "v1 unexecuted inheritance defect corrected in new v2; zero previous source attempts. Orchestrator permits correction under existing PDF-only approval. No scientific/numerical budget change or runtime retry.",
+  "prior_preparation_bytes": 34596,
+  "protocol": {
+    "bytes": 6817,
+    "path": "/home/nomli/workspace/bdss_lab/research1/.research/protocol/temperature-poc-checkpoint-2026-10-01.md",
+    "sha256": "2f1a4860d87857cfff6c0606965b0b4a84cf0d1525f9ea05f45be38147a0f913"
+  },
+  "python_binary": {
+    "bytes": 22464,
+    "path": "/home/linuxbrew/.linuxbrew/bin/python3",
+    "sha256": "a7738082185395bdb559c67f09a1e8d01761a75d48362496672008c56725c2d0"
+  },
+  "related_claim": "C022",
+  "script": {
+    "bytes": 24242,
+    "path": "/home/nomli/workspace/bdss_lab/research1/.research/experiments/scripts/inspect_spc_doc_v2.py",
+    "sha256": "256eb1ac0faddadefe3aea94ea99868216563c921b081ac98193f8e027f73e94"
+  },
+  "source_id": "S018",
+  "source_retrieved_at": "2026-10-01T05:37:52.437954+00:00",
+  "source_title_byline_date": null,
+  "source_url": "https://skulddata.cs.umass.edu/traces/storage/SPC-Traces.pdf",
+  "started_at": "2026-10-01T05:37:49.105675+00:00",
+  "status": "complete",
+  "text_validation": {
+    "form_feed_delimiters": 6,
+    "manual_sections_read_pending": true,
+    "nonempty_pages": 6,
+    "utf8": true
+  },
+  "v1_preserved": {
+    "docs": {
+      "INSPECTION-RESULT.md": {
+        "bytes": 4441,
+        "sha256": "3e7230612edf4f17acab15793a8c730d7108b8c633c39cc0dcfcffdc81abd2bc"
+      },
+      "INSPECTION.md": {
+        "bytes": 3978,
+        "sha256": "cb6e1b0d0d06684f3a67fa75cd09329256931b97f76eae532e07cc0715e36222"
+      },
+      "manifest.json": {
+        "bytes": 4898,
+        "sha256": "c2aabb11f10fdec0c2d7ffaacc384f318db007304d0fbed6789cfc5c6d50c41c"
+      }
+    },
+    "script": {
+      "bytes": 21279,
+      "sha256": "dcceea41775dd7661d6443747da82cdfd1da2dfc9c9f2a95b659629168acc814"
+    }
+  },
+  "wall_s_before_manifest": 3.4030595060030464
+}

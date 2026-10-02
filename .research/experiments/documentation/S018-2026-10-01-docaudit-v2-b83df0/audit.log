@@ -1,0 +1,14 @@
+[
+  {
+    "elapsed_s": 0.067158,
+    "message": "Parent/child inherited and actual limits + seccomp verified before networking; extractor awaits stdin."
+  },
+  {
+    "elapsed_s": 3.389473,
+    "message": "Single PDF body complete; no redirect/retry/trace links or licensing acceptance."
+  },
+  {
+    "elapsed_s": 3.402162,
+    "message": "Extraction complete with valid UTF-8/page delimiters; source claims require manual text inspection."
+  }
+]

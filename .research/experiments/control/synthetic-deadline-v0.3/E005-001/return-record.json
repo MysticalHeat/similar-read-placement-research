@@ -1,0 +1,41 @@
+{
+  "version": "0.3",
+  "stage": "E005",
+  "outcome_sha256": "f683d18a03233c02cdded560e762a3eadc250b4cca5f0a9c575776ccf6d2ecd6",
+  "tool_return_observed": true,
+  "tool_timeout_or_error": false,
+  "actual_tool_OS_exit": null,
+  "stdout": {
+    "failure_pointer": null,
+    "handoff_ledger": {
+      "clock_end": [81099.516987922, 0.95725017],
+      "clock_start": [81098.490290865, 0.016573569],
+      "observed_totals": [10.457738917015377, 10.207397824000001],
+      "phase": "finalization",
+      "phase_totals": {
+        "E004_preparation": [9.119470335994265, 9.007930684],
+        "E005_fits": [0.5102547980059171, 0.481421533],
+        "finalization": [0.2012057670071954, 0.17303731000000144],
+        "inventory": [0.2840584670047974, 0.23893544700000047],
+        "prediction_metrics": [0.34274954900320154, 0.30607284999999995]
+      },
+      "status": "SUCCESS_OBSERVED",
+      "worker": [1.0266970570082776, 0.95725017]
+    },
+    "local_return_intended": 0,
+    "memory": {
+      "first": [81098.49972048, 19812352, 1778753536],
+      "last": [81099.5169195, 35770368, 1778753536],
+      "max_current": 35770368,
+      "max_gap": 0.2126352740015136
+    },
+    "observed_totals": [10.457738917015377, 10.207397824000001],
+    "outcome_path": ".research/experiments/control/synthetic-deadline-v0.3/E005-001/outcome.json",
+    "outcome_sha256": "f683d18a03233c02cdded560e762a3eadc250b4cca5f0a9c575776ccf6d2ecd6",
+    "primary": null,
+    "secondary": null,
+    "stage": "E005",
+    "unknown": "B001/startup-before-marker/post-LAST-clock/stdout/exit/tool; OS exit UNKNOWN",
+    "worker": [1.0266970570082776, 0.95725017]
+  }
+}

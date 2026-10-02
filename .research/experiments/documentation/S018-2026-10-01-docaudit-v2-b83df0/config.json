@@ -1,0 +1,75 @@
+{
+  "all_old_new_document_and_script_cap_bytes": 5242880,
+  "ca_file": "/etc/ssl/certs/ca-certificates.crt",
+  "child_as_soft_hard": [
+    201326592,
+    201326592
+  ],
+  "child_command": [
+    "/usr/bin/pdftotext",
+    "-layout",
+    "-enc",
+    "UTF-8",
+    "-eol",
+    "unix",
+    "-",
+    "-"
+  ],
+  "child_cpu_soft_hard": [
+    20,
+    20
+  ],
+  "child_environment": {
+    "HOME": "/nonexistent",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "OMP_NUM_THREADS": "1",
+    "PATH": "/usr/bin:/bin",
+    "TMPDIR": "/nonexistent",
+    "XDG_CACHE_HOME": "/nonexistent"
+  },
+  "child_nproc_soft_hard": [
+    0,
+    0
+  ],
+  "core_soft_hard": [
+    0,
+    0
+  ],
+  "independent_unit": null,
+  "kind": "DOCUMENT_ONLY_NOT_EXPERIMENT",
+  "log_cap_bytes": 8192,
+  "manifest_cap_bytes": 32768,
+  "max_source_attempts": 1,
+  "operation_watchdog_s": 45,
+  "parent_as_soft_hard": [
+    67108864,
+    201326592
+  ],
+  "parent_child_fsize_soft_hard": [
+    1048576,
+    1048576
+  ],
+  "parent_cpu_soft_hard": [
+    8,
+    20
+  ],
+  "pdf_body_cap_bytes": 1048576,
+  "prior_inventory_cpu_ceiling_s": 2,
+  "prior_inventory_wall_ceiling_s": 5,
+  "proxy": false,
+  "redirect": false,
+  "remaining_cpu_budget_s": 28,
+  "repetitions": null,
+  "retry": false,
+  "seed": null,
+  "shell_timeout_s": 55,
+  "socket_timeout_s": 10,
+  "stderr_cap_bytes": 16384,
+  "text_cap_bytes": 1048576,
+  "total_watchdog_s": 50,
+  "url": "https://skulddata.cs.umass.edu/traces/storage/SPC-Traces.pdf",
+  "version": "S018-document-audit-v2",
+  "warmup": null,
+  "workload_split_model": null
+}
