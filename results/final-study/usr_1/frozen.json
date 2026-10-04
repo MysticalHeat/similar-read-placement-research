@@ -1,0 +1,31 @@
+{
+  "selection": {
+    "method": "original_log_l2",
+    "kind": "model",
+    "columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "log_target": true,
+    "model_path": "results/next-read-24h/usr_1.lightgbm.txt"
+  },
+  "days": [
+    2,
+    3,
+    4
+  ],
+  "new_fits": 0,
+  "hashes": {
+    "results/final-study/usr-selection/selection.json": "99622a4067b3a5789cf5885d34d5e9f245144aee22abcbf77a6e15a9af6f2687",
+    "results/next-read-24h/usr_1.lightgbm.txt": "6efe42fcf1b9a02c837427637040752cc84b731095d9a9171da80e2bc53fda11",
+    "final_study.py": "cfa2033b9fe34f2b1667d5b1bab1067ba324560f13df6249f73636efc6376001",
+    "next_read.py": "6f9eac6980f3f65b751bb29cfb83a6a3ea36bbf2f077d535b9d5cc4726d88878",
+    "next_read_extended.py": "d33b5583a4633bb99982dd55c8631a9a730a192ab32af48c466a974c09a82238",
+    "prxy_diagnosis.py": "cc0d1d848024eb83a3e5b38cd77c2c56429350cf7894e36e116cc2bd3f38b63f"
+  }
+}

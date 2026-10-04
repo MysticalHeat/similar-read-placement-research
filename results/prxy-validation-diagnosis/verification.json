@@ -1,0 +1,8 @@
+{
+  "validation_rows": 922870,
+  "methods_checked": 7,
+  "selection_verified": "no_counts_log_l2",
+  "source_histories_and_selected_predictions_audited": 64,
+  "prefix_hash_independently_verified": true,
+  "test_scored": false
+}

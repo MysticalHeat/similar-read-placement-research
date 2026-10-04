@@ -1,0 +1,9 @@
+{
+  "baseline_path": "results/prxy-day2/frozen-baselines.json",
+  "baseline_file_sha256": "870b665269084bf5d391e3fbb96636cb7f6b0e8ab5e026ebb2d5056ae459008f",
+  "baseline_values_sha256": "bff219164792aabfa2bfe8ba22e6e510f427c67fb9c444b446643f0ea7843262",
+  "code_hashes": {
+    "run_final_evaluation.py": "a12c0669c10de1a006d87e5da81401032adbad07d9692795de6fe3c56b85c78e",
+    "final_study.py": "cfa2033b9fe34f2b1667d5b1bab1067ba324560f13df6249f73636efc6376001"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "usr_1": {
+    "prediction_rows_verified": 41847,
+    "source_writes_audited": 128,
+    "prefix_hash_independently_verified": true,
+    "sample_features_predictions_and_first_reads_verified": true
+  },
+  "prxy_1": {
+    "prediction_rows_verified": 1837209,
+    "source_writes_audited": 128,
+    "prefix_hash_independently_verified": true,
+    "sample_features_predictions_and_first_reads_verified": true
+  }
+}

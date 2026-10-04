@@ -1,0 +1,22 @@
+{
+  "window_hours_half_open": [
+    24,
+    48
+  ],
+  "primary_metric": "MAE seconds",
+  "selected_method": "no_counts_log_l2",
+  "feature_indices": [
+    0,
+    1,
+    4,
+    5,
+    6
+  ],
+  "train_end_event_exclusive": 15155552,
+  "model_hashes": {
+    "selected_no_counts": "b70f59ec3e887716149ac1014b9318396200128b3c4eb7881f85dd255468d5d6",
+    "original_all_features": "a165107ccb0728b8d1d5e326aa1b8acb0737fa395dd8feb0a14af3e775a10b60"
+  },
+  "selection_hash": "e4fd8a2bc81fd00d4bf17ea44be642c2b2ab5ceceeb6476062bf7967e57f4c23",
+  "fits_permitted": 0
+}

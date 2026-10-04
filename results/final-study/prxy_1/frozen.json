@@ -1,0 +1,30 @@
+{
+  "selection": {
+    "method": "no_counts_log_l2",
+    "kind": "model",
+    "columns": [
+      0,
+      1,
+      4,
+      5,
+      6
+    ],
+    "log_target": true,
+    "model_path": "results/prxy-validation-diagnosis/no_counts_log_l2.lightgbm.txt"
+  },
+  "days": [
+    2,
+    3,
+    4
+  ],
+  "new_fits": 0,
+  "hashes": {
+    "results/prxy-validation-diagnosis/selected-model.json": "e4fd8a2bc81fd00d4bf17ea44be642c2b2ab5ceceeb6476062bf7967e57f4c23",
+    "results/next-read-24h/prxy_1.lightgbm.txt": "a165107ccb0728b8d1d5e326aa1b8acb0737fa395dd8feb0a14af3e775a10b60",
+    "results/prxy-validation-diagnosis/no_counts_log_l2.lightgbm.txt": "b70f59ec3e887716149ac1014b9318396200128b3c4eb7881f85dd255468d5d6",
+    "final_study.py": "cfa2033b9fe34f2b1667d5b1bab1067ba324560f13df6249f73636efc6376001",
+    "next_read.py": "6f9eac6980f3f65b751bb29cfb83a6a3ea36bbf2f077d535b9d5cc4726d88878",
+    "next_read_extended.py": "d33b5583a4633bb99982dd55c8631a9a730a192ab32af48c466a974c09a82238",
+    "prxy_diagnosis.py": "cc0d1d848024eb83a3e5b38cd77c2c56429350cf7894e36e116cc2bd3f38b63f"
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "workload": "usr_1",
+  "method": "original_log_l2",
+  "kind": "model",
+  "columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "log_target": true,
+  "model_path": "results/next-read-24h/usr_1.lightgbm.txt",
+  "selection_metric": "validation MAE seconds",
+  "metrics": {
+    "global_median": {
+      "n": 24808,
+      "mae_seconds": 7554.663080188434,
+      "median_absolute_error_seconds": 7938.857457349999,
+      "p90_absolute_error_seconds": 11966.191565009998,
+      "rmse_seconds": 8331.047148743428,
+      "mae_log1p_seconds": 1.1015623206680403
+    },
+    "address_median": {
+      "n": 24808,
+      "mae_seconds": 6855.641451573105,
+      "median_absolute_error_seconds": 6382.072206575001,
+      "p90_absolute_error_seconds": 12043.943566119999,
+      "rmse_seconds": 8315.03302242116,
+      "mae_log1p_seconds": 0.9956458458550425
+    },
+    "period_remaining": {
+      "n": 24808,
+      "mae_seconds": 15332.819318960608,
+      "median_absolute_error_seconds": 8728.520354749999,
+      "p90_absolute_error_seconds": 40565.41938909996,
+      "rmse_seconds": 21173.174998400173,
+      "mae_log1p_seconds": 3.02007947821896
+    },
+    "original_log_l2": {
+      "n": 24808,
+      "mae_seconds": 4892.6614507523645,
+      "median_absolute_error_seconds": 4156.795525786512,
+      "p90_absolute_error_seconds": 10048.688189784547,
+      "rmse_seconds": 6253.969570228956,
+      "mae_log1p_seconds": 1.4904764577595546
+    },
+    "no_counts_log_l2": {
+      "n": 24808,
+      "mae_seconds": 5108.885254755344,
+      "median_absolute_error_seconds": 4258.304570374672,
+      "p90_absolute_error_seconds": 10353.261027367165,
+      "rmse_seconds": 6663.681495690646,
+      "mae_log1p_seconds": 1.5179953798430306
+    },
+    "all_features_raw_l1": {
+      "n": 24808,
+      "mae_seconds": 5182.886414658498,
+      "median_absolute_error_seconds": 4188.123581717191,
+      "p90_absolute_error_seconds": 11236.744324038464,
+      "rmse_seconds": 6745.250110723811,
+      "mae_log1p_seconds": 1.0974276007475028
+    },
+    "no_counts_raw_l1": {
+      "n": 24808,
+      "mae_seconds": 4906.825069522048,
+      "median_absolute_error_seconds": 3856.8503108379978,
+      "p90_absolute_error_seconds": 10462.16246117528,
+      "rmse_seconds": 6263.957691393463,
+      "mae_log1p_seconds": 0.9702747449885564
+    }
+  },
+  "train_end_event_exclusive": 9215919,
+  "source": {
+    "archive": "/home/nomli/workspace/bdss_lab/research1/dataset/msr-cambridge2.tar",
+    "member": "MSR-Cambridge/usr_1.csv.gz",
+    "volume": [
+      "usr",
+      1
+    ],
+    "prefix_sha256": "62bf427e683ebb6fba34920758d9d514e597789d83e24ac6e9e4dacf503a3928",
+    "loaded_events": 10180923,
+    "requested_hours": 24,
+    "max_events": 10180923,
+    "stop_reason": "event_cap_reached",
+    "first_timestamp": 128166372010520299,
+    "last_timestamp": 128167063204685303,
+    "first_excluded_timestamp": 128167063208239769,
+    "counts": {
+      "Read": 9684979,
+      "Write": 495944
+    }
+  },
+  "train_observed_targets": 65710,
+  "validation_observed_targets": 24808,
+  "new_fits": 3,
+  "definitions": {
+    "global_median": {
+      "kind": "global_median"
+    },
+    "address_median": {
+      "kind": "address_median"
+    },
+    "period_remaining": {
+      "kind": "period_remaining"
+    },
+    "original_log_l2": {
+      "kind": "model",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "log_target": true,
+      "model_path": "results/next-read-24h/usr_1.lightgbm.txt"
+    },
+    "no_counts_log_l2": {
+      "kind": "model",
+      "columns": [
+        0,
+        1,
+        4,
+        5,
+        6
+      ],
+      "log_target": true,
+      "model_path": "results/final-study/usr-selection/no_counts_log_l2.lightgbm.txt",
+      "params": {
+        "objective": "regression",
+        "n_estimators": 150,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "reg_lambda": 1.0,
+        "random_state": 42,
+        "n_jobs": 2,
+        "deterministic": true,
+        "force_col_wise": true,
+        "verbosity": -1
+      }
+    },
+    "all_features_raw_l1": {
+      "kind": "model",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "log_target": false,
+      "model_path": "results/final-study/usr-selection/all_features_raw_l1.lightgbm.txt",
+      "params": {
+        "objective": "regression_l1",
+        "n_estimators": 150,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "reg_lambda": 1.0,
+        "random_state": 42,
+        "n_jobs": 2,
+        "deterministic": true,
+        "force_col_wise": true,
+        "verbosity": -1
+      }
+    },
+    "no_counts_raw_l1": {
+      "kind": "model",
+      "columns": [
+        0,
+        1,
+        4,
+        5,
+        6
+      ],
+      "log_target": false,
+      "model_path": "results/final-study/usr-selection/no_counts_raw_l1.lightgbm.txt",
+      "params": {
+        "objective": "regression_l1",
+        "n_estimators": 150,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "reg_lambda": 1.0,
+        "random_state": 42,
+        "n_jobs": 2,
+        "deterministic": true,
+        "force_col_wise": true,
+        "verbosity": -1
+      }
+    }
+  },
+  "code_hashes": {
+    "final_study.py": "cfa2033b9fe34f2b1667d5b1bab1067ba324560f13df6249f73636efc6376001",
+    "next_read_extended.py": "d33b5583a4633bb99982dd55c8631a9a730a192ab32af48c466a974c09a82238",
+    "next_read.py": "6f9eac6980f3f65b751bb29cfb83a6a3ea36bbf2f077d535b9d5cc4726d88878",
+    "prxy_diagnosis.py": "cc0d1d848024eb83a3e5b38cd77c2c56429350cf7894e36e116cc2bd3f38b63f"
+  }
+}

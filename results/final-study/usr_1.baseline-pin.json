@@ -1,0 +1,9 @@
+{
+  "baseline_path": "results/final-study/usr-selection/baselines.json",
+  "baseline_file_sha256": "db28d0ec601f81a2dfa082fc60f25b3b1cdee94128a99ca05af35f895109598a",
+  "baseline_values_sha256": "e493c5eff353f313798ca93a4a6bf3e37b8e09539c365d32289eae73359beac8",
+  "code_hashes": {
+    "run_final_evaluation.py": "a12c0669c10de1a006d87e5da81401032adbad07d9692795de6fe3c56b85c78e",
+    "final_study.py": "cfa2033b9fe34f2b1667d5b1bab1067ba324560f13df6249f73636efc6376001"
+  }
+}

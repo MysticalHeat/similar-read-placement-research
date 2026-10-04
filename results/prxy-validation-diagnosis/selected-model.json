@@ -1,0 +1,17 @@
+{
+  "method": "no_counts_log_l2",
+  "model_file": "no_counts_log_l2.lightgbm.txt",
+  "feature_indices_in_original_schema": [0, 1, 4, 5, 6],
+  "feature_names": [
+    "log_offset_bytes",
+    "log_size_bytes",
+    "log_seconds_since_read",
+    "log_seconds_since_write",
+    "log_last_read_read_interval_seconds"
+  ],
+  "prediction_to_seconds": "max(0, expm1(model_output))",
+  "selection": "minimum validation MAE seconds, including median baselines",
+  "training_scope": "original first 60 percent of first 24h prxy_1, completed labels only",
+  "validation_mae_seconds": 3.898572641837069,
+  "independent_future_evaluation_complete": false
+}

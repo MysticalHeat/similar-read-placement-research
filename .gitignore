@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Raw traces stay local; keep the dataset documentation in Git.
+/dataset/*
+!/dataset/README.md
+
+# Keep models, experiment metadata and historical reports, not bulky arrays.
+/results/**
+!/results/**/
+!/results/**/*.lightgbm.txt
+!/results/**/*.json
+!/results/**/*.md

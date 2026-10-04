@@ -1,0 +1,22 @@
+{
+  "rows_verified": 4451738,
+  "methods_verified": 4,
+  "fits": 0,
+  "model_and_selection_hashes_unchanged": true,
+  "source_samples_audited": 64,
+  "prefix_hash_independently_verified": true,
+  "hours_with_smaller_selected_mae": 24,
+  "all_hour_mae_verified": true,
+  "rare_error_diagnostics": {
+    "address_median": {
+      "abs_error_over_60s_fraction": 0.007472362479552929,
+      "abs_error_over_600s_fraction": 3.931048952117128e-05,
+      "p99_abs_error_seconds": 50.45032662699999
+    },
+    "selected_no_counts": {
+      "abs_error_over_60s_fraction": 0.0008535992010311478,
+      "abs_error_over_600s_fraction": 3.773806994032443e-05,
+      "p99_abs_error_seconds": 13.039886431815791
+    }
+  }
+}

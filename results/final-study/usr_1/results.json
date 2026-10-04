@@ -1,0 +1,203 @@
+{
+  "workload": "usr_1",
+  "source": {
+    "archive": "/home/nomli/workspace/bdss_lab/research1/dataset/msr-cambridge2.tar",
+    "member": "MSR-Cambridge/usr_1.csv.gz",
+    "volume": [
+      "usr",
+      1
+    ],
+    "prefix_sha256": "40ba6d8d1a4209caa9a48aecfa5519018fa144a97fdbf53a0f04bb4364151a3d",
+    "loaded_events": 23666893,
+    "requested_hours": 96,
+    "max_events": 130000000,
+    "stop_reason": "duration_reached",
+    "first_timestamp": 128166372010520299,
+    "last_timestamp": 128169828009824382,
+    "first_excluded_timestamp": 128169828019437225,
+    "counts": {
+      "Read": 21868169,
+      "Write": 1798724
+    }
+  },
+  "frozen": {
+    "selection": {
+      "method": "original_log_l2",
+      "kind": "model",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "log_target": true,
+      "model_path": "results/next-read-24h/usr_1.lightgbm.txt"
+    },
+    "days": [
+      2,
+      3,
+      4
+    ],
+    "new_fits": 0,
+    "hashes": {
+      "results/final-study/usr-selection/selection.json": "99622a4067b3a5789cf5885d34d5e9f245144aee22abcbf77a6e15a9af6f2687",
+      "results/next-read-24h/usr_1.lightgbm.txt": "6efe42fcf1b9a02c837427637040752cc84b731095d9a9171da80e2bc53fda11",
+      "final_study.py": "cfa2033b9fe34f2b1667d5b1bab1067ba324560f13df6249f73636efc6376001",
+      "next_read.py": "6f9eac6980f3f65b751bb29cfb83a6a3ea36bbf2f077d535b9d5cc4726d88878",
+      "next_read_extended.py": "d33b5583a4633bb99982dd55c8631a9a730a192ab32af48c466a974c09a82238",
+      "prxy_diagnosis.py": "cc0d1d848024eb83a3e5b38cd77c2c56429350cf7894e36e116cc2bd3f38b63f"
+    }
+  },
+  "days": {
+    "2": {
+      "metrics": {
+        "global_median": {
+          "n": 66654,
+          "mae_seconds": 12202.873796384765,
+          "median_absolute_error_seconds": 11766.51191595,
+          "p90_absolute_error_seconds": 20846.49013841,
+          "rmse_seconds": 14546.716448415746,
+          "mae_log1p_seconds": 1.5845693159929022
+        },
+        "address_median": {
+          "n": 66654,
+          "mae_seconds": 9918.773740623254,
+          "median_absolute_error_seconds": 8599.5089028,
+          "p90_absolute_error_seconds": 16838.813406250036,
+          "rmse_seconds": 13204.929122935006,
+          "mae_log1p_seconds": 1.4283414537564754
+        },
+        "original": {
+          "n": 66654,
+          "mae_seconds": 12153.362087755688,
+          "median_absolute_error_seconds": 6149.6477949860055,
+          "p90_absolute_error_seconds": 33813.074531102095,
+          "rmse_seconds": 18452.458940904467,
+          "mae_log1p_seconds": 1.9858536643016753
+        },
+        "selected": {
+          "n": 66654,
+          "mae_seconds": 12153.362087755688,
+          "median_absolute_error_seconds": 6149.6477949860055,
+          "p90_absolute_error_seconds": 33813.074531102095,
+          "rmse_seconds": 18452.458940904467,
+          "mae_log1p_seconds": 1.9858536643016753
+        }
+      },
+      "coverage": {
+        "start_event": 10642792,
+        "end_event_exclusive": 15295085,
+        "writes": 373657,
+        "observed_targets": 66654,
+        "right_censored": 307003,
+        "observed_fraction": 0.1783828484412175
+      },
+      "evaluation_role": "new_future_period"
+    },
+    "3": {
+      "metrics": {
+        "global_median": {
+          "n": 3577,
+          "mae_seconds": 12381.505222121876,
+          "median_absolute_error_seconds": 13513.10628875,
+          "p90_absolute_error_seconds": 21363.80704935,
+          "rmse_seconds": 13970.183726167044,
+          "mae_log1p_seconds": 2.235924688686884
+        },
+        "address_median": {
+          "n": 3577,
+          "mae_seconds": 13291.457813713294,
+          "median_absolute_error_seconds": 13032.5861899,
+          "p90_absolute_error_seconds": 26825.460262099998,
+          "rmse_seconds": 16193.823769287785,
+          "mae_log1p_seconds": 2.154497012488
+        },
+        "original": {
+          "n": 3577,
+          "mae_seconds": 15071.470434888139,
+          "median_absolute_error_seconds": 13911.928652654911,
+          "p90_absolute_error_seconds": 34016.3880951612,
+          "rmse_seconds": 20267.6148218372,
+          "mae_log1p_seconds": 3.867976894410283
+        },
+        "selected": {
+          "n": 3577,
+          "mae_seconds": 15071.470434888139,
+          "median_absolute_error_seconds": 13911.928652654911,
+          "p90_absolute_error_seconds": 34016.3880951612,
+          "rmse_seconds": 20267.6148218372,
+          "mae_log1p_seconds": 3.867976894410283
+        }
+      },
+      "coverage": {
+        "start_event": 15295085,
+        "end_event_exclusive": 18542804,
+        "writes": 170813,
+        "observed_targets": 3577,
+        "right_censored": 167236,
+        "observed_fraction": 0.02094102907858301
+      },
+      "evaluation_role": "new_future_period"
+    },
+    "4": {
+      "metrics": {
+        "global_median": {
+          "n": 215104,
+          "mae_seconds": 16606.678165628407,
+          "median_absolute_error_seconds": 13053.727983399998,
+          "p90_absolute_error_seconds": 36466.28924427,
+          "rmse_seconds": 21706.8022487445,
+          "mae_log1p_seconds": 1.0048096787966905
+        },
+        "address_median": {
+          "n": 215104,
+          "mae_seconds": 16450.66607042449,
+          "median_absolute_error_seconds": 12085.396171975,
+          "p90_absolute_error_seconds": 38117.4557797,
+          "rmse_seconds": 22492.71940527956,
+          "mae_log1p_seconds": 1.0386983061984467
+        },
+        "original": {
+          "n": 215104,
+          "mae_seconds": 24658.94281783792,
+          "median_absolute_error_seconds": 22197.43214037585,
+          "p90_absolute_error_seconds": 49376.189034143434,
+          "rmse_seconds": 30579.283781719252,
+          "mae_log1p_seconds": 3.56904952553586
+        },
+        "selected": {
+          "n": 215104,
+          "mae_seconds": 24658.94281783792,
+          "median_absolute_error_seconds": 22197.43214037585,
+          "p90_absolute_error_seconds": 49376.189034143434,
+          "rmse_seconds": 30579.283781719252,
+          "mae_log1p_seconds": 3.56904952553586
+        }
+      },
+      "coverage": {
+        "start_event": 18542804,
+        "end_event_exclusive": 23666893,
+        "writes": 614645,
+        "observed_targets": 215104,
+        "right_censored": 399541,
+        "observed_fraction": 0.34996461372011484
+      },
+      "evaluation_role": "new_future_period"
+    }
+  },
+  "elapsed_seconds": 36.83176443800039,
+  "process_peak_rss_mib_linux": 1576.46484375,
+  "baseline_pin": {
+    "baseline_path": "results/final-study/usr-selection/baselines.json",
+    "baseline_file_sha256": "db28d0ec601f81a2dfa082fc60f25b3b1cdee94128a99ca05af35f895109598a",
+    "baseline_values_sha256": "e493c5eff353f313798ca93a4a6bf3e37b8e09539c365d32289eae73359beac8",
+    "code_hashes": {
+      "run_final_evaluation.py": "a12c0669c10de1a006d87e5da81401032adbad07d9692795de6fe3c56b85c78e",
+      "final_study.py": "cfa2033b9fe34f2b1667d5b1bab1067ba324560f13df6249f73636efc6376001"
+    }
+  },
+  "baseline_frozen_before_evaluation": true
+}

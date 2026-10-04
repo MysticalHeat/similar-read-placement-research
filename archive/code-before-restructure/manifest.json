@@ -1,0 +1,17 @@
+{
+  "purpose": "Exact source snapshots from before package relocation",
+  "sha256": {
+    "next_read.py": "6f9eac6980f3f65b751bb29cfb83a6a3ea36bbf2f077d535b9d5cc4726d88878",
+    "next_read_extended.py": "d33b5583a4633bb99982dd55c8631a9a730a192ab32af48c466a974c09a82238",
+    "prxy_diagnosis.py": "cc0d1d848024eb83a3e5b38cd77c2c56429350cf7894e36e116cc2bd3f38b63f",
+    "prxy_day2.py": "d0ff40cb66dcc76fafcc40cbe47d51ba1007924ab52cc464542a603fb86cd20f",
+    "final_study.py": "cfa2033b9fe34f2b1667d5b1bab1067ba324560f13df6249f73636efc6376001",
+    "run_final_evaluation.py": "a12c0669c10de1a006d87e5da81401032adbad07d9692795de6fe3c56b85c78e",
+    "render_final_report.py": "53fdc72b59d2e8950446a62a13d034aec07718b9e312a89364e41ead18a36201",
+    "verify_pilot.py": "46527784a402f151cf045412597b1532ee0de7d58d60646c762e49bf8236f6a3",
+    "verify_extended.py": "9d450418794fc19a6124ac647c001aaf5f4564f023bf5ae6fb7d19b56c7216dd",
+    "verify_diagnosis.py": "718894ef8d99b70fceeed3480e6fe0692e7d4d6fb76cc55bdc2997c2601f6f20",
+    "verify_day2.py": "4e126f3235eaf134cc6ec0a34112fdc44d1197436e498ca68c17c11ca0f019d0",
+    "verify_final_study.py": "13b921bc6f7dde151b347b1e515fbcbe146cf87cd9b575248328fdf59fe1f078"
+  }
+}

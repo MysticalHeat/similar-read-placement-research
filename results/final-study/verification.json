@@ -1,0 +1,28 @@
+{
+  "usr_selection_methods_checked": 7,
+  "usr_selection_verified": "original_log_l2",
+  "workloads": {
+    "usr_1": {
+      "prediction_rows_verified": 285335,
+      "days": {
+        "2": 66654,
+        "3": 3577,
+        "4": 215104
+      },
+      "source_samples_audited": 256,
+      "source_prefix_hash_independently_verified": true,
+      "frozen_model_and_baseline_verified": true
+    },
+    "prxy_1": {
+      "prediction_rows_verified": 13035932,
+      "days": {
+        "2": 4451738,
+        "3": 4313417,
+        "4": 4270777
+      },
+      "source_samples_audited": 192,
+      "source_prefix_hash_independently_verified": true,
+      "frozen_model_and_baseline_verified": true
+    }
+  }
+}

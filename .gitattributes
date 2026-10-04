@@ -1,0 +1,10 @@
+# Models are immutable artifacts: preserve bytes and avoid tree-level merges.
+*.lightgbm.txt binary
+
+# Recorded fingerprints depend on exact historical bytes, including newlines.
+results/**/*.json -text
+archive/code-before-restructure/** -text
+notebooks/reference/** -text
+
+# csv.writer emits CRLF; normalize the Git diff and restore that CSV dialect.
+reports/*.csv text eol=crlf
