@@ -1,5 +1,5 @@
 # Finite synthetic analysis v0.3
-2026-10-02; meeting 2026-10-03. Static analysis, no execution/rehash/replication.
+2026-10-02. Static analysis, no execution/rehash/replication.
 Paths relative to `.research/`; raw/state unchanged. C-IDs are proposals only.
 
 ## Design and access
