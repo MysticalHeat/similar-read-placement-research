@@ -15,3 +15,5 @@ __pycache__/
 !/results/**/*.lightgbm.txt
 !/results/**/*.json
 !/results/**/*.md
+
+/submission/trained/
