@@ -15,7 +15,7 @@ from read_prediction.notebook_training import (
     prepare_samples,
     train_workload,
 )
-from read_prediction.notebook_features import FEATURE_DESCRIPTION
+from read_prediction.notebook_features import FEATURE_DESCRIPTION, TRAINING_NOTE
 from read_prediction.notebook_format import format_literal
 from read_prediction.paths import PROJECT_ROOT
 
@@ -84,6 +84,7 @@ def main():
             "        f'{result[\"validation_mae_seconds\"]:>18.2f}'\n"
             "    )"
         ),
+        nbformat.v4.new_markdown_cell(TRAINING_NOTE),
     ], metadata={"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"}})
     folder = PROJECT_ROOT / "submission"
     folder.mkdir(exist_ok=True)

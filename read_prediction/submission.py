@@ -8,7 +8,7 @@ import nbformat
 from nbclient import NotebookClient
 
 from read_prediction.paths import PROJECT_ROOT
-from read_prediction.notebook_features import FEATURE_DESCRIPTION
+from read_prediction.notebook_features import FEATURE_DESCRIPTION, RESULTS_NOTE
 from read_prediction.notebook_format import format_literal
 
 
@@ -81,6 +81,7 @@ def main():
             "        f'{result[\"evaluation_role\"]}'\n"
             "    )"
         ),
+        nbformat.v4.new_markdown_cell(RESULTS_NOTE),
     ], metadata={"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"}})
     NotebookClient(notebook, timeout=60, kernel_name="python3",
                    resources={"metadata": {"path": str(folder)}}).execute()
