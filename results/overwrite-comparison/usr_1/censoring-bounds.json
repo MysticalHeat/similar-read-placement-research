@@ -1,0 +1,9 @@
+{
+  "n": 722228,
+  "censored_n": 131943,
+  "mean_lower_bound_seconds": 48028.70121361088,
+  "mean_upper_bound_seconds": null,
+  "median_lower_bound_seconds": 4911.009305,
+  "median_upper_bound_seconds": 4921.292042499999,
+  "reporter_code_sha256": "aaa3a08aa16cb294e3045b7dea8503c47ef904d795330e40ec20eaad140c0f23"
+}

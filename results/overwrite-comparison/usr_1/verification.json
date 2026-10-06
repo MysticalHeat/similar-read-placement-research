@@ -1,0 +1,13 @@
+{
+  "workload": "usr_1",
+  "new_fits": 0,
+  "input_hashes_verified": 8,
+  "code_hashes_verified": 4,
+  "rows_verified_by_day": {
+    "5": 268047,
+    "6": 181803,
+    "7": 272378
+  },
+  "source_samples_verified": 192,
+  "pooled_metrics_independently_recomputed": true
+}

@@ -1,0 +1,18 @@
+{
+  "workload": "prxy_1",
+  "source_samples_audited": 384,
+  "source_events_scanned": 168638964,
+  "source_prefix_hash_independently_verified": true,
+  "source_prefix_sha256_expected": "3aaf6ec80cd749e6d767e738281de800829b2e1d20f053a83e410973e079076a",
+  "source_prefix_sha256_actual": "3aaf6ec80cd749e6d767e738281de800829b2e1d20f053a83e410973e079076a",
+  "first_excluded_timestamp_verified": false,
+  "eof_verified": true,
+  "frozen_hashes_verified": 16,
+  "model_sha256": {
+    "results/prxy-validation-diagnosis/no_counts_log_l2.lightgbm.txt": "b70f59ec3e887716149ac1014b9318396200128b3c4eb7881f85dd255468d5d6",
+    "results/mae-improvement/prxy_1/log_l2_all_regularized.lightgbm.txt": "f64cb5e7174dd119d22993a59c03bb2ff56704d748523764f3134b569e9dd8be"
+  },
+  "auditor_code_sha256": "ef679bca80fed3df7df8aabc82dcc63612b3d4db9ad928c3494009f1c1152a2f",
+  "selected_prediction_reconstruction_verified": true,
+  "new_fits": 0
+}

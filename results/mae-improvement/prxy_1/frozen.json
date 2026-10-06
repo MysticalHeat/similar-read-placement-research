@@ -1,0 +1,65 @@
+{
+  "selection": {
+    "kind": "model",
+    "model_path": "results/mae-improvement/prxy_1/log_l2_all_regularized.lightgbm.txt",
+    "columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "log_target": true,
+    "params": {
+      "objective": "regression",
+      "metric": "None",
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "reg_lambda": 1.0,
+      "random_state": 42,
+      "n_jobs": 2,
+      "deterministic": true,
+      "force_col_wise": true,
+      "verbosity": -1,
+      "num_leaves": 15,
+      "min_child_samples": 200
+    },
+    "profile": "regularized",
+    "history_features": false,
+    "best_iteration": 25,
+    "fit_seconds": 5.73551126899838,
+    "method": "log_l2_all_regularized"
+  },
+  "selection_path": "results/mae-improvement/prxy_1/selection.json",
+  "hashes": {
+    "docs/protocols/mae-improvement-protocol.md": "54cd3b571aa56870a309ddbd5aa232cb251575653e7d0757c31ada33d8dabaac",
+    "read_prediction/checks/mae_improvement.py": "95ff81cda97369362474b61bc77e33b8850c97168230a6cac3c20e5087545db7",
+    "read_prediction/experiments/mae_improvement.py": "4d697be6ce618fd7d3bb02c95ef842796d3f38e052acac18b8b1799e4ae7d729",
+    "read_prediction/extended.py": "21e1a25cf644d5108beae14ac8b5b23bbf767170c3fc28b4b6166eb5121fac00",
+    "read_prediction/pipeline.py": "45b817a8850787641fefeb2ff6382760821eca001f1f774c437a65d60de89044",
+    "results/mae-improvement/prxy_1/baselines.json": "e0a308f4da8d83c9d407c96c8a424c3ffa78001353c6e498aa765bdf23def767",
+    "results/mae-improvement/prxy_1/log_l1_all_balanced.lightgbm.txt": "0228e0ff7bd516d89ee18551e9945e053c47823ebd6fda3691550ed7e4299223",
+    "results/mae-improvement/prxy_1/log_l1_all_regularized.lightgbm.txt": "b5f278a56d05570b1c757b3ebbd80ff678b60a4030242be36e4862046eb5a21c",
+    "results/mae-improvement/prxy_1/log_l1_no_counts_balanced.lightgbm.txt": "d7f280a1f8ecc975e0378891042b104750571d8e215cb9d59666f255c966fb1f",
+    "results/mae-improvement/prxy_1/log_l1_no_counts_regularized.lightgbm.txt": "6944648875f9368b707dfacb1e7ad5ed637dac284be1bd88177fddfd594e0665",
+    "results/mae-improvement/prxy_1/log_l2_all_balanced.lightgbm.txt": "4de8979adf8a2a7f7b93128bd1f8e0e32f9ce37ef083d80220c58e05b14670cd",
+    "results/mae-improvement/prxy_1/log_l2_all_regularized.lightgbm.txt": "f64cb5e7174dd119d22993a59c03bb2ff56704d748523764f3134b569e9dd8be",
+    "results/mae-improvement/prxy_1/log_l2_no_counts_balanced.lightgbm.txt": "3d80af4c947550087973a0988245c49572f8d5a25886ab089eae0f46b849dbb1",
+    "results/mae-improvement/prxy_1/log_l2_no_counts_regularized.lightgbm.txt": "f0428922b217679fecc6ab5a28b0f7e1ef2bc272a25256835e9dab75e29f7d80",
+    "results/mae-improvement/prxy_1/selection.json": "c8fc56de550e638985388983d05368793d0a2e22b4d4bb8a7444111f58a6d0f8",
+    "results/prxy-validation-diagnosis/no_counts_log_l2.lightgbm.txt": "b70f59ec3e887716149ac1014b9318396200128b3c4eb7881f85dd255468d5d6"
+  },
+  "development_days": [
+    2,
+    3,
+    4
+  ],
+  "test_days": [
+    5,
+    6,
+    7
+  ],
+  "new_fits": 0
+}

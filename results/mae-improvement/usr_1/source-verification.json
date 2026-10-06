@@ -1,0 +1,18 @@
+{
+  "workload": "usr_1",
+  "source_samples_audited": 384,
+  "source_events_scanned": 45283980,
+  "source_prefix_hash_independently_verified": true,
+  "source_prefix_sha256_expected": "a4f5ca473a65ce74b5f9dc64f1e60ca01eb8693c2195a62d6d136608d7ad4117",
+  "source_prefix_sha256_actual": "a4f5ca473a65ce74b5f9dc64f1e60ca01eb8693c2195a62d6d136608d7ad4117",
+  "first_excluded_timestamp_verified": false,
+  "eof_verified": true,
+  "frozen_hashes_verified": 20,
+  "model_sha256": {
+    "results/next-read-24h/usr_1.lightgbm.txt": "6efe42fcf1b9a02c837427637040752cc84b731095d9a9171da80e2bc53fda11",
+    "results/mae-improvement/usr_1/log_l1_no_counts_balanced_history.lightgbm.txt": "d54238c8229a6f56d3b511c8be36997857ffead79149792df37e81861e749663"
+  },
+  "auditor_code_sha256": "ef679bca80fed3df7df8aabc82dcc63612b3d4db9ad928c3494009f1c1152a2f",
+  "selected_prediction_reconstruction_verified": true,
+  "new_fits": 0
+}

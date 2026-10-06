@@ -1,0 +1,10 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+  "lightgbm": "4.7.0",
+  "numpy": "2.5.3",
+  "scikit_learn": "1.9.1",
+  "executable": ".venv/bin/python",
+  "training_threads": 2,
+  "seed": 42
+}

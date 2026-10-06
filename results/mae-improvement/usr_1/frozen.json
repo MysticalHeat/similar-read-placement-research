@@ -1,0 +1,73 @@
+{
+  "selection": {
+    "kind": "blend",
+    "model_path": "results/mae-improvement/usr_1/log_l1_no_counts_balanced_history.lightgbm.txt",
+    "columns": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "log_target": true,
+    "params": {
+      "objective": "regression_l1",
+      "metric": "None",
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "reg_lambda": 1.0,
+      "random_state": 42,
+      "n_jobs": 2,
+      "deterministic": true,
+      "force_col_wise": true,
+      "verbosity": -1,
+      "num_leaves": 31,
+      "min_child_samples": 50
+    },
+    "profile": "balanced",
+    "history_features": true,
+    "best_iteration": 6,
+    "fit_seconds": 0.239379981001548,
+    "model_method": "log_l1_no_counts_balanced_history",
+    "model_weight": 0.25,
+    "method": "log_l1_no_counts_balanced_history_blend_25"
+  },
+  "selection_path": "results/mae-improvement/usr_1/selection.json",
+  "hashes": {
+    "docs/protocols/mae-improvement-protocol.md": "54cd3b571aa56870a309ddbd5aa232cb251575653e7d0757c31ada33d8dabaac",
+    "read_prediction/checks/mae_improvement.py": "95ff81cda97369362474b61bc77e33b8850c97168230a6cac3c20e5087545db7",
+    "read_prediction/experiments/mae_improvement.py": "4d697be6ce618fd7d3bb02c95ef842796d3f38e052acac18b8b1799e4ae7d729",
+    "read_prediction/extended.py": "21e1a25cf644d5108beae14ac8b5b23bbf767170c3fc28b4b6166eb5121fac00",
+    "read_prediction/pipeline.py": "45b817a8850787641fefeb2ff6382760821eca001f1f774c437a65d60de89044",
+    "results/mae-improvement/usr_1/baselines.json": "db28d0ec601f81a2dfa082fc60f25b3b1cdee94128a99ca05af35f895109598a",
+    "results/mae-improvement/usr_1/log_l1_all_balanced.lightgbm.txt": "ec63655232b8b6e5eacb21063250224094d2d929f394c8dd21fe2e78f67725a3",
+    "results/mae-improvement/usr_1/log_l1_all_balanced_history.lightgbm.txt": "7aa886c3d4ea714745e9bab9d2a077a474715b32962bf5f721d3a34bf48ab032",
+    "results/mae-improvement/usr_1/log_l1_all_regularized.lightgbm.txt": "1cbb6d09099a94c9dcf405f8c96299d79ec138784c84efaa4ddcd6058a42cd80",
+    "results/mae-improvement/usr_1/log_l1_no_counts_balanced.lightgbm.txt": "389d384aa08e21c9d680b46ef25102723a0f6988428fc27395d270fe2c12c3f0",
+    "results/mae-improvement/usr_1/log_l1_no_counts_balanced_history.lightgbm.txt": "d54238c8229a6f56d3b511c8be36997857ffead79149792df37e81861e749663",
+    "results/mae-improvement/usr_1/log_l1_no_counts_regularized.lightgbm.txt": "1cecca3192e7150e0e757c3669d3f11cec3a5a5a2d9437abc9394d2a5508e867",
+    "results/mae-improvement/usr_1/log_l2_all_balanced.lightgbm.txt": "292e95884988f5cce6f60820beeb59762e7686e8127f85cd9ce726833de690ad",
+    "results/mae-improvement/usr_1/log_l2_all_balanced_history.lightgbm.txt": "21c63a0f434beba2ec9db266856c5faf486b6ce7df80b7fff9319cd4282156a9",
+    "results/mae-improvement/usr_1/log_l2_all_regularized.lightgbm.txt": "8097399f5a50c3e156bed92e889420744b0e8b119c42fe44d4af8dc0a71697b6",
+    "results/mae-improvement/usr_1/log_l2_no_counts_balanced.lightgbm.txt": "182fdf2459dfb63c42b23574b3282e195a6337d3b4a9e8b9a2d3128c2f689e31",
+    "results/mae-improvement/usr_1/log_l2_no_counts_balanced_history.lightgbm.txt": "b3f5e2168a53d845bb257502112ca7fa2fc9edee5e1e2119a7d729de1a7a085c",
+    "results/mae-improvement/usr_1/log_l2_no_counts_regularized.lightgbm.txt": "addbde1cc76b371b15c16fbda30cfdf84896e3eb09fb7118024425dd863e37d4",
+    "results/mae-improvement/usr_1/selection.json": "1000f6ec34330cbab850c2f73d74194ef6ba9d0c5d7dd7bb790dded6deed08ad",
+    "results/next-read-24h/usr_1.lightgbm.txt": "6efe42fcf1b9a02c837427637040752cc84b731095d9a9171da80e2bc53fda11"
+  },
+  "development_days": [
+    2,
+    3,
+    4
+  ],
+  "test_days": [
+    5,
+    6,
+    7
+  ],
+  "new_fits": 0
+}

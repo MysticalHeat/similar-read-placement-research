@@ -1,5 +1,9 @@
 # Прогноз следующего чтения в момент записи
 
+Новый этап улучшения MAE: [reports/mae-improvement.ru.md](reports/mae-improvement.ru.md). Настройки и причинные признаки выбираются на уже известных днях 2–4, затем замороженные кандидаты проверяются на днях 5–7. Артефакты и проверка: [results/mae-improvement/README.md](results/mae-improvement/README.md).
+
+Сопоставление с временем до перезаписи: [reports/overwrite-comparison.ru.md](reports/overwrite-comparison.ru.md). Отдельно сравниваются средние, типичные интервалы и ошибки каждой записи; неизвестные перезаписи учитываются через границы, без новых fits.
+
 **Минимальный комплект для сдачи: `submission/` — `results.ipynb`, `training.ipynb`, `usr_1.lightgbm.txt`, `prxy_1.lightgbm.txt`. В notebooks код и краткое описание features/labels. Для обучения задайте DATASET с исходными архивами; новые модели сохраняются в trained/.**
 
 Цель: для каждой записи предсказать время **от этой записи до первого последующего чтения того же начального байтового адреса**. Временные метки MSR FILETIME переводятся в секунды через разность целых чисел / 10⁷. Исходный пример сеньора — `notebooks/reference/lgb_src1_2_log.ipynb`.

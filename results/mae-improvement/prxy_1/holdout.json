@@ -1,0 +1,144 @@
+{
+  "source": {
+    "archive": "/home/nomli/workspace/bdss_lab/research1/dataset/msr-cambridge1.tar",
+    "member": "MSR-Cambridge/prxy_1.csv.gz",
+    "volume": [
+      "prxy",
+      1
+    ],
+    "prefix_sha256": "3aaf6ec80cd749e6d767e738281de800829b2e1d20f053a83e410973e079076a",
+    "loaded_events": 168638964,
+    "requested_hours": 168,
+    "max_events": 200000000,
+    "stop_reason": "end_of_trace",
+    "first_timestamp": 128166391023873138,
+    "last_timestamp": 128172419991701745,
+    "first_excluded_timestamp": null,
+    "counts": {
+      "Read": 110414460,
+      "Write": 58224504
+    }
+  },
+  "days": {
+    "5": {
+      "metrics": {
+        "current": {
+          "n": 4311254,
+          "mae_seconds": 21.86791788809905,
+          "median_absolute_error_seconds": 10.952563686079548,
+          "p90_absolute_error_seconds": 15.408131443340444,
+          "rmse_seconds": 720.5019910109058,
+          "mae_log1p_seconds": 0.2812179331987907
+        },
+        "address_median": {
+          "n": 4311254,
+          "mae_seconds": 31.330519287817637,
+          "median_absolute_error_seconds": 13.70250185,
+          "p90_absolute_error_seconds": 44.74910267,
+          "rmse_seconds": 721.099452841488,
+          "mae_log1p_seconds": 0.6190433003609889
+        },
+        "selected": {
+          "n": 4311254,
+          "mae_seconds": 22.960936160241967,
+          "median_absolute_error_seconds": 10.898146379721322,
+          "p90_absolute_error_seconds": 18.607676739901464,
+          "rmse_seconds": 721.1398394256814,
+          "mae_log1p_seconds": 0.4265937868151738
+        }
+      },
+      "coverage": {
+        "start_event": 95251368,
+        "end_event_exclusive": 118549536,
+        "writes": 8056498,
+        "observed_targets": 4311254,
+        "right_censored": 3745244,
+        "observed_fraction": 0.5351275454918502
+      },
+      "end_seconds": 432000,
+      "partial_day": false,
+      "evaluation_role": "new_future_period"
+    },
+    "6": {
+      "metrics": {
+        "current": {
+          "n": 4770307,
+          "mae_seconds": 12.802502240976606,
+          "median_absolute_error_seconds": 2.6439562451134435,
+          "p90_absolute_error_seconds": 6.58872475848314,
+          "rmse_seconds": 533.9880346327393,
+          "mae_log1p_seconds": 0.07253657029003996
+        },
+        "address_median": {
+          "n": 4770307,
+          "mae_seconds": 19.530698100211087,
+          "median_absolute_error_seconds": 6.812501599999997,
+          "p90_absolute_error_seconds": 24.446947710000032,
+          "rmse_seconds": 535.181138593137,
+          "mae_log1p_seconds": 0.2068260553361366
+        },
+        "selected": {
+          "n": 4770307,
+          "mae_seconds": 13.723117833789095,
+          "median_absolute_error_seconds": 3.341555198839103,
+          "p90_absolute_error_seconds": 8.636964676835849,
+          "rmse_seconds": 535.446486408228,
+          "mae_log1p_seconds": 0.08988789793211228
+        }
+      },
+      "coverage": {
+        "start_event": 118549536,
+        "end_event_exclusive": 144152571,
+        "writes": 8809654,
+        "observed_targets": 4770307,
+        "right_censored": 4039347,
+        "observed_fraction": 0.541486305818594
+      },
+      "end_seconds": 518400,
+      "partial_day": false,
+      "evaluation_role": "new_future_period"
+    },
+    "7": {
+      "metrics": {
+        "current": {
+          "n": 4548153,
+          "mae_seconds": 4.7813004652849465,
+          "median_absolute_error_seconds": 2.985734224801277,
+          "p90_absolute_error_seconds": 7.299569009202532,
+          "rmse_seconds": 207.08522048713107,
+          "mae_log1p_seconds": 0.07486245804144459
+        },
+        "address_median": {
+          "n": 4548153,
+          "mae_seconds": 11.478542895930183,
+          "median_absolute_error_seconds": 6.3665650000000085,
+          "p90_absolute_error_seconds": 26.42326878,
+          "rmse_seconds": 209.57427692452487,
+          "mae_log1p_seconds": 0.21417423579313644
+        },
+        "selected": {
+          "n": 4548153,
+          "mae_seconds": 5.351488787171564,
+          "median_absolute_error_seconds": 3.377408042252611,
+          "p90_absolute_error_seconds": 8.892494125284408,
+          "rmse_seconds": 209.21301511164302,
+          "mae_log1p_seconds": 0.09170799700520402
+        }
+      },
+      "coverage": {
+        "start_event": 144152571,
+        "end_event_exclusive": 168638964,
+        "writes": 8458026,
+        "observed_targets": 4548153,
+        "right_censored": 3909873,
+        "observed_fraction": 0.5377322084372879
+      },
+      "end_seconds": 602896.7828607,
+      "partial_day": true,
+      "evaluation_role": "new_future_period"
+    }
+  },
+  "new_fits": 0,
+  "elapsed_seconds": 326.7916475969978,
+  "peak_rss_mib": 12303.78515625
+}
