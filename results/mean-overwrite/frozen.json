@@ -1,0 +1,48 @@
+{
+  "proj_1": {
+    "same_start": {
+      "selected": "address_median",
+      "candidates": [
+        "log_l2",
+        "raw_l1",
+        "address_median"
+      ],
+      "selection_metric": "validation observed_read MAE"
+    },
+    "range": {
+      "selected": "address_median",
+      "candidates": [
+        "log_l2",
+        "raw_l1",
+        "address_median"
+      ],
+      "selection_metric": "validation observed_read MAE"
+    }
+  },
+  "prn_1": {
+    "same_start": {
+      "selected": "mix_log25",
+      "candidates": [
+        "log_l2",
+        "raw_l1",
+        "address_median",
+        "mix_log75",
+        "mix_log50",
+        "mix_log25"
+      ],
+      "selection_metric": "validation observed_read MAE"
+    },
+    "range": {
+      "selected": "mix_log25",
+      "candidates": [
+        "log_l2",
+        "raw_l1",
+        "address_median",
+        "mix_log75",
+        "mix_log50",
+        "mix_log25"
+      ],
+      "selection_metric": "validation observed_read MAE"
+    }
+  }
+}

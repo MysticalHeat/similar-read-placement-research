@@ -1,0 +1,1393 @@
+{
+  "evaluation_role": "development; days 5–7 already inspected",
+  "selection": "minimum observed-Read MAE on validation day 4; no pass-count constraint",
+  "ninety_percent_threshold": 0.9,
+  "selected_results": [
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "validation",
+      "method": "address_median",
+      "observed_reads": 111801,
+      "all_writes": 359386,
+      "paired_n": 105507,
+      "censored_n": 6294,
+      "observed_read": {
+        "mae_seconds": 11082.821313910727,
+        "mean_overwrite_lower_seconds": 19501.20653418926,
+        "ratio_upper_bound": 0.5683146473260754,
+        "margin_lower_seconds": 8418.385220278533,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 10906.47195984205,
+        "mean_overwrite_seconds": 16955.60452535874,
+        "ratio": 0.6432369865391925,
+        "margin_seconds": 6049.132565516689,
+        "passed": true
+      },
+      "confirmed_pass_count": 72020,
+      "unknown_pass_count": 745,
+      "pass_lower": 0.6441802846128389,
+      "pass_upper": 0.6508439101618053,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "day5",
+      "method": "address_median",
+      "observed_reads": 24707,
+      "all_writes": 234914,
+      "paired_n": 17999,
+      "censored_n": 6708,
+      "observed_read": {
+        "mae_seconds": 20505.715189505,
+        "mean_overwrite_lower_seconds": 26151.59791592412,
+        "ratio_upper_bound": 0.7841094550103475,
+        "margin_lower_seconds": 5645.88272641912,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 21055.379672835945,
+        "mean_overwrite_seconds": 9474.905258464027,
+        "ratio": 2.2222258796758907,
+        "margin_seconds": -11580.474414371918,
+        "passed": false
+      },
+      "confirmed_pass_count": 9423,
+      "unknown_pass_count": 893,
+      "pass_lower": 0.3813898895049986,
+      "pass_upper": 0.4175334925324807,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "day6",
+      "method": "address_median",
+      "observed_reads": 66311,
+      "all_writes": 314624,
+      "paired_n": 56276,
+      "censored_n": 10035,
+      "observed_read": {
+        "mae_seconds": 33227.52535223575,
+        "mean_overwrite_lower_seconds": 16777.197536403713,
+        "ratio_upper_bound": 1.9805170249761666,
+        "margin_lower_seconds": -16450.32781583204,
+        "status": "undetermined"
+      },
+      "paired": {
+        "mae_seconds": 34614.64146376193,
+        "mean_overwrite_seconds": 6709.64116966601,
+        "ratio": 5.158940782146919,
+        "margin_seconds": -27905.00029409592,
+        "passed": false
+      },
+      "confirmed_pass_count": 16581,
+      "unknown_pass_count": 909,
+      "pass_lower": 0.25004901147622566,
+      "pass_upper": 0.26375714436518827,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "day7",
+      "method": "address_median",
+      "observed_reads": 120826,
+      "all_writes": 473200,
+      "paired_n": 114100,
+      "censored_n": 6726,
+      "observed_read": {
+        "mae_seconds": 9415.102926920612,
+        "mean_overwrite_lower_seconds": 18712.90732208477,
+        "ratio_upper_bound": 0.5031341610829766,
+        "margin_lower_seconds": 9297.80439516416,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 9121.405143138176,
+        "mean_overwrite_seconds": 16370.64441546479,
+        "ratio": 0.5571805795574849,
+        "margin_seconds": 7249.239272326615,
+        "passed": true
+      },
+      "confirmed_pass_count": 82788,
+      "unknown_pass_count": 1098,
+      "pass_lower": 0.6851836525251188,
+      "pass_upper": 0.6942711005909324,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "address_median",
+      "observed_reads": 211844,
+      "all_writes": 1022738,
+      "paired_n": 188375,
+      "censored_n": 23469,
+      "observed_read": {
+        "mae_seconds": 18162.300395891856,
+        "mean_overwrite_lower_seconds": 18974.556823150142,
+        "ratio_upper_bound": 0.9571923373584524,
+        "margin_lower_seconds": 812.2564272582858,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 17877.64654852346,
+        "mean_overwrite_seconds": 12825.593173275387,
+        "ratio": 1.3939040718814475,
+        "margin_seconds": -5052.0533752480715,
+        "passed": false
+      },
+      "confirmed_pass_count": 108792,
+      "unknown_pass_count": 2900,
+      "pass_lower": 0.5135477049149374,
+      "pass_upper": 0.5272370234701006,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "validation",
+      "method": "address_median",
+      "observed_reads": 119387,
+      "all_writes": 359386,
+      "paired_n": 113732,
+      "censored_n": 5655,
+      "observed_read": {
+        "mae_seconds": 11018.689681322365,
+        "mean_overwrite_lower_seconds": 17527.782956169318,
+        "ratio_upper_bound": 0.6286413808794954,
+        "margin_lower_seconds": 6509.093274846953,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 10931.105762710868,
+        "mean_overwrite_seconds": 15116.984711879884,
+        "ratio": 0.7231009338866706,
+        "margin_seconds": 4185.878949169017,
+        "passed": true
+      },
+      "confirmed_pass_count": 71320,
+      "unknown_pass_count": 705,
+      "pass_lower": 0.5973849749135165,
+      "pass_upper": 0.6032901404675551,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "day5",
+      "method": "address_median",
+      "observed_reads": 32035,
+      "all_writes": 234914,
+      "paired_n": 23785,
+      "censored_n": 8250,
+      "observed_read": {
+        "mae_seconds": 18079.90414571119,
+        "mean_overwrite_lower_seconds": 23862.0210781754,
+        "ratio_upper_bound": 0.7576853648095789,
+        "margin_lower_seconds": 5782.116932464211,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 18724.477170511094,
+        "mean_overwrite_seconds": 7211.579272932698,
+        "ratio": 2.5964461405548,
+        "margin_seconds": -11512.897897578398,
+        "passed": false
+      },
+      "confirmed_pass_count": 11120,
+      "unknown_pass_count": 915,
+      "pass_lower": 0.34712033713126267,
+      "pass_upper": 0.3756828468862182,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "day6",
+      "method": "address_median",
+      "observed_reads": 74854,
+      "all_writes": 314624,
+      "paired_n": 65434,
+      "censored_n": 9420,
+      "observed_read": {
+        "mae_seconds": 29778.947843886162,
+        "mean_overwrite_lower_seconds": 14228.296806627495,
+        "ratio_upper_bound": 2.092938336092007,
+        "margin_lower_seconds": -15550.651037258667,
+        "status": "undetermined"
+      },
+      "paired": {
+        "mae_seconds": 30942.828607788506,
+        "mean_overwrite_seconds": 5987.514879484697,
+        "ratio": 5.167891726467247,
+        "margin_seconds": -24955.31372830381,
+        "passed": false
+      },
+      "confirmed_pass_count": 16356,
+      "unknown_pass_count": 1115,
+      "pass_lower": 0.2185053570951452,
+      "pass_upper": 0.23340102065353888,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "day7",
+      "method": "address_median",
+      "observed_reads": 129145,
+      "all_writes": 473200,
+      "paired_n": 123157,
+      "censored_n": 5988,
+      "observed_read": {
+        "mae_seconds": 9593.859921873815,
+        "mean_overwrite_lower_seconds": 15579.715687676697,
+        "ratio_upper_bound": 0.6157917200929669,
+        "margin_lower_seconds": 5985.855765802882,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 9387.830329441505,
+        "mean_overwrite_seconds": 13571.701985795014,
+        "ratio": 0.6917209307474768,
+        "margin_seconds": 4183.871656353509,
+        "passed": true
+      },
+      "confirmed_pass_count": 80598,
+      "unknown_pass_count": 1239,
+      "pass_lower": 0.6240892020597003,
+      "pass_upper": 0.6336830694180959,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "address_median",
+      "observed_reads": 236034,
+      "all_writes": 1022738,
+      "paired_n": 212376,
+      "censored_n": 23658,
+      "observed_read": {
+        "mae_seconds": 17146.94548592367,
+        "mean_overwrite_lower_seconds": 16275.227962444607,
+        "ratio_upper_bound": 1.0535610023706314,
+        "margin_lower_seconds": -871.7175234790611,
+        "status": "undetermined"
+      },
+      "paired": {
+        "mae_seconds": 17074.67772491085,
+        "mean_overwrite_seconds": 10522.679413377513,
+        "ratio": 1.622654939311727,
+        "margin_seconds": -6551.998311533336,
+        "passed": false
+      },
+      "confirmed_pass_count": 108074,
+      "unknown_pass_count": 3269,
+      "pass_lower": 0.4578747129650813,
+      "pass_upper": 0.47172441258462766,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "validation",
+      "method": "mix_log25",
+      "observed_reads": 157855,
+      "all_writes": 345688,
+      "paired_n": 135545,
+      "censored_n": 22310,
+      "observed_read": {
+        "mae_seconds": 12644.232627937901,
+        "mean_overwrite_lower_seconds": 16488.486690531226,
+        "ratio_upper_bound": 0.7668522202949681,
+        "margin_lower_seconds": 3844.254062593325,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12670.605091518037,
+        "mean_overwrite_seconds": 8189.394985479036,
+        "ratio": 1.547196723809857,
+        "margin_seconds": -4481.2101060390005,
+        "passed": false
+      },
+      "confirmed_pass_count": 69588,
+      "unknown_pass_count": 695,
+      "pass_lower": 0.44083494346077096,
+      "pass_upper": 0.44523771815907004,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "day5",
+      "method": "mix_log25",
+      "observed_reads": 251222,
+      "all_writes": 487596,
+      "paired_n": 209721,
+      "censored_n": 41501,
+      "observed_read": {
+        "mae_seconds": 13362.356321008185,
+        "mean_overwrite_lower_seconds": 20073.929287856554,
+        "ratio_upper_bound": 0.6656572377731528,
+        "margin_lower_seconds": 6711.572966848369,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12966.911817795848,
+        "mean_overwrite_seconds": 11206.52402773403,
+        "ratio": 1.1570859782841842,
+        "margin_seconds": -1760.3877900618172,
+        "passed": false
+      },
+      "confirmed_pass_count": 125809,
+      "unknown_pass_count": 1581,
+      "pass_lower": 0.5007881475348497,
+      "pass_upper": 0.507081386184331,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "day6",
+      "method": "mix_log25",
+      "observed_reads": 197159,
+      "all_writes": 410944,
+      "paired_n": 161174,
+      "censored_n": 35985,
+      "observed_read": {
+        "mae_seconds": 12529.233661693539,
+        "mean_overwrite_lower_seconds": 17898.396667134493,
+        "ratio_upper_bound": 0.7000198897535915,
+        "margin_lower_seconds": 5369.163005440954,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 10913.896512435744,
+        "mean_overwrite_seconds": 6990.429909595459,
+        "ratio": 1.5612625623289222,
+        "margin_seconds": -3923.4666028402844,
+        "passed": false
+      },
+      "confirmed_pass_count": 99860,
+      "unknown_pass_count": 236,
+      "pass_lower": 0.5064947580379288,
+      "pass_upper": 0.5076917614717056,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "day7",
+      "method": "mix_log25",
+      "observed_reads": 184935,
+      "all_writes": 401280,
+      "paired_n": 151686,
+      "censored_n": 33249,
+      "observed_read": {
+        "mae_seconds": 15458.857281303895,
+        "mean_overwrite_lower_seconds": 19347.56549613187,
+        "ratio_upper_bound": 0.7990078795388785,
+        "margin_lower_seconds": 3888.7082148279733,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 13441.530990872132,
+        "mean_overwrite_seconds": 8715.30793336798,
+        "ratio": 1.5422898529389921,
+        "margin_seconds": -4726.223057504152,
+        "passed": false
+      },
+      "confirmed_pass_count": 91201,
+      "unknown_pass_count": 266,
+      "pass_lower": 0.49315164787628085,
+      "pass_upper": 0.4945899910779463,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "mix_log25",
+      "observed_reads": 633316,
+      "all_writes": 1299820,
+      "paired_n": 522581,
+      "censored_n": 110735,
+      "observed_read": {
+        "mae_seconds": 13715.195621932955,
+        "mean_overwrite_lower_seconds": 19184.553488426973,
+        "ratio_upper_bound": 0.7149082531530696,
+        "margin_lower_seconds": 5469.357866494018,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12471.486984250692,
+        "mean_overwrite_seconds": 9183.09156867625,
+        "ratio": 1.358092412667564,
+        "margin_seconds": -3288.395415574443,
+        "passed": false
+      },
+      "confirmed_pass_count": 316870,
+      "unknown_pass_count": 2083,
+      "pass_lower": 0.5003347460035749,
+      "pass_upper": 0.5036237833877559,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "validation",
+      "method": "mix_log25",
+      "observed_reads": 173485,
+      "all_writes": 345688,
+      "paired_n": 155726,
+      "censored_n": 17759,
+      "observed_read": {
+        "mae_seconds": 11695.650309638444,
+        "mean_overwrite_lower_seconds": 14279.253252911953,
+        "ratio_upper_bound": 0.8190659625182685,
+        "margin_lower_seconds": 2583.6029432735086,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 11509.372590508836,
+        "mean_overwrite_seconds": 8025.54628373885,
+        "ratio": 1.4340921083252391,
+        "margin_seconds": -3483.8263067699854,
+        "passed": false
+      },
+      "confirmed_pass_count": 77881,
+      "unknown_pass_count": 573,
+      "pass_lower": 0.4489206559644926,
+      "pass_upper": 0.4522235351759518,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "day5",
+      "method": "mix_log25",
+      "observed_reads": 266018,
+      "all_writes": 487596,
+      "paired_n": 233049,
+      "censored_n": 32969,
+      "observed_read": {
+        "mae_seconds": 13678.476194532093,
+        "mean_overwrite_lower_seconds": 17293.43267041247,
+        "ratio_upper_bound": 0.7909636250491063,
+        "margin_lower_seconds": 3614.9564758803754,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 13225.788481783562,
+        "mean_overwrite_seconds": 10548.082455434673,
+        "ratio": 1.2538571382677484,
+        "margin_seconds": -2677.7060263488893,
+        "passed": false
+      },
+      "confirmed_pass_count": 123821,
+      "unknown_pass_count": 1444,
+      "pass_lower": 0.46546098384319856,
+      "pass_upper": 0.4708891879496876,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "day6",
+      "method": "mix_log25",
+      "observed_reads": 214896,
+      "all_writes": 410944,
+      "paired_n": 183809,
+      "censored_n": 31087,
+      "observed_read": {
+        "mae_seconds": 12910.436842403611,
+        "mean_overwrite_lower_seconds": 15303.389097714897,
+        "ratio_upper_bound": 0.8436325287142701,
+        "margin_lower_seconds": 2392.9522553112856,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 11412.3302849754,
+        "mean_overwrite_seconds": 6534.244394447167,
+        "ratio": 1.7465416957274593,
+        "margin_seconds": -4878.085890528233,
+        "passed": false
+      },
+      "confirmed_pass_count": 98849,
+      "unknown_pass_count": 368,
+      "pass_lower": 0.4599852952125679,
+      "pass_upper": 0.46169775147047876,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "day7",
+      "method": "mix_log25",
+      "observed_reads": 203140,
+      "all_writes": 401280,
+      "paired_n": 174179,
+      "censored_n": 28961,
+      "observed_read": {
+        "mae_seconds": 14703.989559763151,
+        "mean_overwrite_lower_seconds": 16645.433335679987,
+        "ratio_upper_bound": 0.8833647801913758,
+        "margin_lower_seconds": 1941.4437759168359,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12851.437751560641,
+        "mean_overwrite_seconds": 8076.049395487098,
+        "ratio": 1.5913025196133685,
+        "margin_seconds": -4775.388356073543,
+        "passed": false
+      },
+      "confirmed_pass_count": 93285,
+      "unknown_pass_count": 357,
+      "pass_lower": 0.45921531948409966,
+      "pass_upper": 0.4609727281677661,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "mix_log25",
+      "observed_reads": 684054,
+      "all_writes": 1299820,
+      "paired_n": 591037,
+      "censored_n": 93017,
+      "observed_read": {
+        "mae_seconds": 13741.737575063507,
+        "mean_overwrite_lower_seconds": 16475.826182538745,
+        "ratio_upper_bound": 0.8340545367993227,
+        "margin_lower_seconds": 2734.088607475238,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12551.49233190359,
+        "mean_overwrite_seconds": 8571.292835663557,
+        "ratio": 1.4643639614877189,
+        "margin_seconds": -3980.199496240033,
+        "passed": false
+      },
+      "confirmed_pass_count": 315955,
+      "unknown_pass_count": 2169,
+      "pass_lower": 0.46188604993173055,
+      "pass_upper": 0.4650568522368117,
+      "ninety_percent_status": "failed"
+    }
+  ],
+  "pooled_candidates": [
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "log_l2",
+      "observed_reads": 211844,
+      "all_writes": 1022738,
+      "paired_n": 188375,
+      "censored_n": 23469,
+      "observed_read": {
+        "mae_seconds": 14481.23229421975,
+        "mean_overwrite_lower_seconds": 18974.556823150142,
+        "ratio_upper_bound": 0.7631921224400743,
+        "margin_lower_seconds": 4493.324528930392,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 15240.914170314558,
+        "mean_overwrite_seconds": 12825.593173275387,
+        "ratio": 1.188320412507077,
+        "margin_seconds": -2415.320997039171,
+        "passed": false
+      },
+      "confirmed_pass_count": 123826,
+      "unknown_pass_count": 121,
+      "pass_lower": 0.5845150204867733,
+      "pass_upper": 0.5850861955023507,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "raw_l1",
+      "observed_reads": 211844,
+      "all_writes": 1022738,
+      "paired_n": 188375,
+      "censored_n": 23469,
+      "observed_read": {
+        "mae_seconds": 16095.13346006491,
+        "mean_overwrite_lower_seconds": 18974.556823150142,
+        "ratio_upper_bound": 0.8482481888814312,
+        "margin_lower_seconds": 2879.4233630852323,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 16890.486906677535,
+        "mean_overwrite_seconds": 12825.593173275387,
+        "ratio": 1.3169361197166416,
+        "margin_seconds": -4064.8937334021484,
+        "passed": false
+      },
+      "confirmed_pass_count": 124162,
+      "unknown_pass_count": 323,
+      "pass_lower": 0.5861010932573025,
+      "pass_upper": 0.5876258001170672,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "address_median",
+      "observed_reads": 211844,
+      "all_writes": 1022738,
+      "paired_n": 188375,
+      "censored_n": 23469,
+      "observed_read": {
+        "mae_seconds": 18162.300395891856,
+        "mean_overwrite_lower_seconds": 18974.556823150142,
+        "ratio_upper_bound": 0.9571923373584524,
+        "margin_lower_seconds": 812.2564272582858,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 17877.64654852346,
+        "mean_overwrite_seconds": 12825.593173275387,
+        "ratio": 1.3939040718814475,
+        "margin_seconds": -5052.0533752480715,
+        "passed": false
+      },
+      "confirmed_pass_count": 108792,
+      "unknown_pass_count": 2900,
+      "pass_lower": 0.5135477049149374,
+      "pass_upper": 0.5272370234701006,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "previous_model",
+      "observed_reads": 211844,
+      "all_writes": 1022738,
+      "paired_n": 188375,
+      "censored_n": 23469,
+      "observed_read": {
+        "mae_seconds": 13771.977502162834,
+        "mean_overwrite_lower_seconds": 18974.556823150142,
+        "ratio_upper_bound": 0.7258128677535257,
+        "margin_lower_seconds": 5202.579320987308,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 14249.228601673538,
+        "mean_overwrite_seconds": 12825.593173275387,
+        "ratio": 1.1109995778881068,
+        "margin_seconds": -1423.635428398151,
+        "passed": false
+      },
+      "confirmed_pass_count": 112585,
+      "unknown_pass_count": 116,
+      "pass_lower": 0.5314523894941561,
+      "pass_upper": 0.5319999622363626,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "previous_address_median",
+      "observed_reads": 211844,
+      "all_writes": 1022738,
+      "paired_n": 188375,
+      "censored_n": 23469,
+      "observed_read": {
+        "mae_seconds": 13097.407643726501,
+        "mean_overwrite_lower_seconds": 18974.556823150142,
+        "ratio_upper_bound": 0.690261583751292,
+        "margin_lower_seconds": 5877.149179423641,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 13075.554209607675,
+        "mean_overwrite_seconds": 12825.593173275387,
+        "ratio": 1.0194892378820444,
+        "margin_seconds": -249.96103633228813,
+        "passed": false
+      },
+      "confirmed_pass_count": 109669,
+      "unknown_pass_count": 189,
+      "pass_lower": 0.5176875436642058,
+      "pass_upper": 0.5185797095976284,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "log_l2",
+      "observed_reads": 236034,
+      "all_writes": 1022738,
+      "paired_n": 212376,
+      "censored_n": 23658,
+      "observed_read": {
+        "mae_seconds": 12733.140969599392,
+        "mean_overwrite_lower_seconds": 16275.227962444607,
+        "ratio_upper_bound": 0.7823632946328833,
+        "margin_lower_seconds": 3542.0869928452157,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 13541.080443576428,
+        "mean_overwrite_seconds": 10522.679413377513,
+        "ratio": 1.286847190874371,
+        "margin_seconds": -3018.4010301989147,
+        "passed": false
+      },
+      "confirmed_pass_count": 138133,
+      "unknown_pass_count": 271,
+      "pass_lower": 0.5852250099561928,
+      "pass_upper": 0.5863731496309854,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "raw_l1",
+      "observed_reads": 236034,
+      "all_writes": 1022738,
+      "paired_n": 212376,
+      "censored_n": 23658,
+      "observed_read": {
+        "mae_seconds": 13462.049839254494,
+        "mean_overwrite_lower_seconds": 16275.227962444607,
+        "ratio_upper_bound": 0.8271496946352104,
+        "margin_lower_seconds": 2813.178123190113,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 14223.526570084818,
+        "mean_overwrite_seconds": 10522.679413377513,
+        "ratio": 1.3517019773502181,
+        "margin_seconds": -3700.8471567073047,
+        "passed": false
+      },
+      "confirmed_pass_count": 134232,
+      "unknown_pass_count": 353,
+      "pass_lower": 0.5686977299880526,
+      "pass_upper": 0.5701932772397197,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "address_median",
+      "observed_reads": 236034,
+      "all_writes": 1022738,
+      "paired_n": 212376,
+      "censored_n": 23658,
+      "observed_read": {
+        "mae_seconds": 17146.94548592367,
+        "mean_overwrite_lower_seconds": 16275.227962444607,
+        "ratio_upper_bound": 1.0535610023706314,
+        "margin_lower_seconds": -871.7175234790611,
+        "status": "undetermined"
+      },
+      "paired": {
+        "mae_seconds": 17074.67772491085,
+        "mean_overwrite_seconds": 10522.679413377513,
+        "ratio": 1.622654939311727,
+        "margin_seconds": -6551.998311533336,
+        "passed": false
+      },
+      "confirmed_pass_count": 108074,
+      "unknown_pass_count": 3269,
+      "pass_lower": 0.4578747129650813,
+      "pass_upper": 0.47172441258462766,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "previous_model",
+      "observed_reads": 236034,
+      "all_writes": 1022738,
+      "paired_n": 212376,
+      "censored_n": 23658,
+      "observed_read": {
+        "mae_seconds": 12258.641352677616,
+        "mean_overwrite_lower_seconds": 16275.227962444607,
+        "ratio_upper_bound": 0.7532085806088038,
+        "margin_lower_seconds": 4016.5866097669914,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12837.449819718071,
+        "mean_overwrite_seconds": 10522.679413377513,
+        "ratio": 1.219979181670952,
+        "margin_seconds": -2314.770406340558,
+        "passed": false
+      },
+      "confirmed_pass_count": 114664,
+      "unknown_pass_count": 252,
+      "pass_lower": 0.48579441944804563,
+      "pass_upper": 0.48686206224526973,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "previous_address_median",
+      "observed_reads": 236034,
+      "all_writes": 1022738,
+      "paired_n": 212376,
+      "censored_n": 23658,
+      "observed_read": {
+        "mae_seconds": 12208.42282906123,
+        "mean_overwrite_lower_seconds": 16275.227962444607,
+        "ratio_upper_bound": 0.7501230002573478,
+        "margin_lower_seconds": 4066.8051333833773,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12346.060941922848,
+        "mean_overwrite_seconds": 10522.679413377513,
+        "ratio": 1.1732811061626818,
+        "margin_seconds": -1823.3815285453347,
+        "passed": false
+      },
+      "confirmed_pass_count": 109922,
+      "unknown_pass_count": 335,
+      "pass_lower": 0.46570409347805825,
+      "pass_upper": 0.46712338052992364,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "log_l2",
+      "observed_reads": 633316,
+      "all_writes": 1299820,
+      "paired_n": 522581,
+      "censored_n": 110735,
+      "observed_read": {
+        "mae_seconds": 15536.40506399272,
+        "mean_overwrite_lower_seconds": 19184.553488426973,
+        "ratio_upper_bound": 0.8098392841597806,
+        "margin_lower_seconds": 3648.148424434252,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12906.605080646535,
+        "mean_overwrite_seconds": 9183.09156867625,
+        "ratio": 1.4054749409960456,
+        "margin_seconds": -3723.5135119702863,
+        "passed": false
+      },
+      "confirmed_pass_count": 349987,
+      "unknown_pass_count": 1363,
+      "pass_lower": 0.5526261771374795,
+      "pass_upper": 0.5547783413019725,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "raw_l1",
+      "observed_reads": 633316,
+      "all_writes": 1299820,
+      "paired_n": 522581,
+      "censored_n": 110735,
+      "observed_read": {
+        "mae_seconds": 13545.950922374297,
+        "mean_overwrite_lower_seconds": 19184.553488426973,
+        "ratio_upper_bound": 0.706086327760813,
+        "margin_lower_seconds": 5638.602566052676,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12726.875633998548,
+        "mean_overwrite_seconds": 9183.09156867625,
+        "ratio": 1.385903161132601,
+        "margin_seconds": -3543.7840653222993,
+        "passed": false
+      },
+      "confirmed_pass_count": 312552,
+      "unknown_pass_count": 2627,
+      "pass_lower": 0.4935166646666119,
+      "pass_upper": 0.4976646729278907,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "address_median",
+      "observed_reads": 633316,
+      "all_writes": 1299820,
+      "paired_n": 522581,
+      "censored_n": 110735,
+      "observed_read": {
+        "mae_seconds": 13973.124539562252,
+        "mean_overwrite_lower_seconds": 19184.553488426973,
+        "ratio_upper_bound": 0.728352867216404,
+        "margin_lower_seconds": 5211.428948864721,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 14484.553707811696,
+        "mean_overwrite_seconds": 9183.09156867625,
+        "ratio": 1.5773069014381675,
+        "margin_seconds": -5301.462139135447,
+        "passed": false
+      },
+      "confirmed_pass_count": 309367,
+      "unknown_pass_count": 6678,
+      "pass_lower": 0.4884875796600749,
+      "pass_upper": 0.4990320787726822,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "previous_model",
+      "observed_reads": 633316,
+      "all_writes": 1299820,
+      "paired_n": 522581,
+      "censored_n": 110735,
+      "observed_read": {
+        "mae_seconds": 18796.79136905903,
+        "mean_overwrite_lower_seconds": 19184.553488426973,
+        "ratio_upper_bound": 0.9797877954469015,
+        "margin_lower_seconds": 387.76211936794425,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 15531.107575619215,
+        "mean_overwrite_seconds": 9183.09156867625,
+        "ratio": 1.6912722103954843,
+        "margin_seconds": -6348.016006942966,
+        "passed": false
+      },
+      "confirmed_pass_count": 348068,
+      "unknown_pass_count": 11,
+      "pass_lower": 0.5495960942088941,
+      "pass_upper": 0.549613463105306,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "previous_address_median",
+      "observed_reads": 633316,
+      "all_writes": 1299820,
+      "paired_n": 522581,
+      "censored_n": 110735,
+      "observed_read": {
+        "mae_seconds": 14051.59650591611,
+        "mean_overwrite_lower_seconds": 19184.553488426973,
+        "ratio_upper_bound": 0.7324432395256265,
+        "margin_lower_seconds": 5132.956982510863,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12433.508292020631,
+        "mean_overwrite_seconds": 9183.09156867625,
+        "ratio": 1.3539566930195528,
+        "margin_seconds": -3250.4167233443823,
+        "passed": false
+      },
+      "confirmed_pass_count": 315888,
+      "unknown_pass_count": 545,
+      "pass_lower": 0.49878417725116686,
+      "pass_upper": 0.49964472711884744,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "mix_log75",
+      "observed_reads": 633316,
+      "all_writes": 1299820,
+      "paired_n": 522581,
+      "censored_n": 110735,
+      "observed_read": {
+        "mae_seconds": 14648.584833499795,
+        "mean_overwrite_lower_seconds": 19184.553488426973,
+        "ratio_upper_bound": 0.7635614163413557,
+        "margin_lower_seconds": 4535.968654927177,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12480.968373328507,
+        "mean_overwrite_seconds": 9183.09156867625,
+        "ratio": 1.359124896010119,
+        "margin_seconds": -3297.876804652258,
+        "passed": false
+      },
+      "confirmed_pass_count": 329563,
+      "unknown_pass_count": 1642,
+      "pass_lower": 0.5203768734723266,
+      "pass_upper": 0.5229695760094487,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "mix_log50",
+      "observed_reads": 633316,
+      "all_writes": 1299820,
+      "paired_n": 522581,
+      "censored_n": 110735,
+      "observed_read": {
+        "mae_seconds": 14081.589047532121,
+        "mean_overwrite_lower_seconds": 19184.553488426973,
+        "ratio_upper_bound": 0.7340066088077994,
+        "margin_lower_seconds": 5102.964440894852,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12378.78556055525,
+        "mean_overwrite_seconds": 9183.09156867625,
+        "ratio": 1.3479976180113016,
+        "margin_seconds": -3195.6939918790013,
+        "passed": false
+      },
+      "confirmed_pass_count": 322370,
+      "unknown_pass_count": 1864,
+      "pass_lower": 0.5090191942095257,
+      "pass_upper": 0.5119624326560517,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "window": "pooled",
+      "method": "mix_log25",
+      "observed_reads": 633316,
+      "all_writes": 1299820,
+      "paired_n": 522581,
+      "censored_n": 110735,
+      "observed_read": {
+        "mae_seconds": 13715.195621932955,
+        "mean_overwrite_lower_seconds": 19184.553488426973,
+        "ratio_upper_bound": 0.7149082531530696,
+        "margin_lower_seconds": 5469.357866494018,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12471.486984250692,
+        "mean_overwrite_seconds": 9183.09156867625,
+        "ratio": 1.358092412667564,
+        "margin_seconds": -3288.395415574443,
+        "passed": false
+      },
+      "confirmed_pass_count": 316870,
+      "unknown_pass_count": 2083,
+      "pass_lower": 0.5003347460035749,
+      "pass_upper": 0.5036237833877559,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "log_l2",
+      "observed_reads": 684054,
+      "all_writes": 1299820,
+      "paired_n": 591037,
+      "censored_n": 93017,
+      "observed_read": {
+        "mae_seconds": 15606.838342836922,
+        "mean_overwrite_lower_seconds": 16475.826182538745,
+        "ratio_upper_bound": 0.9472567973178312,
+        "margin_lower_seconds": 868.9878397018238,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 13486.510556764477,
+        "mean_overwrite_seconds": 8571.292835663557,
+        "ratio": 1.573451148541981,
+        "margin_seconds": -4915.21772110092,
+        "passed": false
+      },
+      "confirmed_pass_count": 345873,
+      "unknown_pass_count": 1351,
+      "pass_lower": 0.5056223631467691,
+      "pass_upper": 0.5075973534253144,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "raw_l1",
+      "observed_reads": 684054,
+      "all_writes": 1299820,
+      "paired_n": 591037,
+      "censored_n": 93017,
+      "observed_read": {
+        "mae_seconds": 13695.24448086254,
+        "mean_overwrite_lower_seconds": 16475.826182538745,
+        "ratio_upper_bound": 0.8312326392091284,
+        "margin_lower_seconds": 2780.581701676205,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12794.480592839462,
+        "mean_overwrite_seconds": 8571.292835663557,
+        "ratio": 1.4927130408617013,
+        "margin_seconds": -4223.187757175905,
+        "passed": false
+      },
+      "confirmed_pass_count": 313744,
+      "unknown_pass_count": 2617,
+      "pass_lower": 0.45865384896514017,
+      "pass_upper": 0.46247957032631926,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "address_median",
+      "observed_reads": 684054,
+      "all_writes": 1299820,
+      "paired_n": 591037,
+      "censored_n": 93017,
+      "observed_read": {
+        "mae_seconds": 13606.783035254508,
+        "mean_overwrite_lower_seconds": 16475.826182538745,
+        "ratio_upper_bound": 0.8258634732184247,
+        "margin_lower_seconds": 2869.0431472842374,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 14067.09513829478,
+        "mean_overwrite_seconds": 8571.292835663557,
+        "ratio": 1.6411870890426485,
+        "margin_seconds": -5495.802302631224,
+        "passed": false
+      },
+      "confirmed_pass_count": 309845,
+      "unknown_pass_count": 5892,
+      "pass_lower": 0.45295400655503804,
+      "pass_upper": 0.46156736164104,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "previous_model",
+      "observed_reads": 684054,
+      "all_writes": 1299820,
+      "paired_n": 591037,
+      "censored_n": 93017,
+      "observed_read": {
+        "mae_seconds": 18270.751267289423,
+        "mean_overwrite_lower_seconds": 16475.826182538745,
+        "ratio_upper_bound": 1.108942948588093,
+        "margin_lower_seconds": -1794.9250847506773,
+        "status": "undetermined"
+      },
+      "paired": {
+        "mae_seconds": 15703.963334962757,
+        "mean_overwrite_seconds": 8571.292835663557,
+        "ratio": 1.8321580695063273,
+        "margin_seconds": -7132.6704992992,
+        "passed": false
+      },
+      "confirmed_pass_count": 343712,
+      "unknown_pass_count": 26,
+      "pass_lower": 0.5024632558248325,
+      "pass_upper": 0.5025012645200525,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "previous_address_median",
+      "observed_reads": 684054,
+      "all_writes": 1299820,
+      "paired_n": 591037,
+      "censored_n": 93017,
+      "observed_read": {
+        "mae_seconds": 13700.983252859925,
+        "mean_overwrite_lower_seconds": 16475.826182538745,
+        "ratio_upper_bound": 0.8315809538814127,
+        "margin_lower_seconds": 2774.84292967882,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12515.328889142658,
+        "mean_overwrite_seconds": 8571.292835663557,
+        "ratio": 1.4601448263520644,
+        "margin_seconds": -3944.0360534791016,
+        "passed": false
+      },
+      "confirmed_pass_count": 312892,
+      "unknown_pass_count": 788,
+      "pass_lower": 0.45740833326023966,
+      "pass_upper": 0.4585602890999833,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "mix_log75",
+      "observed_reads": 684054,
+      "all_writes": 1299820,
+      "paired_n": 591037,
+      "censored_n": 93017,
+      "observed_read": {
+        "mae_seconds": 14651.078411138828,
+        "mean_overwrite_lower_seconds": 16475.826182538745,
+        "ratio_upper_bound": 0.8892469639347249,
+        "margin_lower_seconds": 1824.7477713999178,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12837.521943239293,
+        "mean_overwrite_seconds": 8571.292835663557,
+        "ratio": 1.4977346112624632,
+        "margin_seconds": -4266.229107575737,
+        "passed": false
+      },
+      "confirmed_pass_count": 328443,
+      "unknown_pass_count": 1746,
+      "pass_lower": 0.4801419186204598,
+      "pass_upper": 0.48269434869176997,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "mix_log50",
+      "observed_reads": 684054,
+      "all_writes": 1299820,
+      "paired_n": 591037,
+      "censored_n": 93017,
+      "observed_read": {
+        "mae_seconds": 14043.384235846148,
+        "mean_overwrite_lower_seconds": 16475.826182538745,
+        "ratio_upper_bound": 0.8523629759295152,
+        "margin_lower_seconds": 2432.4419466925974,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12545.000902254897,
+        "mean_overwrite_seconds": 8571.292835663557,
+        "ratio": 1.463606616035504,
+        "margin_seconds": -3973.70806659134,
+        "passed": false
+      },
+      "confirmed_pass_count": 321829,
+      "unknown_pass_count": 1955,
+      "pass_lower": 0.4704730913056572,
+      "pass_upper": 0.47333105281162013,
+      "ninety_percent_status": "failed"
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "window": "pooled",
+      "method": "mix_log25",
+      "observed_reads": 684054,
+      "all_writes": 1299820,
+      "paired_n": 591037,
+      "censored_n": 93017,
+      "observed_read": {
+        "mae_seconds": 13741.737575063507,
+        "mean_overwrite_lower_seconds": 16475.826182538745,
+        "ratio_upper_bound": 0.8340545367993227,
+        "margin_lower_seconds": 2734.088607475238,
+        "status": "passed"
+      },
+      "paired": {
+        "mae_seconds": 12551.49233190359,
+        "mean_overwrite_seconds": 8571.292835663557,
+        "ratio": 1.4643639614877189,
+        "margin_seconds": -3980.199496240033,
+        "passed": false
+      },
+      "confirmed_pass_count": 315955,
+      "unknown_pass_count": 2169,
+      "pass_lower": 0.46188604993173055,
+      "pass_upper": 0.4650568522368117,
+      "ninety_percent_status": "failed"
+    }
+  ],
+  "source_fingerprints": {
+    "results/mean-overwrite/metrics.json": {
+      "size_bytes": 95792,
+      "sha256": "28d7e5bb189327e653e6643b9ed524990e4abf9ad35e574405b2f16172e0c3b3"
+    },
+    "results/mean-overwrite/frozen.json": {
+      "size_bytes": 992,
+      "sha256": "86c338d46c9601214f2ead63c39f1683ace5062078c3ba38a8f379266c2d93e5"
+    },
+    "results/mean-overwrite/verification.json": {
+      "size_bytes": 376,
+      "sha256": "3dd2aa9fbbc2725c248945ddce4ddcd9a4c74a8484e50557da35c1c8516d79a0"
+    },
+    "results/long-history/proj_1/metrics.json": {
+      "size_bytes": 132353,
+      "sha256": "eb70165fb5cc2e7a700b450d0123d82a88df2b72a56e413c5f150e8eac2de0d5"
+    },
+    "results/long-history/proj_1/frozen.json": {
+      "size_bytes": 34817,
+      "sha256": "50741a44557271512fb3e498deebec409ed9f0c827ca17bf6fe403c6cd69b3f5"
+    },
+    "results/long-history/proj_1/verification.json": {
+      "size_bytes": 388,
+      "sha256": "66a9004ed20adce1c452ba55293e97b32f215a35bc321b63fe4304028cfa7d34"
+    },
+    "results/long-history/prn_1/metrics.json": {
+      "size_bytes": 134067,
+      "sha256": "f952835efa9d0a2bb79756244fc3b53563dbd5c03838af0c33892fa7e1f6dfc3"
+    },
+    "results/long-history/prn_1/frozen.json": {
+      "size_bytes": 35083,
+      "sha256": "05c3987d059ca6cdb356c96d9239e0494a5c44f83c7f8e22ca8c70d5ad458770"
+    },
+    "results/long-history/prn_1/verification.json": {
+      "size_bytes": 388,
+      "sha256": "369bdec39631a656ace9331ab801f2df843277cc0ee03021d93d25849ea14d55"
+    },
+    "results/mixture/prn_1/metrics.json": {
+      "size_bytes": 133493,
+      "sha256": "6b3b3c3a0f6681b6a54ee0ca976dd320eef1b0583b9b6bb08488076407a7cade"
+    },
+    "results/mixture/prn_1/frozen.json": {
+      "size_bytes": 34689,
+      "sha256": "45c75050dc953547bdd7c84113f47ef3680f8b68a5b7dd4ad8df94b0f1d0062d"
+    },
+    "results/mixture/prn_1/verification.json": {
+      "size_bytes": 395,
+      "sha256": "c5a93ec95e3c540f7647d7e11d515bba973f50a1a9d4872912299bfa6feb9837"
+    }
+  }
+}

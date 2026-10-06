@@ -1,0 +1,148 @@
+{
+  "hashes": {
+    "read_prediction/experiments/mean_overwrite.py": {
+      "size_bytes": 9263,
+      "sha256": "1398e4733ab054f8421c178001dc1e9ea18c4394906e9e029dabbad3926a3a92"
+    },
+    "read_prediction/overwrite_reporting.py": {
+      "size_bytes": 5915,
+      "sha256": "aaa3a08aa16cb294e3045b7dea8503c47ef904d795330e40ec20eaad140c0f23"
+    },
+    "docs/protocols/mean-overwrite-protocol.md": {
+      "size_bytes": 3263,
+      "sha256": "538fd3b2e68f8d334abd0b4eec4ec671894b895265a17c1c612ec704b9636f2d"
+    },
+    "results/long-history/proj_1/provenance.json": {
+      "size_bytes": 4658,
+      "sha256": "9418ddd0874e4f083f9a3cce01d75a3ac902270f412536fed2789643402a4a20"
+    },
+    "results/long-history/proj_1/verification.json": {
+      "size_bytes": 388,
+      "sha256": "66a9004ed20adce1c452ba55293e97b32f215a35bc321b63fe4304028cfa7d34"
+    },
+    "results/long-history/proj_1/same_start.validation.npz": {
+      "size_bytes": 31628760,
+      "sha256": "68af0c3db2f23c532647bc99a3b980b242d7e7738390c17d0299fc889f27744e"
+    },
+    "results/long-history/proj_1/same_start.day5.npz": {
+      "size_bytes": 20675224,
+      "sha256": "9e2cda5990a8862ffa1bb6076a3b332db7dde7ca878a34848773a2b86acb0451"
+    },
+    "results/long-history/proj_1/same_start.day6.npz": {
+      "size_bytes": 27689704,
+      "sha256": "f308ec86510c6a9953e4b0668a18fc67b8cb53368925f61451788001109b6541"
+    },
+    "results/long-history/proj_1/same_start.day7.npz": {
+      "size_bytes": 41644392,
+      "sha256": "0a7ed13f09a44878ad0f46eccfa9955b989e4ed9925dae8df89dfcdc17999703"
+    },
+    "results/long-history/proj_1/range.validation.npz": {
+      "size_bytes": 31628760,
+      "sha256": "f9e74a4f0f5363b7ca7fe4668eb30775d9cd20d91f27cf4465a698bc64defa04"
+    },
+    "results/long-history/proj_1/range.day5.npz": {
+      "size_bytes": 20675224,
+      "sha256": "c2935f55921bf327c81d36cfda9422725d825047171ca9330f2a35982667533d"
+    },
+    "results/long-history/proj_1/range.day6.npz": {
+      "size_bytes": 27689704,
+      "sha256": "6fae2e60f1a7417bf3e8172624e322c917193917da18f9a98c37740e8825405b"
+    },
+    "results/long-history/proj_1/range.day7.npz": {
+      "size_bytes": 41644392,
+      "sha256": "ece83d9f1a528cd8b22796f53bf31c06ecef825ec6fc57859917f702d8db8d48"
+    },
+    "results/long-history/prn_1/provenance.json": {
+      "size_bytes": 4635,
+      "sha256": "c97a99b3b511e54856be1c2f464ae70fc51ad4261cbc5bfa9036c6f5607db4ea"
+    },
+    "results/long-history/prn_1/verification.json": {
+      "size_bytes": 388,
+      "sha256": "369bdec39631a656ace9331ab801f2df843277cc0ee03021d93d25849ea14d55"
+    },
+    "results/long-history/prn_1/same_start.validation.npz": {
+      "size_bytes": 30423336,
+      "sha256": "53dc330444e64d63eb7eccf17ce76f89627c571d32f78a5b62b406888ad8a2fc"
+    },
+    "results/long-history/prn_1/same_start.day5.npz": {
+      "size_bytes": 42911240,
+      "sha256": "7a68499c1a34ebda2f19e245bafedaf7ac8d4b37ee9895e3fbaeb0a7cde100c4"
+    },
+    "results/long-history/prn_1/same_start.day6.npz": {
+      "size_bytes": 36165864,
+      "sha256": "6e932fbca23ff8da8933372591caa9dbb584ad7caeb6cef7a4b05d67ff0c1e7e"
+    },
+    "results/long-history/prn_1/same_start.day7.npz": {
+      "size_bytes": 35315432,
+      "sha256": "8fd83c6a50dcb15e6a08d0b6c48e0d93b0f0ad6bc50d341e684304a9f4608528"
+    },
+    "results/long-history/prn_1/range.validation.npz": {
+      "size_bytes": 30423336,
+      "sha256": "596eddfe115196b2a2bfc96fc9d121e024436940a3bdea1a4fb03efa30e2ae8a"
+    },
+    "results/long-history/prn_1/range.day5.npz": {
+      "size_bytes": 42911240,
+      "sha256": "62e586a9b9d10b9fc7013d1d374b31ba3294fe22343ed7fed53cc5743daea38b"
+    },
+    "results/long-history/prn_1/range.day6.npz": {
+      "size_bytes": 36165864,
+      "sha256": "e8cf198f681c733a80c68d5a8ad27f1594f80b394166d094d7e0bff9d9ddb03b"
+    },
+    "results/long-history/prn_1/range.day7.npz": {
+      "size_bytes": 35315432,
+      "sha256": "c40b06997854888ddeb249ca583ea649e2066ccbdce6c7f825fe88ee2b6f9d9b"
+    },
+    "results/mixture/prn_1/provenance.json": {
+      "size_bytes": 4286,
+      "sha256": "63d44703b57516f7d6f8bcc5d417e4a861dfd9fc30af6f6f783660ac2232cf3d"
+    },
+    "results/mixture/prn_1/verification.json": {
+      "size_bytes": 395,
+      "sha256": "c5a93ec95e3c540f7647d7e11d515bba973f50a1a9d4872912299bfa6feb9837"
+    },
+    "results/mixture/prn_1/same_start.validation.npz": {
+      "size_bytes": 30423288,
+      "sha256": "4547a42513748fdc50ef61f463780f301f8937d76bd9fe7e371bb01bc2691d1e"
+    },
+    "results/mixture/prn_1/same_start.day5.npz": {
+      "size_bytes": 42911192,
+      "sha256": "e340fe8c9509b615e532a12fdc7b2db44f40fb1f69d680a59b1616875d84ea10"
+    },
+    "results/mixture/prn_1/same_start.day6.npz": {
+      "size_bytes": 36165816,
+      "sha256": "97ac9bcd91e14ffbc64149dff2461f00108da1f9b1b9b98ec5179b3d178606b9"
+    },
+    "results/mixture/prn_1/same_start.day7.npz": {
+      "size_bytes": 35315384,
+      "sha256": "7bbf42e2a5b51d00ed4aa161f167e9b6624f94f65095c594e9715af3a1eee8a6"
+    },
+    "results/mixture/prn_1/range.validation.npz": {
+      "size_bytes": 30423288,
+      "sha256": "83055846b282e2647144ccea423b6cfb7b960bd84bdbf3879cc4184bc903229c"
+    },
+    "results/mixture/prn_1/range.day5.npz": {
+      "size_bytes": 42911192,
+      "sha256": "392bcf2d2be11f75eddacbaaa6f61a4ee0c8eb331dd1b04b5efa129932b66b9d"
+    },
+    "results/mixture/prn_1/range.day6.npz": {
+      "size_bytes": 36165816,
+      "sha256": "cba4f4021936cf951bddce2bba95615ed078da8972457dac712e4f406e595247"
+    },
+    "results/mixture/prn_1/range.day7.npz": {
+      "size_bytes": 35315384,
+      "sha256": "d1c08f50e833b17f9acdfbb017d0657a2efc1cde917c7974c3ef4e55abe94273"
+    },
+    "results/mean-overwrite/frozen.json": {
+      "size_bytes": 992,
+      "sha256": "86c338d46c9601214f2ead63c39f1683ace5062078c3ba38a8f379266c2d93e5"
+    },
+    "results/mean-overwrite/metrics.json": {
+      "size_bytes": 95792,
+      "sha256": "28d7e5bb189327e653e6643b9ed524990e4abf9ad35e574405b2f16172e0c3b3"
+    },
+    "reports/mean-overwrite.ru.md": {
+      "size_bytes": 6937,
+      "sha256": "3c673d1a76fd16e9134302d7d9e7d7d9fe2627eb45dc9c889a30775d496ce91e"
+    }
+  }
+}

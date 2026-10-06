@@ -2,6 +2,7 @@
 
 | Каталог | Этап |
 |---|---|
+| `mean-overwrite/` | выбор сохранённых long-history/mixture прогнозов по validation MAE; сравнение со средним overwrite на совпадающих записях и границы при цензурировании |
 | `next-read-pilot/` | первый миллион событий каждой нагрузки |
 | `next-read-24h/` | первые сутки обеих нагрузок, исходные модели |
 | `prxy-validation-diagnosis/` | выбор улучшенного prxy_1 по validation |

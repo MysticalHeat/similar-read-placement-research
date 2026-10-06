@@ -1030,6 +1030,26 @@
       "size_bytes": 3130,
       "storage": "git"
     },
+    "results/mean-overwrite/frozen.json": {
+      "sha256": "86c338d46c9601214f2ead63c39f1683ace5062078c3ba38a8f379266c2d93e5",
+      "size_bytes": 992,
+      "storage": "git"
+    },
+    "results/mean-overwrite/metrics.json": {
+      "sha256": "28d7e5bb189327e653e6643b9ed524990e4abf9ad35e574405b2f16172e0c3b3",
+      "size_bytes": 95792,
+      "storage": "git"
+    },
+    "results/mean-overwrite/provenance.json": {
+      "sha256": "63c6ad2f06e43761d33dd4ab03cf0df00e2c35ffd8a448e187bb7a0ab9315af6",
+      "size_bytes": 6169,
+      "storage": "git"
+    },
+    "results/mean-overwrite/verification.json": {
+      "sha256": "3dd2aa9fbbc2725c248945ddce4ddcd9a4c74a8484e50557da35c1c8516d79a0",
+      "size_bytes": 376,
+      "storage": "git"
+    },
     "results/mixture/prn_1/frozen.json": {
       "sha256": "45c75050dc953547bdd7c84113f47ef3680f8b68a5b7dd4ad8df94b0f1d0062d",
       "size_bytes": 34689,

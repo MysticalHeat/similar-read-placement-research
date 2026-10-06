@@ -1,5 +1,6 @@
 # Что читать
 
+- **`mean-overwrite.ru.md`** — новая цель MAE < среднего времени до перезаписи: выбор по validation MAE, одинаковые выборки, нижние границы при неизвестных overwrite.
 - **`mixture.ru.md`** — три фиксированные смеси log-L2/raw-L1 на prn_1: MAE улучшается ценой основного критерия, frozen fallback log-L2.
 - **`long-history.ru.md`** — train дней 1–3, суточный validation и сравнение log-L2/raw-L1/медианы на днях 5–7; development.
 - **`new-workloads-diagnostics.ru.md`** — бюджеты перезаписи, направление ошибок, адреса/размеры и контроль одинаковой длины окна для proj_1/prn_1.

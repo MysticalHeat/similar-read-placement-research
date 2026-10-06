@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "verified_windows": 20,
+  "selection_metric": "validation observed_read MAE",
+  "checker_fingerprint": {
+    "size_bytes": 5007,
+    "sha256": "0c50d34c5e63534afea954c9770105cef0ff4f31794b122bb2d74f2b79b22f98"
+  },
+  "metrics_fingerprint": {
+    "size_bytes": 95792,
+    "sha256": "28d7e5bb189327e653e6643b9ed524990e4abf9ad35e574405b2f16172e0c3b3"
+  }
+}

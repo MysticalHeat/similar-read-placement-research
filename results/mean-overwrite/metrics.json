@@ -1,0 +1,2446 @@
+{
+  "proj_1": {
+    "same_start": {
+      "selected": "address_median",
+      "windows": {
+        "validation": {
+          "all_writes": 359386,
+          "observed_reads": 111801,
+          "paired_n": 105507,
+          "censored_n": 6294,
+          "coverage": 0.3110889127567574,
+          "bounds": {
+            "n": 111801,
+            "censored_n": 6294,
+            "mean_lower_bound_seconds": 19501.20653418926,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 12972.4583189,
+            "median_upper_bound_seconds": 13049.4584414
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 17300.55639981285,
+                "mean_overwrite_seconds": 16955.60452535874,
+                "ratio": 1.0203444161450097,
+                "margin_seconds": -344.9518744541092,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16809.829524803048,
+                "mean_overwrite_lower_seconds": 19501.20653418926,
+                "ratio_upper_bound": 0.8619892054028696,
+                "margin_lower_seconds": 2691.3770093862113,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 17219.036181478637,
+                "mean_overwrite_seconds": 16955.60452535874,
+                "ratio": 1.0155365534579384,
+                "margin_seconds": -263.4316561198975,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16730.397457316816,
+                "mean_overwrite_lower_seconds": 19501.20653418926,
+                "ratio_upper_bound": 0.8579160180671541,
+                "margin_lower_seconds": 2770.8090768724433,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 10906.47195984205,
+                "mean_overwrite_seconds": 16955.60452535874,
+                "ratio": 0.6432369865391925,
+                "margin_seconds": 6049.132565516689,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 11082.821313910727,
+                "mean_overwrite_lower_seconds": 19501.20653418926,
+                "ratio_upper_bound": 0.5683146473260754,
+                "margin_lower_seconds": 8418.385220278533,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 16293.37288746097,
+                "mean_overwrite_seconds": 16955.60452535874,
+                "ratio": 0.9609432009983874,
+                "margin_seconds": 662.2316378977703,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 16022.677589783772,
+                "mean_overwrite_lower_seconds": 19501.20653418926,
+                "ratio_upper_bound": 0.8216249369849514,
+                "margin_lower_seconds": 3478.528944405487,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 11982.51138931256,
+                "mean_overwrite_seconds": 16955.60452535874,
+                "ratio": 0.706699154924943,
+                "margin_seconds": 4973.09313604618,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 11852.915976580696,
+                "mean_overwrite_lower_seconds": 19501.20653418926,
+                "ratio_upper_bound": 0.6078042379480634,
+                "margin_lower_seconds": 7648.290557608563,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day5": {
+          "all_writes": 234914,
+          "observed_reads": 24707,
+          "paired_n": 17999,
+          "censored_n": 6708,
+          "coverage": 0.10517465966268506,
+          "bounds": {
+            "n": 24707,
+            "censored_n": 6708,
+            "mean_lower_bound_seconds": 26151.59791592412,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 2987.0029748,
+            "median_upper_bound_seconds": 2987.0029748
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 12754.565963587003,
+                "mean_overwrite_seconds": 9474.905258464027,
+                "ratio": 1.3461417941032416,
+                "margin_seconds": -3279.6607051229767,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 10577.836827957522,
+                "mean_overwrite_lower_seconds": 26151.59791592412,
+                "ratio_upper_bound": 0.4044814722972056,
+                "margin_lower_seconds": 15573.761087966599,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 14030.503022871935,
+                "mean_overwrite_seconds": 9474.905258464027,
+                "ratio": 1.480806682508867,
+                "margin_seconds": -4555.5977644079085,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 11613.039719938808,
+                "mean_overwrite_lower_seconds": 26151.59791592412,
+                "ratio_upper_bound": 0.4440661621241677,
+                "margin_lower_seconds": 14538.558195985313,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 21055.379672835945,
+                "mean_overwrite_seconds": 9474.905258464027,
+                "ratio": 2.2222258796758907,
+                "margin_seconds": -11580.474414371918,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 20505.715189505,
+                "mean_overwrite_lower_seconds": 26151.59791592412,
+                "ratio_upper_bound": 0.7841094550103475,
+                "margin_lower_seconds": 5645.88272641912,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 13358.327553322886,
+                "mean_overwrite_seconds": 9474.905258464027,
+                "ratio": 1.4098639710819019,
+                "margin_seconds": -3883.4222948588595,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 11917.638719602754,
+                "mean_overwrite_lower_seconds": 26151.59791592412,
+                "ratio_upper_bound": 0.4557135957013898,
+                "margin_lower_seconds": 14233.959196321368,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 14132.39700660878,
+                "mean_overwrite_seconds": 9474.905258464027,
+                "ratio": 1.4915607724925977,
+                "margin_seconds": -4657.491748144754,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12893.996824231292,
+                "mean_overwrite_lower_seconds": 26151.59791592412,
+                "ratio_upper_bound": 0.4930481443499073,
+                "margin_lower_seconds": 13257.60109169283,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day6": {
+          "all_writes": 314624,
+          "observed_reads": 66311,
+          "paired_n": 56276,
+          "censored_n": 10035,
+          "coverage": 0.2107626881611066,
+          "bounds": {
+            "n": 66311,
+            "censored_n": 10035,
+            "mean_lower_bound_seconds": 16777.197536403713,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 2121.7033969,
+            "median_upper_bound_seconds": 2121.7034188
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 12243.554962474083,
+                "mean_overwrite_seconds": 6709.64116966601,
+                "ratio": 1.8247704538696723,
+                "margin_seconds": -5533.913792808074,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 11626.8164793632,
+                "mean_overwrite_lower_seconds": 16777.197536403713,
+                "ratio_upper_bound": 0.6930130287930957,
+                "margin_lower_seconds": 5150.381057040513,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 18389.126207772573,
+                "mean_overwrite_seconds": 6709.64116966601,
+                "ratio": 2.7407018859531562,
+                "margin_seconds": -11679.485038106563,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 17344.99272672412,
+                "mean_overwrite_lower_seconds": 16777.197536403713,
+                "ratio_upper_bound": 1.0338432678692842,
+                "margin_lower_seconds": -567.7951903204048,
+                "status": "undetermined"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 34614.64146376193,
+                "mean_overwrite_seconds": 6709.64116966601,
+                "ratio": 5.158940782146919,
+                "margin_seconds": -27905.00029409592,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 33227.52535223575,
+                "mean_overwrite_lower_seconds": 16777.197536403713,
+                "ratio_upper_bound": 1.9805170249761666,
+                "margin_lower_seconds": -16450.32781583204,
+                "status": "undetermined"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 9994.052648067907,
+                "mean_overwrite_seconds": 6709.64116966601,
+                "ratio": 1.4895062784058521,
+                "margin_seconds": -3284.4114784018975,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 9848.536337470405,
+                "mean_overwrite_lower_seconds": 16777.197536403713,
+                "ratio_upper_bound": 0.587019155976481,
+                "margin_lower_seconds": 6928.661198933309,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 14916.993012433622,
+                "mean_overwrite_seconds": 6709.64116966601,
+                "ratio": 2.2232177005042666,
+                "margin_seconds": -8207.351842767614,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15257.592492792604,
+                "mean_overwrite_lower_seconds": 16777.197536403713,
+                "ratio_upper_bound": 0.9094243814967417,
+                "margin_lower_seconds": 1519.605043611109,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day7": {
+          "all_writes": 473200,
+          "observed_reads": 120826,
+          "paired_n": 114100,
+          "censored_n": 6726,
+          "coverage": 0.25533812341504647,
+          "bounds": {
+            "n": 120826,
+            "censored_n": 6726,
+            "mean_lower_bound_seconds": 18712.90732208477,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 13249.785705499999,
+            "median_upper_bound_seconds": 13257.785516200001
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 17111.476555532085,
+                "mean_overwrite_seconds": 16370.64441546479,
+                "ratio": 1.0452536944341333,
+                "margin_seconds": -740.832140067294,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16845.958089031246,
+                "mean_overwrite_lower_seconds": 18712.90732208477,
+                "ratio_upper_bound": 0.9002320055927295,
+                "margin_lower_seconds": 1866.949233053525,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 16602.48887526818,
+                "mean_overwrite_seconds": 16370.64441546479,
+                "ratio": 1.0141622072973726,
+                "margin_seconds": -231.84445980338933,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16325.710258153538,
+                "mean_overwrite_lower_seconds": 18712.90732208477,
+                "ratio_upper_bound": 0.8724304554688898,
+                "margin_lower_seconds": 2387.197063931233,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 9121.405143138176,
+                "mean_overwrite_seconds": 16370.64441546479,
+                "ratio": 0.5571805795574849,
+                "margin_seconds": 7249.239272326615,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 9415.102926920612,
+                "mean_overwrite_lower_seconds": 18712.90732208477,
+                "ratio_upper_bound": 0.5031341610829766,
+                "margin_lower_seconds": 9297.80439516416,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 16488.488986725017,
+                "mean_overwrite_seconds": 16370.64441546479,
+                "ratio": 1.0071985297749735,
+                "margin_seconds": -117.84457126022608,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16304.399790185544,
+                "mean_overwrite_lower_seconds": 18712.90732208477,
+                "ratio_upper_bound": 0.871291644294271,
+                "margin_lower_seconds": 2408.5075318992276,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 12000.611847021732,
+                "mean_overwrite_seconds": 16370.64441546479,
+                "ratio": 0.7330567778801158,
+                "margin_seconds": 4370.032568443059,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 11953.46224779223,
+                "mean_overwrite_lower_seconds": 18712.90732208477,
+                "ratio_upper_bound": 0.6387816731013722,
+                "margin_lower_seconds": 6759.445074292542,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "pooled": {
+          "all_writes": 1022738,
+          "observed_reads": 211844,
+          "paired_n": 188375,
+          "censored_n": 23469,
+          "coverage": 0.20713418294812552,
+          "bounds": {
+            "n": 211844,
+            "censored_n": 23469,
+            "mean_lower_bound_seconds": 18974.556823150142,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 8908.7841097,
+            "median_upper_bound_seconds": 8935.455540949999
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 15240.914170314558,
+                "mean_overwrite_seconds": 12825.593173275387,
+                "ratio": 1.188320412507077,
+                "margin_seconds": -2415.320997039171,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14481.23229421975,
+                "mean_overwrite_lower_seconds": 18974.556823150142,
+                "ratio_upper_bound": 0.7631921224400743,
+                "margin_lower_seconds": 4493.324528930392,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 16890.486906677535,
+                "mean_overwrite_seconds": 12825.593173275387,
+                "ratio": 1.3169361197166416,
+                "margin_seconds": -4064.8937334021484,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16095.13346006491,
+                "mean_overwrite_lower_seconds": 18974.556823150142,
+                "ratio_upper_bound": 0.8482481888814312,
+                "margin_lower_seconds": 2879.4233630852323,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 17877.64654852346,
+                "mean_overwrite_seconds": 12825.593173275387,
+                "ratio": 1.3939040718814475,
+                "margin_seconds": -5052.0533752480715,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 18162.300395891856,
+                "mean_overwrite_lower_seconds": 18974.556823150142,
+                "ratio_upper_bound": 0.9571923373584524,
+                "margin_lower_seconds": 812.2564272582858,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 14249.228601673538,
+                "mean_overwrite_seconds": 12825.593173275387,
+                "ratio": 1.1109995778881068,
+                "margin_seconds": -1423.635428398151,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13771.977502162834,
+                "mean_overwrite_lower_seconds": 18974.556823150142,
+                "ratio_upper_bound": 0.7258128677535257,
+                "margin_lower_seconds": 5202.579320987308,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 13075.554209607675,
+                "mean_overwrite_seconds": 12825.593173275387,
+                "ratio": 1.0194892378820444,
+                "margin_seconds": -249.96103633228813,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13097.407643726501,
+                "mean_overwrite_lower_seconds": 18974.556823150142,
+                "ratio_upper_bound": 0.690261583751292,
+                "margin_lower_seconds": 5877.149179423641,
+                "status": "passed"
+              }
+            }
+          }
+        }
+      }
+    },
+    "range": {
+      "selected": "address_median",
+      "windows": {
+        "validation": {
+          "all_writes": 359386,
+          "observed_reads": 119387,
+          "paired_n": 113732,
+          "censored_n": 5655,
+          "coverage": 0.3321971362267868,
+          "bounds": {
+            "n": 119387,
+            "censored_n": 5655,
+            "mean_lower_bound_seconds": 17527.782956169318,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 10500.4434907,
+            "median_upper_bound_seconds": 10526.4433162
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 15496.304468096818,
+                "mean_overwrite_seconds": 15116.984711879884,
+                "ratio": 1.025092289464237,
+                "margin_seconds": -379.31975621693346,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14921.790247431696,
+                "mean_overwrite_lower_seconds": 17527.782956169318,
+                "ratio_upper_bound": 0.8513221714774611,
+                "margin_lower_seconds": 2605.992708737622,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 15424.00874328903,
+                "mean_overwrite_seconds": 15116.984711879884,
+                "ratio": 1.020309872455442,
+                "margin_seconds": -307.0240314091461,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14898.088723072051,
+                "mean_overwrite_lower_seconds": 17527.782956169318,
+                "ratio_upper_bound": 0.8499699454475682,
+                "margin_lower_seconds": 2629.694233097267,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 10931.105762710868,
+                "mean_overwrite_seconds": 15116.984711879884,
+                "ratio": 0.7231009338866706,
+                "margin_seconds": 4185.878949169017,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 11018.689681322365,
+                "mean_overwrite_lower_seconds": 17527.782956169318,
+                "ratio_upper_bound": 0.6286413808794954,
+                "margin_lower_seconds": 6509.093274846953,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 14461.209125243488,
+                "mean_overwrite_seconds": 15116.984711879884,
+                "ratio": 0.9566199477518128,
+                "margin_seconds": 655.7755866363968,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 14016.45289601609,
+                "mean_overwrite_lower_seconds": 17527.782956169318,
+                "ratio_upper_bound": 0.799670610428381,
+                "margin_lower_seconds": 3511.3300601532283,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 11930.692806828447,
+                "mean_overwrite_seconds": 15116.984711879884,
+                "ratio": 0.7892243747162456,
+                "margin_seconds": 3186.2919050514374,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 11657.983926435367,
+                "mean_overwrite_lower_seconds": 17527.782956169318,
+                "ratio_upper_bound": 0.6651145758472587,
+                "margin_lower_seconds": 5869.799029733951,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day5": {
+          "all_writes": 234914,
+          "observed_reads": 32035,
+          "paired_n": 23785,
+          "censored_n": 8250,
+          "coverage": 0.13636905420707152,
+          "bounds": {
+            "n": 32035,
+            "censored_n": 8250,
+            "mean_lower_bound_seconds": 23862.0210781754,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 1482.1402805,
+            "median_upper_bound_seconds": 1482.1402805
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 10159.285670455862,
+                "mean_overwrite_seconds": 7211.579272932698,
+                "ratio": 1.4087463072876178,
+                "margin_seconds": -2947.706397523164,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 8344.552981436562,
+                "mean_overwrite_lower_seconds": 23862.0210781754,
+                "ratio_upper_bound": 0.3497001764476953,
+                "margin_lower_seconds": 15517.468096738838,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 11131.927044397804,
+                "mean_overwrite_seconds": 7211.579272932698,
+                "ratio": 1.5436184812083245,
+                "margin_seconds": -3920.3477714651062,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 9184.285181493042,
+                "mean_overwrite_lower_seconds": 23862.0210781754,
+                "ratio_upper_bound": 0.3848913363794294,
+                "margin_lower_seconds": 14677.735896682358,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 18724.477170511094,
+                "mean_overwrite_seconds": 7211.579272932698,
+                "ratio": 2.5964461405548,
+                "margin_seconds": -11512.897897578398,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 18079.90414571119,
+                "mean_overwrite_lower_seconds": 23862.0210781754,
+                "ratio_upper_bound": 0.7576853648095789,
+                "margin_lower_seconds": 5782.116932464211,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 11041.652428532874,
+                "mean_overwrite_seconds": 7211.579272932698,
+                "ratio": 1.5311004719833883,
+                "margin_seconds": -3830.0731556001765,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 9707.9516467807,
+                "mean_overwrite_lower_seconds": 23862.0210781754,
+                "ratio_upper_bound": 0.40683694038221074,
+                "margin_lower_seconds": 14154.069431394699,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 11950.826092392845,
+                "mean_overwrite_seconds": 7211.579272932698,
+                "ratio": 1.6571718399114068,
+                "margin_seconds": -4739.246819460147,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 10817.472370279887,
+                "mean_overwrite_lower_seconds": 23862.0210781754,
+                "ratio_upper_bound": 0.45333428944850473,
+                "margin_lower_seconds": 13044.548707895512,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day6": {
+          "all_writes": 314624,
+          "observed_reads": 74854,
+          "paired_n": 65434,
+          "censored_n": 9420,
+          "coverage": 0.23791573433685922,
+          "bounds": {
+            "n": 74854,
+            "censored_n": 9420,
+            "mean_lower_bound_seconds": 14228.296806627495,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 1262.1254869499999,
+            "median_upper_bound_seconds": 1262.1254869499999
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 11161.435356212312,
+                "mean_overwrite_seconds": 5987.514879484697,
+                "ratio": 1.8641181827297433,
+                "margin_seconds": -5173.920476727615,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 10566.372148880175,
+                "mean_overwrite_lower_seconds": 14228.296806627495,
+                "ratio_upper_bound": 0.7426308498117914,
+                "margin_lower_seconds": 3661.9246577473205,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 14222.836865955283,
+                "mean_overwrite_seconds": 5987.514879484697,
+                "ratio": 2.375415702879947,
+                "margin_seconds": -8235.321986470586,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13480.883679051118,
+                "mean_overwrite_lower_seconds": 14228.296806627495,
+                "ratio_upper_bound": 0.9474699510606052,
+                "margin_lower_seconds": 747.4131275763775,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 30942.828607788506,
+                "mean_overwrite_seconds": 5987.514879484697,
+                "ratio": 5.167891726467247,
+                "margin_seconds": -24955.31372830381,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 29778.947843886162,
+                "mean_overwrite_lower_seconds": 14228.296806627495,
+                "ratio_upper_bound": 2.092938336092007,
+                "margin_lower_seconds": -15550.651037258667,
+                "status": "undetermined"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 9110.824181829576,
+                "mean_overwrite_seconds": 5987.514879484697,
+                "ratio": 1.5216370005269497,
+                "margin_seconds": -3123.3093023448782,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 8905.082143589138,
+                "mean_overwrite_lower_seconds": 14228.296806627495,
+                "ratio_upper_bound": 0.6258712665764169,
+                "margin_lower_seconds": 5323.214663038358,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 12680.827507663817,
+                "mean_overwrite_seconds": 5987.514879484697,
+                "ratio": 2.117878245465866,
+                "margin_seconds": -6693.312628179119,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12983.923113155714,
+                "mean_overwrite_lower_seconds": 14228.296806627495,
+                "ratio_upper_bound": 0.9125423295294096,
+                "margin_lower_seconds": 1244.3736934717817,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day7": {
+          "all_writes": 473200,
+          "observed_reads": 129145,
+          "paired_n": 123157,
+          "censored_n": 5988,
+          "coverage": 0.27291842772612,
+          "bounds": {
+            "n": 129145,
+            "censored_n": 5988,
+            "mean_lower_bound_seconds": 15579.715687676697,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 10200.955909,
+            "median_upper_bound_seconds": 10203.8009548
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 15458.51660494165,
+                "mean_overwrite_seconds": 13571.701985795014,
+                "ratio": 1.1390256447659617,
+                "margin_seconds": -1886.8146191466349,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15077.63537129448,
+                "mean_overwrite_lower_seconds": 15579.715687676697,
+                "ratio_upper_bound": 0.9677734609252623,
+                "margin_lower_seconds": 502.08031638221655,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 14820.96581282764,
+                "mean_overwrite_seconds": 13571.701985795014,
+                "ratio": 1.0920491643819017,
+                "margin_seconds": -1249.263827032626,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14512.252344711549,
+                "mean_overwrite_lower_seconds": 15579.715687676697,
+                "ratio_upper_bound": 0.9314837725948045,
+                "margin_lower_seconds": 1067.4633429651476,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 9387.830329441505,
+                "mean_overwrite_seconds": 13571.701985795014,
+                "ratio": 0.6917209307474768,
+                "margin_seconds": 4183.871656353509,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 9593.859921873815,
+                "mean_overwrite_lower_seconds": 15579.715687676697,
+                "ratio_upper_bound": 0.6157917200929669,
+                "margin_lower_seconds": 5985.855765802882,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 15164.2445852526,
+                "mean_overwrite_seconds": 13571.701985795014,
+                "ratio": 1.117342880143142,
+                "margin_seconds": -1592.5425994575853,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14835.114818669463,
+                "mean_overwrite_lower_seconds": 15579.715687676697,
+                "ratio_upper_bound": 0.9522070309924717,
+                "margin_lower_seconds": 744.600869007234,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 12244.528308238823,
+                "mean_overwrite_seconds": 13571.701985795014,
+                "ratio": 0.9022102254422257,
+                "margin_seconds": 1327.1736775561913,
+                "passed": true
+              },
+              "observed_read": {
+                "mae_seconds": 12103.965046579922,
+                "mean_overwrite_lower_seconds": 15579.715687676697,
+                "ratio_upper_bound": 0.7769053870574778,
+                "margin_lower_seconds": 3475.7506410967744,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "pooled": {
+          "all_writes": 1022738,
+          "observed_reads": 236034,
+          "paired_n": 212376,
+          "censored_n": 23658,
+          "coverage": 0.23078637930731039,
+          "bounds": {
+            "n": 236034,
+            "censored_n": 23658,
+            "mean_lower_bound_seconds": 16275.227962444607,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 6321.03283775,
+            "median_upper_bound_seconds": 6356.7364723499995
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 13541.080443576428,
+                "mean_overwrite_seconds": 10522.679413377513,
+                "ratio": 1.286847190874371,
+                "margin_seconds": -3018.4010301989147,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12733.140969599392,
+                "mean_overwrite_lower_seconds": 16275.227962444607,
+                "ratio_upper_bound": 0.7823632946328833,
+                "margin_lower_seconds": 3542.0869928452157,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 14223.526570084818,
+                "mean_overwrite_seconds": 10522.679413377513,
+                "ratio": 1.3517019773502181,
+                "margin_seconds": -3700.8471567073047,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13462.049839254494,
+                "mean_overwrite_lower_seconds": 16275.227962444607,
+                "ratio_upper_bound": 0.8271496946352104,
+                "margin_lower_seconds": 2813.178123190113,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 17074.67772491085,
+                "mean_overwrite_seconds": 10522.679413377513,
+                "ratio": 1.622654939311727,
+                "margin_seconds": -6551.998311533336,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 17146.94548592367,
+                "mean_overwrite_lower_seconds": 16275.227962444607,
+                "ratio_upper_bound": 1.0535610023706314,
+                "margin_lower_seconds": -871.7175234790611,
+                "status": "undetermined"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 12837.449819718071,
+                "mean_overwrite_seconds": 10522.679413377513,
+                "ratio": 1.219979181670952,
+                "margin_seconds": -2314.770406340558,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12258.641352677616,
+                "mean_overwrite_lower_seconds": 16275.227962444607,
+                "ratio_upper_bound": 0.7532085806088038,
+                "margin_lower_seconds": 4016.5866097669914,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 12346.060941922848,
+                "mean_overwrite_seconds": 10522.679413377513,
+                "ratio": 1.1732811061626818,
+                "margin_seconds": -1823.3815285453347,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12208.42282906123,
+                "mean_overwrite_lower_seconds": 16275.227962444607,
+                "ratio_upper_bound": 0.7501230002573478,
+                "margin_lower_seconds": 4066.8051333833773,
+                "status": "passed"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "prn_1": {
+    "same_start": {
+      "selected": "mix_log25",
+      "windows": {
+        "validation": {
+          "all_writes": 345688,
+          "observed_reads": 157855,
+          "paired_n": 135545,
+          "censored_n": 22310,
+          "coverage": 0.4566400916433316,
+          "bounds": {
+            "n": 157855,
+            "censored_n": 22310,
+            "mean_lower_bound_seconds": 16488.486690531226,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 4460.6588982,
+            "median_upper_bound_seconds": 4474.0191998
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 14705.128705098377,
+                "mean_overwrite_seconds": 8189.394985479036,
+                "ratio": 1.7956306578413503,
+                "margin_seconds": -6515.733719619341,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15574.026878673083,
+                "mean_overwrite_lower_seconds": 16488.486690531226,
+                "ratio_upper_bound": 0.9445394941924363,
+                "margin_lower_seconds": 914.4598118581434,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 13123.871892914172,
+                "mean_overwrite_seconds": 8189.394985479036,
+                "ratio": 1.6025447442924254,
+                "margin_seconds": -4934.476907435136,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12928.348554744089,
+                "mean_overwrite_lower_seconds": 16488.486690531226,
+                "ratio_upper_bound": 0.7840833908771262,
+                "margin_lower_seconds": 3560.138135787138,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 14977.541939106339,
+                "mean_overwrite_seconds": 8189.394985479036,
+                "ratio": 1.8288948042759756,
+                "margin_seconds": -6788.1469536273025,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14270.812162316905,
+                "mean_overwrite_lower_seconds": 16488.486690531226,
+                "ratio_upper_bound": 0.8655016333616683,
+                "margin_lower_seconds": 2217.674528214322,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 20540.342409384193,
+                "mean_overwrite_seconds": 8189.394985479036,
+                "ratio": 2.5081636000956293,
+                "margin_seconds": -12350.947423905156,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 22984.900787963776,
+                "mean_overwrite_lower_seconds": 16488.486690531226,
+                "ratio_upper_bound": 1.3939969882841472,
+                "margin_lower_seconds": -6496.414097432549,
+                "status": "undetermined"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 16990.18508001214,
+                "mean_overwrite_seconds": 8189.394985479036,
+                "ratio": 2.0746569325497375,
+                "margin_seconds": -8800.790094533102,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 17971.326556110504,
+                "mean_overwrite_lower_seconds": 16488.486690531226,
+                "ratio_upper_bound": 1.0899318350683342,
+                "margin_lower_seconds": -1482.839865579277,
+                "status": "undetermined"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 13647.477532267942,
+                "mean_overwrite_seconds": 8189.394985479036,
+                "ratio": 1.666481779968711,
+                "margin_seconds": -5458.082546788905,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14195.87544644958,
+                "mean_overwrite_lower_seconds": 16488.486690531226,
+                "ratio_upper_bound": 0.860956842971028,
+                "margin_lower_seconds": 2292.611244081647,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 12908.742781120258,
+                "mean_overwrite_seconds": 8189.394985479036,
+                "ratio": 1.5762755129053243,
+                "margin_seconds": -4719.347795641222,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13131.412743321913,
+                "mean_overwrite_lower_seconds": 16488.486690531226,
+                "ratio_upper_bound": 0.7963989048711689,
+                "margin_lower_seconds": 3357.0739472093137,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 12670.605091518037,
+                "mean_overwrite_seconds": 8189.394985479036,
+                "ratio": 1.547196723809857,
+                "margin_seconds": -4481.2101060390005,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12644.232627937901,
+                "mean_overwrite_lower_seconds": 16488.486690531226,
+                "ratio_upper_bound": 0.7668522202949681,
+                "margin_lower_seconds": 3844.254062593325,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day5": {
+          "all_writes": 487596,
+          "observed_reads": 251222,
+          "paired_n": 209721,
+          "censored_n": 41501,
+          "coverage": 0.5152257196531554,
+          "bounds": {
+            "n": 251222,
+            "censored_n": 41501,
+            "mean_lower_bound_seconds": 20073.929287856554,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 5074.60936875,
+            "median_upper_bound_seconds": 5075.1210438
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 12745.264343189816,
+                "mean_overwrite_seconds": 11206.52402773403,
+                "ratio": 1.137307546180037,
+                "margin_seconds": -1538.740315455785,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14362.410218528878,
+                "mean_overwrite_lower_seconds": 20073.929287856554,
+                "ratio_upper_bound": 0.7154757801810739,
+                "margin_lower_seconds": 5711.519069327676,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 13491.04705985557,
+                "mean_overwrite_seconds": 11206.52402773403,
+                "ratio": 1.2038565237952263,
+                "margin_seconds": -2284.5230321215386,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13570.45370613166,
+                "mean_overwrite_lower_seconds": 20073.929287856554,
+                "ratio_upper_bound": 0.6760237874475785,
+                "margin_lower_seconds": 6503.475581724893,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 15335.474214623193,
+                "mean_overwrite_seconds": 11206.52402773403,
+                "ratio": 1.3684416485139184,
+                "margin_seconds": -4128.950186889162,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14678.771850391755,
+                "mean_overwrite_lower_seconds": 20073.929287856554,
+                "ratio_upper_bound": 0.7312356061387282,
+                "margin_lower_seconds": 5395.157437464799,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 16549.742034637562,
+                "mean_overwrite_seconds": 11206.52402773403,
+                "ratio": 1.4767953018866578,
+                "margin_seconds": -5343.218006903531,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 19730.979320762784,
+                "mean_overwrite_lower_seconds": 20073.929287856554,
+                "ratio_upper_bound": 0.9829156533244724,
+                "margin_lower_seconds": 342.9499670937694,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 13029.022784449311,
+                "mean_overwrite_seconds": 11206.52402773403,
+                "ratio": 1.162628371848839,
+                "margin_seconds": -1822.4987567152803,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14776.484484840705,
+                "mean_overwrite_lower_seconds": 20073.929287856554,
+                "ratio_upper_bound": 0.7361032448081569,
+                "margin_lower_seconds": 5297.444803015849,
+                "status": "passed"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 12504.31912844788,
+                "mean_overwrite_seconds": 11206.52402773403,
+                "ratio": 1.115807104638517,
+                "margin_seconds": -1297.795100713849,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13690.647936498366,
+                "mean_overwrite_lower_seconds": 20073.929287856554,
+                "ratio_upper_bound": 0.6820113660946456,
+                "margin_lower_seconds": 6383.281351358188,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 12622.212229515155,
+                "mean_overwrite_seconds": 11206.52402773403,
+                "ratio": 1.1263271464262747,
+                "margin_seconds": -1415.688201781124,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13403.927899739649,
+                "mean_overwrite_lower_seconds": 20073.929287856554,
+                "ratio_upper_bound": 0.6677281616134899,
+                "margin_lower_seconds": 6670.001388116905,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 12966.911817795848,
+                "mean_overwrite_seconds": 11206.52402773403,
+                "ratio": 1.1570859782841842,
+                "margin_seconds": -1760.3877900618172,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13362.356321008185,
+                "mean_overwrite_lower_seconds": 20073.929287856554,
+                "ratio_upper_bound": 0.6656572377731528,
+                "margin_lower_seconds": 6711.572966848369,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day6": {
+          "all_writes": 410944,
+          "observed_reads": 197159,
+          "paired_n": 161174,
+          "censored_n": 35985,
+          "coverage": 0.47977096636038,
+          "bounds": {
+            "n": 197159,
+            "censored_n": 35985,
+            "mean_lower_bound_seconds": 17898.396667134493,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 3230.2867776,
+            "median_upper_bound_seconds": 3232.9586174
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 11637.076562810176,
+                "mean_overwrite_seconds": 6990.429909595459,
+                "ratio": 1.6647154342877348,
+                "margin_seconds": -4646.646653214717,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14733.698382005217,
+                "mean_overwrite_lower_seconds": 17898.396667134493,
+                "ratio_upper_bound": 0.8231853755403478,
+                "margin_lower_seconds": 3164.698285129276,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 10922.57609560833,
+                "mean_overwrite_seconds": 6990.429909595459,
+                "ratio": 1.5625042002946608,
+                "margin_seconds": -3932.146186012871,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12025.945023108496,
+                "mean_overwrite_lower_seconds": 17898.396667134493,
+                "ratio_upper_bound": 0.6719006873498816,
+                "margin_lower_seconds": 5872.451644025998,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 11742.159067846555,
+                "mean_overwrite_seconds": 6990.429909595459,
+                "ratio": 1.6797477722691423,
+                "margin_seconds": -4751.729158251095,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 11155.234209293796,
+                "mean_overwrite_lower_seconds": 17898.396667134493,
+                "ratio_upper_bound": 0.6232532676950517,
+                "margin_lower_seconds": 6743.162457840697,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 13510.69530145375,
+                "mean_overwrite_seconds": 6990.429909595459,
+                "ratio": 1.9327416877334263,
+                "margin_seconds": -6520.265391858291,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16780.621776496373,
+                "mean_overwrite_lower_seconds": 17898.396667134493,
+                "ratio_upper_bound": 0.9375488815324666,
+                "margin_lower_seconds": 1117.7748906381203,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 11292.357862590647,
+                "mean_overwrite_seconds": 6990.429909595459,
+                "ratio": 1.6154024872047021,
+                "margin_seconds": -4301.927952995187,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12814.413750581181,
+                "mean_overwrite_lower_seconds": 17898.396667134493,
+                "ratio_upper_bound": 0.7159531654648902,
+                "margin_lower_seconds": 5083.982916553312,
+                "status": "passed"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 11203.705997994495,
+                "mean_overwrite_seconds": 6990.429909595459,
+                "ratio": 1.6027205970001437,
+                "margin_seconds": -4213.276088399036,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13829.015283325069,
+                "mean_overwrite_lower_seconds": 17898.396667134493,
+                "ratio_upper_bound": 0.7726398928636032,
+                "margin_lower_seconds": 4069.3813838094247,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 10999.70357525426,
+                "mean_overwrite_seconds": 6990.429909595459,
+                "ratio": 1.5735374959064312,
+                "margin_seconds": -4009.2736656588004,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13123.976356263296,
+                "mean_overwrite_lower_seconds": 17898.396667134493,
+                "ratio_upper_bound": 0.7332487149735533,
+                "margin_lower_seconds": 4774.420310871197,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 10913.896512435744,
+                "mean_overwrite_seconds": 6990.429909595459,
+                "ratio": 1.5612625623289222,
+                "margin_seconds": -3923.4666028402844,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12529.233661693539,
+                "mean_overwrite_lower_seconds": 17898.396667134493,
+                "ratio_upper_bound": 0.7000198897535915,
+                "margin_lower_seconds": 5369.163005440954,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day7": {
+          "all_writes": 401280,
+          "observed_reads": 184935,
+          "paired_n": 151686,
+          "censored_n": 33249,
+          "coverage": 0.46086273923444976,
+          "bounds": {
+            "n": 184935,
+            "censored_n": 33249,
+            "mean_lower_bound_seconds": 19347.56549613187,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 5375.8843128,
+            "median_upper_bound_seconds": 5378.5025259
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 14478.612583869759,
+                "mean_overwrite_seconds": 8715.30793336798,
+                "ratio": 1.661285257453271,
+                "margin_seconds": -5763.304650501779,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 17986.96434039304,
+                "mean_overwrite_lower_seconds": 19347.56549613187,
+                "ratio_upper_bound": 0.9296758470200888,
+                "margin_lower_seconds": 1360.6011557388301,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 13587.4914996575,
+                "mean_overwrite_seconds": 8715.30793336798,
+                "ratio": 1.5590374549630737,
+                "margin_seconds": -4872.183566289521,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15133.142123348982,
+                "mean_overwrite_lower_seconds": 19347.56549613187,
+                "ratio_upper_bound": 0.7821729367642937,
+                "margin_lower_seconds": 4214.423372782887,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 16222.003532401495,
+                "mean_overwrite_seconds": 8715.30793336798,
+                "ratio": 1.861323048643285,
+                "margin_seconds": -7506.6955990335155,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16018.698989526783,
+                "mean_overwrite_lower_seconds": 19347.56549613187,
+                "ratio_upper_bound": 0.827943908122672,
+                "margin_lower_seconds": 3328.8665066050853,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 16269.533603707225,
+                "mean_overwrite_seconds": 8715.30793336798,
+                "ratio": 1.8667766793892224,
+                "margin_seconds": -7554.225670339245,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 19677.19483566697,
+                "mean_overwrite_lower_seconds": 19347.56549613187,
+                "ratio_upper_bound": 1.0170372515136854,
+                "margin_lower_seconds": -329.6293395351022,
+                "status": "undetermined"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 12822.679899461757,
+                "mean_overwrite_seconds": 8715.30793336798,
+                "ratio": 1.4712824833610334,
+                "margin_seconds": -4107.371966093777,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14385.843171056204,
+                "mean_overwrite_lower_seconds": 19347.56549613187,
+                "ratio_upper_bound": 0.7435479763039099,
+                "margin_lower_seconds": 4961.722325075665,
+                "status": "passed"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 13805.839108714072,
+                "mean_overwrite_seconds": 8715.30793336798,
+                "ratio": 1.5840907991163642,
+                "margin_seconds": -5090.531175346092,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16823.621122365563,
+                "mean_overwrite_lower_seconds": 19347.56549613187,
+                "ratio_upper_bound": 0.8695471854445505,
+                "margin_lower_seconds": 2523.944373766306,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 13507.567883630301,
+                "mean_overwrite_seconds": 8715.30793336798,
+                "ratio": 1.549866968201361,
+                "margin_seconds": -4792.259950262322,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16023.056857674008,
+                "mean_overwrite_lower_seconds": 19347.56549613187,
+                "ratio_upper_bound": 0.8281691492853442,
+                "margin_lower_seconds": 3324.508638457861,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 13441.530990872132,
+                "mean_overwrite_seconds": 8715.30793336798,
+                "ratio": 1.5422898529389921,
+                "margin_seconds": -4726.223057504152,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15458.857281303895,
+                "mean_overwrite_lower_seconds": 19347.56549613187,
+                "ratio_upper_bound": 0.7990078795388785,
+                "margin_lower_seconds": 3888.7082148279733,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "pooled": {
+          "all_writes": 1299820,
+          "observed_reads": 633316,
+          "paired_n": 522581,
+          "censored_n": 110735,
+          "coverage": 0.4872336169623486,
+          "bounds": {
+            "n": 633316,
+            "censored_n": 110735,
+            "mean_lower_bound_seconds": 19184.553488426973,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 4561.0431804,
+            "median_upper_bound_seconds": 4563.5234072
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 12906.605080646535,
+                "mean_overwrite_seconds": 9183.09156867625,
+                "ratio": 1.4054749409960456,
+                "margin_seconds": -3723.5135119702863,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15536.40506399272,
+                "mean_overwrite_lower_seconds": 19184.553488426973,
+                "ratio_upper_bound": 0.8098392841597806,
+                "margin_lower_seconds": 3648.148424434252,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 12726.875633998548,
+                "mean_overwrite_seconds": 9183.09156867625,
+                "ratio": 1.385903161132601,
+                "margin_seconds": -3543.7840653222993,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13545.950922374297,
+                "mean_overwrite_lower_seconds": 19184.553488426973,
+                "ratio_upper_bound": 0.706086327760813,
+                "margin_lower_seconds": 5638.602566052676,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 14484.553707811696,
+                "mean_overwrite_seconds": 9183.09156867625,
+                "ratio": 1.5773069014381675,
+                "margin_seconds": -5301.462139135447,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13973.124539562252,
+                "mean_overwrite_lower_seconds": 19184.553488426973,
+                "ratio_upper_bound": 0.728352867216404,
+                "margin_lower_seconds": 5211.428948864721,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 15531.107575619215,
+                "mean_overwrite_seconds": 9183.09156867625,
+                "ratio": 1.6912722103954843,
+                "margin_seconds": -6348.016006942966,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 18796.79136905903,
+                "mean_overwrite_lower_seconds": 19184.553488426973,
+                "ratio_upper_bound": 0.9797877954469015,
+                "margin_lower_seconds": 387.76211936794425,
+                "status": "passed"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 12433.508292020631,
+                "mean_overwrite_seconds": 9183.09156867625,
+                "ratio": 1.3539566930195528,
+                "margin_seconds": -3250.4167233443823,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14051.59650591611,
+                "mean_overwrite_lower_seconds": 19184.553488426973,
+                "ratio_upper_bound": 0.7324432395256265,
+                "margin_lower_seconds": 5132.956982510863,
+                "status": "passed"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 12480.968373328507,
+                "mean_overwrite_seconds": 9183.09156867625,
+                "ratio": 1.359124896010119,
+                "margin_seconds": -3297.876804652258,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14648.584833499795,
+                "mean_overwrite_lower_seconds": 19184.553488426973,
+                "ratio_upper_bound": 0.7635614163413557,
+                "margin_lower_seconds": 4535.968654927177,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 12378.78556055525,
+                "mean_overwrite_seconds": 9183.09156867625,
+                "ratio": 1.3479976180113016,
+                "margin_seconds": -3195.6939918790013,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14081.589047532121,
+                "mean_overwrite_lower_seconds": 19184.553488426973,
+                "ratio_upper_bound": 0.7340066088077994,
+                "margin_lower_seconds": 5102.964440894852,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 12471.486984250692,
+                "mean_overwrite_seconds": 9183.09156867625,
+                "ratio": 1.358092412667564,
+                "margin_seconds": -3288.395415574443,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13715.195621932955,
+                "mean_overwrite_lower_seconds": 19184.553488426973,
+                "ratio_upper_bound": 0.7149082531530696,
+                "margin_lower_seconds": 5469.357866494018,
+                "status": "passed"
+              }
+            }
+          }
+        }
+      }
+    },
+    "range": {
+      "selected": "mix_log25",
+      "windows": {
+        "validation": {
+          "all_writes": 345688,
+          "observed_reads": 173485,
+          "paired_n": 155726,
+          "censored_n": 17759,
+          "coverage": 0.5018542732174678,
+          "bounds": {
+            "n": 173485,
+            "censored_n": 17759,
+            "mean_lower_bound_seconds": 14279.253252911953,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 2768.2813738,
+            "median_upper_bound_seconds": 2769.6872476
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 13979.61805815939,
+                "mean_overwrite_seconds": 8025.54628373885,
+                "ratio": 1.7418899055488002,
+                "margin_seconds": -5954.07177442054,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15078.38694316672,
+                "mean_overwrite_lower_seconds": 14279.253252911953,
+                "ratio_upper_bound": 1.055964669587452,
+                "margin_lower_seconds": -799.1336902547682,
+                "status": "undetermined"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 11833.491444908022,
+                "mean_overwrite_seconds": 8025.54628373885,
+                "ratio": 1.4744780014395693,
+                "margin_seconds": -3807.945161169172,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 11777.105140797199,
+                "mean_overwrite_lower_seconds": 14279.253252911953,
+                "ratio_upper_bound": 0.8247703806496679,
+                "margin_lower_seconds": 2502.1481121147535,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 13903.279170240514,
+                "mean_overwrite_seconds": 8025.54628373885,
+                "ratio": 1.732377919047202,
+                "margin_seconds": -5877.732886501663,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13419.245067749587,
+                "mean_overwrite_lower_seconds": 14279.253252911953,
+                "ratio_upper_bound": 0.939772187667658,
+                "margin_lower_seconds": 860.0081851623654,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 19503.59780504982,
+                "mean_overwrite_seconds": 8025.54628373885,
+                "ratio": 2.4301894370190715,
+                "margin_seconds": -11478.051521310968,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 21560.126835886593,
+                "mean_overwrite_lower_seconds": 14279.253252911953,
+                "ratio_upper_bound": 1.509891760725643,
+                "margin_lower_seconds": -7280.87358297464,
+                "status": "undetermined"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 15879.667152405345,
+                "mean_overwrite_seconds": 8025.54628373885,
+                "ratio": 1.978640031592654,
+                "margin_seconds": -7854.120868666495,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16740.821328852813,
+                "mean_overwrite_lower_seconds": 14279.253252911953,
+                "ratio_upper_bound": 1.1723877315110212,
+                "margin_lower_seconds": -2461.5680759408606,
+                "status": "undetermined"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 12781.686213340334,
+                "mean_overwrite_seconds": 8025.54628373885,
+                "ratio": 1.5926250701760014,
+                "margin_seconds": -4756.139929601483,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13592.842520074119,
+                "mean_overwrite_lower_seconds": 14279.253252911953,
+                "ratio_upper_bound": 0.9519295077494437,
+                "margin_lower_seconds": 686.4107328378341,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 11920.759909110098,
+                "mean_overwrite_seconds": 8025.54628373885,
+                "ratio": 1.4853518362062936,
+                "margin_seconds": -3895.213625371248,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12428.316737953759,
+                "mean_overwrite_lower_seconds": 14279.253252911953,
+                "ratio_upper_bound": 0.8703758185267333,
+                "margin_lower_seconds": 1850.9365149581936,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 11509.372590508836,
+                "mean_overwrite_seconds": 8025.54628373885,
+                "ratio": 1.4340921083252391,
+                "margin_seconds": -3483.8263067699854,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 11695.650309638444,
+                "mean_overwrite_lower_seconds": 14279.253252911953,
+                "ratio_upper_bound": 0.8190659625182685,
+                "margin_lower_seconds": 2583.6029432735086,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day5": {
+          "all_writes": 487596,
+          "observed_reads": 266018,
+          "paired_n": 233049,
+          "censored_n": 32969,
+          "coverage": 0.5455705132937924,
+          "bounds": {
+            "n": 266018,
+            "censored_n": 32969,
+            "mean_lower_bound_seconds": 17293.43267041247,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 3201.0293387,
+            "median_upper_bound_seconds": 3201.9601383500003
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 13488.988893417905,
+                "mean_overwrite_seconds": 10548.082455434673,
+                "ratio": 1.2788095798841612,
+                "margin_seconds": -2940.9064379832325,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14832.583302886038,
+                "mean_overwrite_lower_seconds": 17293.43267041247,
+                "ratio_upper_bound": 0.8577003528202515,
+                "margin_lower_seconds": 2460.849367526431,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 13731.87590763703,
+                "mean_overwrite_seconds": 10548.082455434673,
+                "ratio": 1.3018362309598723,
+                "margin_seconds": -3183.793452202357,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13946.932430429482,
+                "mean_overwrite_lower_seconds": 17293.43267041247,
+                "ratio_upper_bound": 0.8064872195264882,
+                "margin_lower_seconds": 3346.5002399829864,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 14985.183673367043,
+                "mean_overwrite_seconds": 10548.082455434673,
+                "ratio": 1.420654771772878,
+                "margin_seconds": -4437.10121793237,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14376.322289884332,
+                "mean_overwrite_lower_seconds": 17293.43267041247,
+                "ratio_upper_bound": 0.8313168683092598,
+                "margin_lower_seconds": 2917.1103805281364,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 16879.367761842972,
+                "mean_overwrite_seconds": 10548.082455434673,
+                "ratio": 1.600230926631242,
+                "margin_seconds": -6331.285306408299,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 19347.748119663574,
+                "mean_overwrite_lower_seconds": 17293.43267041247,
+                "ratio_upper_bound": 1.118791652785387,
+                "margin_lower_seconds": -2054.3154492511057,
+                "status": "undetermined"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 13311.402145283026,
+                "mean_overwrite_seconds": 10548.082455434673,
+                "ratio": 1.2619736527016445,
+                "margin_seconds": -2763.319689848353,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14549.873124842192,
+                "mean_overwrite_lower_seconds": 17293.43267041247,
+                "ratio_upper_bound": 0.8413525181577013,
+                "margin_lower_seconds": 2743.559545570277,
+                "status": "passed"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 13035.299182014021,
+                "mean_overwrite_seconds": 10548.082455434673,
+                "ratio": 1.2357979980804819,
+                "margin_seconds": -2487.2167265793487,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14069.8368036025,
+                "mean_overwrite_lower_seconds": 17293.43267041247,
+                "ratio_upper_bound": 0.8135942164724037,
+                "margin_lower_seconds": 3223.5958668099684,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 12969.705218682371,
+                "mean_overwrite_seconds": 10548.082455434673,
+                "ratio": 1.2295794305248353,
+                "margin_seconds": -2421.6227632476985,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13705.03953474126,
+                "mean_overwrite_lower_seconds": 17293.43267041247,
+                "ratio_upper_bound": 0.7924996613419248,
+                "margin_lower_seconds": 3588.393135671209,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 13225.788481783562,
+                "mean_overwrite_seconds": 10548.082455434673,
+                "ratio": 1.2538571382677484,
+                "margin_seconds": -2677.7060263488893,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13678.476194532093,
+                "mean_overwrite_lower_seconds": 17293.43267041247,
+                "ratio_upper_bound": 0.7909636250491063,
+                "margin_lower_seconds": 3614.9564758803754,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day6": {
+          "all_writes": 410944,
+          "observed_reads": 214896,
+          "paired_n": 183809,
+          "censored_n": 31087,
+          "coverage": 0.5229325650210248,
+          "bounds": {
+            "n": 214896,
+            "censored_n": 31087,
+            "mean_lower_bound_seconds": 15303.389097714897,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 1354.3342267500002,
+            "median_upper_bound_seconds": 1355.63889745
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 12667.689454125404,
+                "mean_overwrite_seconds": 6534.244394447167,
+                "ratio": 1.9386617165544755,
+                "margin_seconds": -6133.445059678237,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15178.563967967315,
+                "mean_overwrite_lower_seconds": 15303.389097714897,
+                "ratio_upper_bound": 0.9918433015751903,
+                "margin_lower_seconds": 124.82512974758174,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 11442.3175462149,
+                "mean_overwrite_seconds": 6534.244394447167,
+                "ratio": 1.7511309426899668,
+                "margin_seconds": -4908.073151767732,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12585.67061515838,
+                "mean_overwrite_lower_seconds": 15303.389097714897,
+                "ratio_upper_bound": 0.8224106787585812,
+                "margin_lower_seconds": 2717.7184825565164,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 11627.502735603657,
+                "mean_overwrite_seconds": 6534.244394447167,
+                "ratio": 1.7794716624748175,
+                "margin_seconds": -5093.25834115649,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 11097.642624747465,
+                "mean_overwrite_lower_seconds": 15303.389097714897,
+                "ratio_upper_bound": 0.7251754858931585,
+                "margin_lower_seconds": 4205.746472967432,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 14215.936813094608,
+                "mean_overwrite_seconds": 6534.244394447167,
+                "ratio": 2.175605311790202,
+                "margin_seconds": -7681.692418647441,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 16822.002495911893,
+                "mean_overwrite_lower_seconds": 15303.389097714897,
+                "ratio_upper_bound": 1.0992337964159689,
+                "margin_lower_seconds": -1518.613398196996,
+                "status": "undetermined"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 11733.729345437185,
+                "mean_overwrite_seconds": 6534.244394447167,
+                "ratio": 1.7957285704539252,
+                "margin_seconds": -5199.484950990018,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12879.69530203427,
+                "mean_overwrite_lower_seconds": 15303.389097714897,
+                "ratio_upper_bound": 0.8416237226796689,
+                "margin_lower_seconds": 2423.693795680627,
+                "status": "passed"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 12007.641924915226,
+                "mean_overwrite_seconds": 6534.244394447167,
+                "ratio": 1.837648119669258,
+                "margin_seconds": -5473.397530468059,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14195.350514917618,
+                "mean_overwrite_lower_seconds": 15303.389097714897,
+                "ratio_upper_bound": 0.9275952159536524,
+                "margin_lower_seconds": 1108.0385827972787,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 11590.955690707124,
+                "mean_overwrite_seconds": 6534.244394447167,
+                "ratio": 1.7738785069865424,
+                "margin_seconds": -5056.711296259957,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13438.603862385104,
+                "mean_overwrite_lower_seconds": 15303.389097714897,
+                "ratio_upper_bound": 0.8781456039951149,
+                "margin_lower_seconds": 1864.785235329793,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 11412.3302849754,
+                "mean_overwrite_seconds": 6534.244394447167,
+                "ratio": 1.7465416957274593,
+                "margin_seconds": -4878.085890528233,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 12910.436842403611,
+                "mean_overwrite_lower_seconds": 15303.389097714897,
+                "ratio_upper_bound": 0.8436325287142701,
+                "margin_lower_seconds": 2392.9522553112856,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "day7": {
+          "all_writes": 401280,
+          "observed_reads": 203140,
+          "paired_n": 174179,
+          "censored_n": 28961,
+          "coverage": 0.5062300637958532,
+          "bounds": {
+            "n": 203140,
+            "censored_n": 28961,
+            "mean_lower_bound_seconds": 16645.433335679987,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 3276.2315011,
+            "median_upper_bound_seconds": 3277.1846139500003
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 14347.286621480895,
+                "mean_overwrite_seconds": 8076.049395487098,
+                "ratio": 1.776522891192093,
+                "margin_seconds": -6271.2372259937965,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 17073.808054757923,
+                "mean_overwrite_lower_seconds": 16645.433335679987,
+                "ratio_upper_bound": 1.0257352698748732,
+                "margin_lower_seconds": -428.3747190779359,
+                "status": "undetermined"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 12967.180497642885,
+                "mean_overwrite_seconds": 8076.049395487098,
+                "ratio": 1.6056341241410625,
+                "margin_seconds": -4891.131102155787,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14539.437945844635,
+                "mean_overwrite_lower_seconds": 16645.433335679987,
+                "ratio_upper_bound": 0.8734790889870624,
+                "margin_lower_seconds": 2105.9953898353524,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 15413.178333950955,
+                "mean_overwrite_seconds": 8076.049395487098,
+                "ratio": 1.9085047130300923,
+                "margin_seconds": -7337.128938463857,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15253.395933837779,
+                "mean_overwrite_lower_seconds": 16645.433335679987,
+                "ratio_upper_bound": 0.9163712128263832,
+                "margin_lower_seconds": 1392.037401842208,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 15701.585555081456,
+                "mean_overwrite_seconds": 8076.049395487098,
+                "ratio": 1.9442161366491286,
+                "margin_seconds": -7625.536159594358,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 18392.981095482184,
+                "mean_overwrite_lower_seconds": 16645.433335679987,
+                "ratio_upper_bound": 1.1049866185253512,
+                "margin_lower_seconds": -1747.547759802197,
+                "status": "undetermined"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 12275.006888549604,
+                "mean_overwrite_seconds": 8076.049395487098,
+                "ratio": 1.519927168277213,
+                "margin_seconds": -4198.957493062506,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13458.153231769304,
+                "mean_overwrite_lower_seconds": 16645.433335679987,
+                "ratio_upper_bound": 0.8085192473133966,
+                "margin_lower_seconds": 3187.2801039106835,
+                "status": "passed"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 13448.661222767347,
+                "mean_overwrite_seconds": 8076.049395487098,
+                "ratio": 1.6652524723638351,
+                "margin_seconds": -5372.611827280249,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15894.333466469889,
+                "mean_overwrite_lower_seconds": 16645.433335679987,
+                "ratio_upper_bound": 0.9548765205409165,
+                "margin_lower_seconds": 751.0998692100984,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 12983.545043915366,
+                "mean_overwrite_seconds": 8076.049395487098,
+                "ratio": 1.6076604300080903,
+                "margin_seconds": -4907.495648428268,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15126.236770225423,
+                "mean_overwrite_lower_seconds": 16645.433335679987,
+                "ratio_upper_bound": 0.9087319305651166,
+                "margin_lower_seconds": 1519.1965654545638,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 12851.437751560641,
+                "mean_overwrite_seconds": 8076.049395487098,
+                "ratio": 1.5913025196133685,
+                "margin_seconds": -4775.388356073543,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14703.989559763151,
+                "mean_overwrite_lower_seconds": 16645.433335679987,
+                "ratio_upper_bound": 0.8833647801913758,
+                "margin_lower_seconds": 1941.4437759168359,
+                "status": "passed"
+              }
+            }
+          }
+        },
+        "pooled": {
+          "all_writes": 1299820,
+          "observed_reads": 684054,
+          "paired_n": 591037,
+          "censored_n": 93017,
+          "coverage": 0.526268252527273,
+          "bounds": {
+            "n": 684054,
+            "censored_n": 93017,
+            "mean_lower_bound_seconds": 16475.826182538745,
+            "mean_upper_bound_seconds": null,
+            "median_lower_bound_seconds": 2756.1522212,
+            "median_upper_bound_seconds": 2757.53501535
+          },
+          "methods": {
+            "log_l2": {
+              "paired": {
+                "mae_seconds": 13486.510556764477,
+                "mean_overwrite_seconds": 8571.292835663557,
+                "ratio": 1.573451148541981,
+                "margin_seconds": -4915.21772110092,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 15606.838342836922,
+                "mean_overwrite_lower_seconds": 16475.826182538745,
+                "ratio_upper_bound": 0.9472567973178312,
+                "margin_lower_seconds": 868.9878397018238,
+                "status": "passed"
+              }
+            },
+            "raw_l1": {
+              "paired": {
+                "mae_seconds": 12794.480592839462,
+                "mean_overwrite_seconds": 8571.292835663557,
+                "ratio": 1.4927130408617013,
+                "margin_seconds": -4223.187757175905,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13695.24448086254,
+                "mean_overwrite_lower_seconds": 16475.826182538745,
+                "ratio_upper_bound": 0.8312326392091284,
+                "margin_lower_seconds": 2780.581701676205,
+                "status": "passed"
+              }
+            },
+            "address_median": {
+              "paired": {
+                "mae_seconds": 14067.09513829478,
+                "mean_overwrite_seconds": 8571.292835663557,
+                "ratio": 1.6411870890426485,
+                "margin_seconds": -5495.802302631224,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13606.783035254508,
+                "mean_overwrite_lower_seconds": 16475.826182538745,
+                "ratio_upper_bound": 0.8258634732184247,
+                "margin_lower_seconds": 2869.0431472842374,
+                "status": "passed"
+              }
+            },
+            "previous_model": {
+              "paired": {
+                "mae_seconds": 15703.963334962757,
+                "mean_overwrite_seconds": 8571.292835663557,
+                "ratio": 1.8321580695063273,
+                "margin_seconds": -7132.6704992992,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 18270.751267289423,
+                "mean_overwrite_lower_seconds": 16475.826182538745,
+                "ratio_upper_bound": 1.108942948588093,
+                "margin_lower_seconds": -1794.9250847506773,
+                "status": "undetermined"
+              }
+            },
+            "previous_address_median": {
+              "paired": {
+                "mae_seconds": 12515.328889142658,
+                "mean_overwrite_seconds": 8571.292835663557,
+                "ratio": 1.4601448263520644,
+                "margin_seconds": -3944.0360534791016,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13700.983252859925,
+                "mean_overwrite_lower_seconds": 16475.826182538745,
+                "ratio_upper_bound": 0.8315809538814127,
+                "margin_lower_seconds": 2774.84292967882,
+                "status": "passed"
+              }
+            },
+            "mix_log75": {
+              "paired": {
+                "mae_seconds": 12837.521943239293,
+                "mean_overwrite_seconds": 8571.292835663557,
+                "ratio": 1.4977346112624632,
+                "margin_seconds": -4266.229107575737,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14651.078411138828,
+                "mean_overwrite_lower_seconds": 16475.826182538745,
+                "ratio_upper_bound": 0.8892469639347249,
+                "margin_lower_seconds": 1824.7477713999178,
+                "status": "passed"
+              }
+            },
+            "mix_log50": {
+              "paired": {
+                "mae_seconds": 12545.000902254897,
+                "mean_overwrite_seconds": 8571.292835663557,
+                "ratio": 1.463606616035504,
+                "margin_seconds": -3973.70806659134,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 14043.384235846148,
+                "mean_overwrite_lower_seconds": 16475.826182538745,
+                "ratio_upper_bound": 0.8523629759295152,
+                "margin_lower_seconds": 2432.4419466925974,
+                "status": "passed"
+              }
+            },
+            "mix_log25": {
+              "paired": {
+                "mae_seconds": 12551.49233190359,
+                "mean_overwrite_seconds": 8571.292835663557,
+                "ratio": 1.4643639614877189,
+                "margin_seconds": -3980.199496240033,
+                "passed": false
+              },
+              "observed_read": {
+                "mae_seconds": 13741.737575063507,
+                "mean_overwrite_lower_seconds": 16475.826182538745,
+                "ratio_upper_bound": 0.8340545367993227,
+                "margin_lower_seconds": 2734.088607475238,
+                "status": "passed"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

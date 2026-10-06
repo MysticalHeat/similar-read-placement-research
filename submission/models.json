@@ -1,0 +1,87 @@
+{
+  "raw_feature_order": [
+    "offset_bytes",
+    "size_bytes",
+    "prior_read_count",
+    "prior_write_count",
+    "seconds_since_read",
+    "seconds_since_write",
+    "last_read_read_interval_seconds"
+  ],
+  "input_transform": "log1p for prn_1; raw offset for proj_1",
+  "missing_history": "NaN",
+  "output": "seconds from Write to first subsequent Read",
+  "history_key": "same starting Offset for both labeling rules; features before current Write",
+  "train_window": "days 1\u20133",
+  "selection_window": "day 4 observed-Read MAE",
+  "predictors": {
+    "proj_1": {
+      "same_start": {
+        "method": "address_median",
+        "global_median_seconds": 30913.136146,
+        "address_medians": "proj_1.same_start.address_medians.json"
+      },
+      "range": {
+        "method": "address_median",
+        "global_median_seconds": 27138.27158845,
+        "address_medians": "proj_1.range.address_medians.json"
+      }
+    },
+    "prn_1": {
+      "same_start": {
+        "method": "mix_log25",
+        "weight_log_l2": 0.25,
+        "models": {
+          "log_l2": "prn_1.same_start.log_l2.lightgbm.txt",
+          "raw_l1": "prn_1.same_start.raw_l1.lightgbm.txt"
+        }
+      },
+      "range": {
+        "method": "mix_log25",
+        "weight_log_l2": 0.25,
+        "models": {
+          "log_l2": "prn_1.range.log_l2.lightgbm.txt",
+          "raw_l1": "prn_1.range.raw_l1.lightgbm.txt"
+        }
+      }
+    }
+  },
+  "files": {
+    "proj_1.same_start.address_medians.json": {
+      "size_bytes": 9263781,
+      "sha256": "6a2b0d25adf0639daf9736ed8b1570c1441c92cc5e1b9fed2f1d605629e9470a"
+    },
+    "proj_1.range.address_medians.json": {
+      "size_bytes": 11196526,
+      "sha256": "bbbd575a24eec885678fb51c92f7aa7cdc8dc1b063e20e3398e44e05ca712a1a"
+    },
+    "prn_1.same_start.log_l2.lightgbm.txt": {
+      "size_bytes": 454291,
+      "sha256": "d3573ec99e7573eaabb22fe07f9a758b1a38e032c26a4cb69a64dde3ff424b09"
+    },
+    "prn_1.same_start.raw_l1.lightgbm.txt": {
+      "size_bytes": 452434,
+      "sha256": "b95bba276cbd3ce273be3ed3a5a2e53796ce10701ca21c473315796a32273699"
+    },
+    "prn_1.range.log_l2.lightgbm.txt": {
+      "size_bytes": 454105,
+      "sha256": "d76fcaba856f9fe3745cde9505d9c44441fdb1bcf8af9b17cc95218613b6446c"
+    },
+    "prn_1.range.raw_l1.lightgbm.txt": {
+      "size_bytes": 451791,
+      "sha256": "0b393b50f2e7b9cfeb7232294b314f19827b8c78dc622077c5a9e16c46a27546"
+    },
+    "predict.py": {
+      "size_bytes": 2891,
+      "sha256": "b7f1c90777b1bda6f6fbf27b5a0c5ec8f9c49ad30e5531316791c6e4423347a1"
+    }
+  },
+  "sources": {
+    "proj_1.same_start.address_medians.json": "results/long-history/proj_1/same_start.address_medians.json",
+    "proj_1.range.address_medians.json": "results/long-history/proj_1/range.address_medians.json",
+    "prn_1.same_start.log_l2.lightgbm.txt": "results/long-history/prn_1/same_start.log_l2.lightgbm.txt",
+    "prn_1.same_start.raw_l1.lightgbm.txt": "results/long-history/prn_1/same_start.raw_l1.lightgbm.txt",
+    "prn_1.range.log_l2.lightgbm.txt": "results/long-history/prn_1/range.log_l2.lightgbm.txt",
+    "prn_1.range.raw_l1.lightgbm.txt": "results/long-history/prn_1/range.raw_l1.lightgbm.txt"
+  }
+}
