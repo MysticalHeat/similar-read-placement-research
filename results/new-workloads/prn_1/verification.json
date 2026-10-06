@@ -1,0 +1,14 @@
+{
+  "verified_windows": 14,
+  "verified_methods_per_window": 4,
+  "direct_label_queries_from_experiment": 1536,
+  "checker_fingerprint": {
+    "size_bytes": 8903,
+    "sha256": "24adb85c972876eaa6d5f3018d83cf83f81133379dd729b61e70a96d44aca6f8"
+  },
+  "metrics_fingerprint": {
+    "size_bytes": 61021,
+    "sha256": "b33883645fbcbdf56a5488be60a261dc7f01e9ab6e9ecc2252385feb210b765c"
+  },
+  "passed": true
+}

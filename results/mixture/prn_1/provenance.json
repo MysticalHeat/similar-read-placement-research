@@ -1,0 +1,104 @@
+{
+  "hashes": {
+    "read_prediction/experiments/mixture.py": {
+      "size_bytes": 5485,
+      "sha256": "e68cff8c698b3fa293a48ae12828bd00bf1b6af10888c054f7fe4812517b827e"
+    },
+    "docs/protocols/mixture-protocol.md": {
+      "size_bytes": 2608,
+      "sha256": "820963a6956f19c00b68178ad75bb11849d45475e89cdadd50d90f3b0489b402"
+    },
+    "read_prediction/experiments/long_history.py": {
+      "size_bytes": 10064,
+      "sha256": "d678e9bf4ccf091b2e370747a669ec7b6e1d46ec40fdd32ae50e9e02117e5c99"
+    },
+    "read_prediction/experiments/new_workloads_diagnostics.py": {
+      "size_bytes": 11210,
+      "sha256": "ac2a5f702224f69379c035b2112c342cc3beb343c7ee828da41d6a136364ca37"
+    },
+    "read_prediction/experiments/prxy0_check.py": {
+      "size_bytes": 11967,
+      "sha256": "f6877cc4bad789c5774d94abc6cd53d9365d81febd852bf2068e6eb0d9e92470"
+    },
+    "results/long-history/prn_1/provenance.json": {
+      "size_bytes": 4635,
+      "sha256": "c97a99b3b511e54856be1c2f464ae70fc51ad4261cbc5bfa9036c6f5607db4ea"
+    },
+    "results/long-history/prn_1/verification.json": {
+      "size_bytes": 388,
+      "sha256": "369bdec39631a656ace9331ab801f2df843277cc0ee03021d93d25849ea14d55"
+    },
+    "results/mixture/prn_1/frozen.json": {
+      "size_bytes": 34689,
+      "sha256": "45c75050dc953547bdd7c84113f47ef3680f8b68a5b7dd4ad8df94b0f1d0062d"
+    },
+    "results/mixture/prn_1/metrics.json": {
+      "size_bytes": 133493,
+      "sha256": "6b3b3c3a0f6681b6a54ee0ca976dd320eef1b0583b9b6bb08488076407a7cade"
+    },
+    "results/mixture/prn_1/range.validation.npz": {
+      "size_bytes": 30423288,
+      "sha256": "83055846b282e2647144ccea423b6cfb7b960bd84bdbf3879cc4184bc903229c"
+    },
+    "results/mixture/prn_1/same_start.day5.npz": {
+      "size_bytes": 42911192,
+      "sha256": "e340fe8c9509b615e532a12fdc7b2db44f40fb1f69d680a59b1616875d84ea10"
+    },
+    "results/mixture/prn_1/same_start.day6.npz": {
+      "size_bytes": 36165816,
+      "sha256": "97ac9bcd91e14ffbc64149dff2461f00108da1f9b1b9b98ec5179b3d178606b9"
+    },
+    "results/mixture/prn_1/range.day7.npz": {
+      "size_bytes": 35315384,
+      "sha256": "d1c08f50e833b17f9acdfbb017d0657a2efc1cde917c7974c3ef4e55abe94273"
+    },
+    "results/mixture/prn_1/same_start.day7.npz": {
+      "size_bytes": 35315384,
+      "sha256": "7bbf42e2a5b51d00ed4aa161f167e9b6624f94f65095c594e9715af3a1eee8a6"
+    },
+    "results/mixture/prn_1/range.day6.npz": {
+      "size_bytes": 36165816,
+      "sha256": "cba4f4021936cf951bddce2bba95615ed078da8972457dac712e4f406e595247"
+    },
+    "results/mixture/prn_1/same_start.validation.npz": {
+      "size_bytes": 30423288,
+      "sha256": "4547a42513748fdc50ef61f463780f301f8937d76bd9fe7e371bb01bc2691d1e"
+    },
+    "results/mixture/prn_1/range.day5.npz": {
+      "size_bytes": 42911192,
+      "sha256": "392bcf2d2be11f75eddacbaaa6f61a4ee0c8eb331dd1b04b5efa129932b66b9d"
+    },
+    "results/long-history/prn_1/same_start.validation.npz": {
+      "size_bytes": 30423336,
+      "sha256": "53dc330444e64d63eb7eccf17ce76f89627c571d32f78a5b62b406888ad8a2fc"
+    },
+    "results/long-history/prn_1/same_start.day5.npz": {
+      "size_bytes": 42911240,
+      "sha256": "7a68499c1a34ebda2f19e245bafedaf7ac8d4b37ee9895e3fbaeb0a7cde100c4"
+    },
+    "results/long-history/prn_1/same_start.day6.npz": {
+      "size_bytes": 36165864,
+      "sha256": "6e932fbca23ff8da8933372591caa9dbb584ad7caeb6cef7a4b05d67ff0c1e7e"
+    },
+    "results/long-history/prn_1/same_start.day7.npz": {
+      "size_bytes": 35315432,
+      "sha256": "8fd83c6a50dcb15e6a08d0b6c48e0d93b0f0ad6bc50d341e684304a9f4608528"
+    },
+    "results/long-history/prn_1/range.validation.npz": {
+      "size_bytes": 30423336,
+      "sha256": "596eddfe115196b2a2bfc96fc9d121e024436940a3bdea1a4fb03efa30e2ae8a"
+    },
+    "results/long-history/prn_1/range.day5.npz": {
+      "size_bytes": 42911240,
+      "sha256": "62e586a9b9d10b9fc7013d1d374b31ba3294fe22343ed7fed53cc5743daea38b"
+    },
+    "results/long-history/prn_1/range.day6.npz": {
+      "size_bytes": 36165864,
+      "sha256": "e8cf198f681c733a80c68d5a8ad27f1594f80b394166d094d7e0bff9d9ddb03b"
+    },
+    "results/long-history/prn_1/range.day7.npz": {
+      "size_bytes": 35315432,
+      "sha256": "c40b06997854888ddeb249ca583ea649e2066ccbdce6c7f825fe88ee2b6f9d9b"
+    }
+  }
+}

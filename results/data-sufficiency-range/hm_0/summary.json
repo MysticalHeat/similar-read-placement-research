@@ -1,0 +1,56 @@
+{
+  "workload": "hm_0",
+  "source": {
+    "archive": "/home/nomli/workspace/bdss_lab/research1/dataset/msr-cambridge1.tar",
+    "member": "MSR-Cambridge/hm_0.csv.gz",
+    "volume": [
+      "hm",
+      0
+    ],
+    "prefix_sha256": "33f57c67b7c69761130c37d8cc551cc7e9c9c6edbb9d70f0d7b2dee1147dfaa2",
+    "loaded_events": 366657,
+    "requested_hours": 19.2,
+    "max_events": 100000000,
+    "stop_reason": "duration_reached",
+    "first_timestamp": 128166385295514663,
+    "last_timestamp": 128167076488193025,
+    "first_excluded_timestamp": 128167076512097791,
+    "counts": {
+      "Read": 98213,
+      "Write": 268444
+    }
+  },
+  "train": {
+    "writes": 207492,
+    "observed_labels": 24346,
+    "unobserved_labels": 183146,
+    "coverage": 0.11733464422724732,
+    "distinct_labelled_offsets": 1075,
+    "distinct_target_reads": 10803,
+    "largest_address_label_share": 0.04933048550069827,
+    "effective_address_count": 67.41312177650234,
+    "read_first": 10902,
+    "write_first": 179425,
+    "unresolved_first_event": 17165
+  },
+  "validation": {
+    "writes": 60952,
+    "observed_labels": 5225,
+    "unobserved_labels": 55727,
+    "coverage": 0.08572319201995013,
+    "distinct_labelled_offsets": 102,
+    "distinct_target_reads": 2679,
+    "largest_address_label_share": 0.1957894736842105,
+    "effective_address_count": 12.479800784883787,
+    "read_first": 2675,
+    "write_first": 50850,
+    "unresolved_first_event": 7427
+  },
+  "verified_direct_queries": 256,
+  "validation_labels_on_training_labelled_offsets_share": 0.9630622009569378,
+  "basic_eligible": true,
+  "basic_failure_reasons": [],
+  "target_event_support": true,
+  "recommended_for_next_check": true,
+  "read_first_support": true
+}

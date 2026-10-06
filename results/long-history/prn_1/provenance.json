@@ -1,0 +1,110 @@
+{
+  "independent_train_queries": 256,
+  "parent": "results/new-workloads/prn_1",
+  "hashes": {
+    "read_prediction/experiments/long_history.py": {
+      "size_bytes": 10064,
+      "sha256": "d678e9bf4ccf091b2e370747a669ec7b6e1d46ec40fdd32ae50e9e02117e5c99"
+    },
+    "docs/protocols/long-history-protocol.md": {
+      "size_bytes": 4472,
+      "sha256": "949d87185356293819bbabb6fff41b694c8c2bc3ff576199c04ed80889372f00"
+    },
+    "read_prediction/experiments/new_workloads.py": {
+      "size_bytes": 9672,
+      "sha256": "d1082812a6c16feb925ec49f8a01bae2a15e5af051585f2a2ce23942e44b75d8"
+    },
+    "read_prediction/experiments/new_workloads_diagnostics.py": {
+      "size_bytes": 11210,
+      "sha256": "ac2a5f702224f69379c035b2112c342cc3beb343c7ee828da41d6a136364ca37"
+    },
+    "read_prediction/experiments/prxy0_check.py": {
+      "size_bytes": 11967,
+      "sha256": "f6877cc4bad789c5774d94abc6cd53d9365d81febd852bf2068e6eb0d9e92470"
+    },
+    "results/new-workloads/prn_1/provenance.json": {
+      "size_bytes": 5121,
+      "sha256": "daf5fcc6dea154285d8867bd1097433b8a9559717a6d4f330efca2037e332438"
+    },
+    "results/new-workloads/prn_1/source.json": {
+      "size_bytes": 545,
+      "sha256": "7f725008e72ecc5c289949fdd61682913a696325827025a47746eb6670c44d18"
+    },
+    "results/new-workloads/prn_1/frozen.json": {
+      "size_bytes": 9324,
+      "sha256": "2cf17e2726c46c3ee8f7b09844ef40710e6aaaa238c4d2fb6368d4af08e348d8"
+    },
+    "results/long-history/prn_1/frozen.json": {
+      "size_bytes": 35083,
+      "sha256": "05c3987d059ca6cdb356c96d9239e0494a5c44f83c7f8e22ca8c70d5ad458770"
+    },
+    "results/long-history/prn_1/metrics.json": {
+      "size_bytes": 134067,
+      "sha256": "f952835efa9d0a2bb79756244fc3b53563dbd5c03838af0c33892fa7e1f6dfc3"
+    },
+    "results/long-history/prn_1/range.validation.npz": {
+      "size_bytes": 30423336,
+      "sha256": "596eddfe115196b2a2bfc96fc9d121e024436940a3bdea1a4fb03efa30e2ae8a"
+    },
+    "results/long-history/prn_1/same_start.day5.npz": {
+      "size_bytes": 42911240,
+      "sha256": "7a68499c1a34ebda2f19e245bafedaf7ac8d4b37ee9895e3fbaeb0a7cde100c4"
+    },
+    "results/long-history/prn_1/range.train.npz": {
+      "size_bytes": 44965336,
+      "sha256": "890e0b6527718fa153d38040eb8c15fa871a0828cecd9c41453c60f2fd71d694"
+    },
+    "results/long-history/prn_1/same_start.day6.npz": {
+      "size_bytes": 36165864,
+      "sha256": "6e932fbca23ff8da8933372591caa9dbb584ad7caeb6cef7a4b05d67ff0c1e7e"
+    },
+    "results/long-history/prn_1/same_start.train.npz": {
+      "size_bytes": 44965336,
+      "sha256": "bf4a73797d01b3530188ed5b12a0d96905d87926f26edefdd6853e97dc76db09"
+    },
+    "results/long-history/prn_1/range.day7.npz": {
+      "size_bytes": 35315432,
+      "sha256": "c40b06997854888ddeb249ca583ea649e2066ccbdce6c7f825fe88ee2b6f9d9b"
+    },
+    "results/long-history/prn_1/same_start.day7.npz": {
+      "size_bytes": 35315432,
+      "sha256": "8fd83c6a50dcb15e6a08d0b6c48e0d93b0f0ad6bc50d341e684304a9f4608528"
+    },
+    "results/long-history/prn_1/range.day6.npz": {
+      "size_bytes": 36165864,
+      "sha256": "e8cf198f681c733a80c68d5a8ad27f1594f80b394166d094d7e0bff9d9ddb03b"
+    },
+    "results/long-history/prn_1/same_start.validation.npz": {
+      "size_bytes": 30423336,
+      "sha256": "53dc330444e64d63eb7eccf17ce76f89627c571d32f78a5b62b406888ad8a2fc"
+    },
+    "results/long-history/prn_1/range.day5.npz": {
+      "size_bytes": 42911240,
+      "sha256": "62e586a9b9d10b9fc7013d1d374b31ba3294fe22343ed7fed53cc5743daea38b"
+    },
+    "results/long-history/prn_1/range.log_l2.lightgbm.txt": {
+      "size_bytes": 454105,
+      "sha256": "d76fcaba856f9fe3745cde9505d9c44441fdb1bcf8af9b17cc95218613b6446c"
+    },
+    "results/long-history/prn_1/same_start.raw_l1.lightgbm.txt": {
+      "size_bytes": 452434,
+      "sha256": "b95bba276cbd3ce273be3ed3a5a2e53796ce10701ca21c473315796a32273699"
+    },
+    "results/long-history/prn_1/same_start.log_l2.lightgbm.txt": {
+      "size_bytes": 454291,
+      "sha256": "d3573ec99e7573eaabb22fe07f9a758b1a38e032c26a4cb69a64dde3ff424b09"
+    },
+    "results/long-history/prn_1/range.raw_l1.lightgbm.txt": {
+      "size_bytes": 451791,
+      "sha256": "0b393b50f2e7b9cfeb7232294b314f19827b8c78dc622077c5a9e16c46a27546"
+    },
+    "results/long-history/prn_1/range.address_medians.json": {
+      "size_bytes": 4029100,
+      "sha256": "31ad5048948f92d1eff73136fbb0236b43532bbe36278491f164812831edbf3b"
+    },
+    "results/long-history/prn_1/same_start.address_medians.json": {
+      "size_bytes": 3798109,
+      "sha256": "7abb29a22ea768327b7a1f33de471817ac9764ea63da4a69dcc6a5a1afe50adf"
+    }
+  }
+}

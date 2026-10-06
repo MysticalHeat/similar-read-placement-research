@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "slice_partitions_checked": true,
+  "hashes": {
+    "docs/protocols/new-workloads-diagnostics-protocol.md": {
+      "size_bytes": 4233,
+      "sha256": "32fe7bb771496901165860c1d084651a7dd3536780f937d9969ee3e73aeb5dd4"
+    },
+    "read_prediction/experiments/new_workloads_diagnostics.py": {
+      "size_bytes": 11210,
+      "sha256": "ac2a5f702224f69379c035b2112c342cc3beb343c7ee828da41d6a136364ca37"
+    },
+    "results/new-workloads/proj_1/frozen.json": {
+      "size_bytes": 9394,
+      "sha256": "a01feabb00c11b8ff93d9f36c4633fce8f7c43004cac796a7763b3dc1bfc541f"
+    },
+    "results/new-workloads/proj_1/metrics.json": {
+      "size_bytes": 60695,
+      "sha256": "909e90084e9e1a046138af83010f6d62d3fe1cc88c0605192e6788df47350ca7"
+    },
+    "results/new-workloads/proj_1/provenance.json": {
+      "size_bytes": 5142,
+      "sha256": "2a6cac0d92f8f948a7caffb8b02bf5c7745e0fb4a595883888ad0a8259a6eb0d"
+    },
+    "results/new-workloads/proj_1/verification.json": {
+      "size_bytes": 406,
+      "sha256": "e18e766e28c7eb2fc4016de5f09a49de0dbbc6d81e9aa822920e14e4c923482b"
+    },
+    "results/new-workloads-diagnostics/proj_1.json": {
+      "size_bytes": 378786,
+      "sha256": "bd782e2f81720cc0964827c7f651414f6791eb8cdc18fe3d9631a0cd47d1f4e1"
+    },
+    "results/new-workloads/prn_1/frozen.json": {
+      "size_bytes": 9324,
+      "sha256": "2cf17e2726c46c3ee8f7b09844ef40710e6aaaa238c4d2fb6368d4af08e348d8"
+    },
+    "results/new-workloads/prn_1/metrics.json": {
+      "size_bytes": 61021,
+      "sha256": "b33883645fbcbdf56a5488be60a261dc7f01e9ab6e9ecc2252385feb210b765c"
+    },
+    "results/new-workloads/prn_1/provenance.json": {
+      "size_bytes": 5121,
+      "sha256": "daf5fcc6dea154285d8867bd1097433b8a9559717a6d4f330efca2037e332438"
+    },
+    "results/new-workloads/prn_1/verification.json": {
+      "size_bytes": 406,
+      "sha256": "74deeb741fdfd939865dcca16a3b11bf4dabaf031547beb93674f34189ba9a83"
+    },
+    "results/new-workloads-diagnostics/prn_1.json": {
+      "size_bytes": 398457,
+      "sha256": "52c8df659e9674cc2c5e024789b2cf7d038489da5f38368cfd8d9a581cea5d7e"
+    }
+  }
+}

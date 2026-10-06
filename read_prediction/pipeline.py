@@ -25,6 +25,7 @@ FEATURE_NAMES = [
     "log_seconds_since_write", "log_last_read_read_interval_seconds",
 ]
 TRACE_SOURCES = {
+    "prxy_0": ("msr-cambridge1.tar", "MSR-Cambridge/prxy_0.csv.gz"),
     "usr_1": ("msr-cambridge2.tar", "MSR-Cambridge/usr_1.csv.gz"),
     "prxy_1": ("msr-cambridge1.tar", "MSR-Cambridge/prxy_1.csv.gz"),
 }

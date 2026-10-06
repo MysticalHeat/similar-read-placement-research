@@ -1,0 +1,55 @@
+{
+  "workload": "wdev_3",
+  "volume": [
+    "wdev",
+    3
+  ],
+  "source_member": "MSR-Cambridge/wdev_3.csv.gz",
+  "first_timestamp": 128166410318061256,
+  "last_included_timestamp": 128167050938335374,
+  "full_window": true,
+  "prefix_sha256": "3d490977bc6e7efb490844d99d0d68dbea8fcff50107345883928c6fd7b3581d",
+  "verified_prefix_events": 83,
+  "train": {
+    "events": 66,
+    "reads": 0,
+    "writes": 66,
+    "observed_labels": 0,
+    "unobserved_labels": 66,
+    "coverage": 0.0,
+    "distinct_labelled_offsets": 0,
+    "distinct_target_reads": 0,
+    "largest_address_label_share": null,
+    "effective_address_count": 0,
+    "read_first": 0,
+    "write_first": 49,
+    "unresolved_first_event": 17
+  },
+  "validation": {
+    "events": 17,
+    "reads": 1,
+    "writes": 16,
+    "observed_labels": 0,
+    "unobserved_labels": 16,
+    "coverage": 0.0,
+    "distinct_labelled_offsets": 0,
+    "distinct_target_reads": 0,
+    "largest_address_label_share": null,
+    "effective_address_count": 0,
+    "read_first": 0,
+    "write_first": 7,
+    "unresolved_first_event": 9
+  },
+  "validation_labels_on_training_labelled_offsets_share": null,
+  "basic_eligible": false,
+  "basic_failure_reasons": [
+    "train_too_few_labels",
+    "train_too_few_labelled_offsets",
+    "validation_too_few_labels",
+    "validation_too_few_labelled_offsets"
+  ],
+  "target_event_support": false,
+  "recommended_for_next_check": false,
+  "read_first_support": false,
+  "source_archive": "msr-cambridge2.tar"
+}

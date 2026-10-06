@@ -17,6 +17,14 @@
 | `window-outcome/` | дополнительный gate Read/Write/no-first-event до известной границы окна |
 | `range-label/` | диагностическое сравнение разметки по диапазонам байтов (512 Б) с точным начальным Offset, день 7, без обучения |
 | `range-refit/` | переобучение gate и времени на диапазонных исходах, выбор на дне 6 и повторная диагностика дня 7 |
+| `prxy0-check/` | новая нагрузка prxy_0: same-start/range, фиксированное обучение первого дня и будущая оценка дней 2–7; validation недостаточен для выбора |
+| `data-sufficiency/` | скрининг same-start train/validation всех 36 исходных трасс, без обучения и просмотра будущих дней |
+| `data-sufficiency-range/` | проверка диапазонных train/validation labels для шести новых кандидатов |
+| `new-workloads/` | proj_1/prn_1: фиксированное обучение и выбор на первом дне, первые будущие оценки дней 2–7 по same-start/range |
+| `new-workloads-diagnostics/` | срезы frozen ошибок по budget, адресам, размерам, target и causal истории; validation и future отдельно |
+| `new-workloads-horizon/` | контроль одинакового 4,8h горизонта наблюдения, без переобучения и замены основной оценки |
+| `long-history/` | proj_1/prn_1: train дней 1–3, validation день 4, development оценка дней 5–7; log-L2/raw-L1/адресная медиана |
+| `mixture/` | prn_1: три фиксированные смеси log-L2/raw-L1, выбор на validation дня 4, development оценка дней 5–7 |
 
 В этих каталогах хранятся `results.json`, модели `.lightgbm.txt`, прогнозы `.npz`/`.csv`, baseline, frozen и verification записи. Они позволяют воспроизвести вычисленные метрики.
 

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "hashes": {
+    "docs/protocols/new-workloads-horizon-protocol.md": {
+      "size_bytes": 1878,
+      "sha256": "3d109ebc1444fdc53b591d78e5f806a37750de9b51398db37090c37a14a9d557"
+    },
+    "read_prediction/experiments/new_workloads_horizon.py": {
+      "size_bytes": 4462,
+      "sha256": "4cd1883d2cfa0e0382ebff39d787668beb0f7628a4c9541e430862acb59bdfdd"
+    },
+    "read_prediction/experiments/new_workloads_diagnostics.py": {
+      "size_bytes": 11210,
+      "sha256": "ac2a5f702224f69379c035b2112c342cc3beb343c7ee828da41d6a136364ca37"
+    },
+    "results/new-workloads-horizon/proj_1.json": {
+      "size_bytes": 4365,
+      "sha256": "ac62300a841a3f10bf82834c68a50fde345466b17a22ec51b021cb274e6c5b03"
+    },
+    "results/new-workloads-horizon/prn_1.json": {
+      "size_bytes": 4390,
+      "sha256": "e663b5a6704d756bdf404509f6652113d9adb4383361248cb3521b1e41a90cb4"
+    }
+  }
+}

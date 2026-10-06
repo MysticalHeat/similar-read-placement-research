@@ -1,0 +1,128 @@
+{
+  "same_start": {
+    "train_target_distribution_4_8h": {
+      "n": 42434,
+      "mean_seconds": 6054.848544042899,
+      "q10": 994.55580504,
+      "q50": 4957.1738402,
+      "q90": 13680.00868976,
+      "q99": 14856.145012994999
+    },
+    "validation_target_distribution_4_8h": {
+      "n": 21556,
+      "mean_seconds": 6275.779284926773,
+      "q10": 1242.3306450999999,
+      "q50": 6343.835195649999,
+      "q90": 10669.78696925,
+      "q99": 11353.692702425
+    },
+    "future_target_distribution_4_8h": {
+      "n": 127149,
+      "mean_seconds": 3627.4093035839833,
+      "q10": 522.14355952,
+      "q50": 2029.8794377,
+      "q90": 8018.93461976,
+      "q99": 14178.232652244002
+    },
+    "retained_observed_fraction": 0.3722182214181582,
+    "future_metrics_4_8h": {
+      "model": {
+        "n": 127149,
+        "mae_seconds": 4416.837509006805,
+        "p90_seconds": 7720.332970802709,
+        "absolute_error_sum_seconds": 561596472.4327062,
+        "confirmed_pass_count": 49092,
+        "unknown_pass_count": 17550,
+        "pass_lower": 0.38609819974989973,
+        "pass_upper": 0.5241252388929524,
+        "over_share": 0.8233411194740029,
+        "under_share": 0.17665888052599707,
+        "exact_share": 0.0,
+        "bias_seconds": 3694.7118854192395,
+        "over_mae_contribution_seconds": 4055.774697213022,
+        "under_mae_contribution_seconds": 361.0628117937825,
+        "median_prediction_target_ratio": 3.4099455263822605
+      },
+      "address_median": {
+        "n": 127149,
+        "mae_seconds": 10632.538086049226,
+        "p90_seconds": 20001.056649090002,
+        "absolute_error_sum_seconds": 1351916585.1030731,
+        "confirmed_pass_count": 28104,
+        "unknown_pass_count": 18856,
+        "pass_lower": 0.22103201755420807,
+        "pass_upper": 0.3693304705502993,
+        "over_share": 0.9242384918481467,
+        "under_share": 0.07576150815185334,
+        "exact_share": 0.0,
+        "bias_seconds": 10329.302528612541,
+        "over_mae_contribution_seconds": 10480.920307330885,
+        "under_mae_contribution_seconds": 151.61777871834306,
+        "median_prediction_target_ratio": 3.702979163929491
+      }
+    }
+  },
+  "range": {
+    "train_target_distribution_4_8h": {
+      "n": 54854,
+      "mean_seconds": 5325.489611899846,
+      "q10": 738.06395331,
+      "q50": 4089.1334881000002,
+      "q90": 12984.721855740003,
+      "q99": 14813.157645514
+    },
+    "validation_target_distribution_4_8h": {
+      "n": 26664,
+      "mean_seconds": 6298.786716079759,
+      "q10": 1010.7882666200001,
+      "q50": 6608.1023893500005,
+      "q90": 10562.14824566,
+      "q99": 11340.180117179
+    },
+    "future_target_distribution_4_8h": {
+      "n": 167184,
+      "mean_seconds": 3399.4371311931645,
+      "q10": 489.83023575,
+      "q50": 1649.15992845,
+      "q90": 7756.6100732899995,
+      "q99": 13331.24920555
+    },
+    "retained_observed_fraction": 0.4390486019743321,
+    "future_metrics_4_8h": {
+      "model": {
+        "n": 167184,
+        "mae_seconds": 3785.403614310708,
+        "p90_seconds": 7019.0481706132205,
+        "absolute_error_sum_seconds": 632858917.8549213,
+        "confirmed_pass_count": 61782,
+        "unknown_pass_count": 18761,
+        "pass_lower": 0.36954493252942866,
+        "pass_upper": 0.48176260886209205,
+        "over_share": 0.8151497750980955,
+        "under_share": 0.18485022490190448,
+        "exact_share": 0.0,
+        "bias_seconds": 3025.987175186139,
+        "over_mae_contribution_seconds": 3405.6953947484244,
+        "under_mae_contribution_seconds": 379.7082195622842,
+        "median_prediction_target_ratio": 3.2810659042925927
+      },
+      "address_median": {
+        "n": 167184,
+        "mae_seconds": 8359.383749508655,
+        "p90_seconds": 16054.207020610002,
+        "absolute_error_sum_seconds": 1397555212.777855,
+        "confirmed_pass_count": 40221,
+        "unknown_pass_count": 18446,
+        "pass_lower": 0.2405792420327304,
+        "pass_upper": 0.3509127667719399,
+        "over_share": 0.9033220882381089,
+        "under_share": 0.09667791176189108,
+        "exact_share": 0.0,
+        "bias_seconds": 7989.227106916252,
+        "over_mae_contribution_seconds": 8174.305428212454,
+        "under_mae_contribution_seconds": 185.0783212962021,
+        "median_prediction_target_ratio": 3.4507476501467567
+      }
+    }
+  }
+}

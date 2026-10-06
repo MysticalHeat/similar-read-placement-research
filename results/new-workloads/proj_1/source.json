@@ -1,0 +1,20 @@
+{
+  "archive": "/home/nomli/workspace/bdss_lab/research1/dataset/msr-cambridge1.tar",
+  "member": "MSR-Cambridge/proj_1.csv.gz",
+  "volume": [
+    "proj",
+    1
+  ],
+  "prefix_sha256": "a6961cdc5380ba5567972aa60ee18487cc89067dfd120bebefb6912feb6e815e",
+  "loaded_events": 23639742,
+  "requested_hours": 168,
+  "max_events": 100000000,
+  "stop_reason": "end_of_trace",
+  "first_timestamp": 128166372003314839,
+  "last_timestamp": 128172419997366338,
+  "first_excluded_timestamp": null,
+  "counts": {
+    "Read": 21142807,
+    "Write": 2496935
+  }
+}

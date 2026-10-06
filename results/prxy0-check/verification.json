@@ -1,0 +1,37 @@
+{
+  "feature_prefix_events": 2000,
+  "direct_label_queries": 1536,
+  "inputs": {
+    "source_prefix_sha256": "65227d1a77bdef5257fc9da26751214fc7e1fb2c344bb15c84b6dff910d84cc0"
+  },
+  "hashes": {
+    "read_prediction/experiments/prxy0_check.py": {
+      "size_bytes": 11967,
+      "sha256": "f6877cc4bad789c5774d94abc6cd53d9365d81febd852bf2068e6eb0d9e92470"
+    },
+    "docs/protocols/prxy0-protocol.md": {
+      "size_bytes": 5958,
+      "sha256": "8137c3b42d8600793549d43933613412aeda3294b875b293fddecad7dbd85012"
+    },
+    "read_prediction/range_label.py": {
+      "size_bytes": 9685,
+      "sha256": "5d9f1ef3c2ea5f5b2889f33ffd7c177ddddde5b18c68369dc3f5dac8b1cc5b0d"
+    },
+    "read_prediction/extended.py": {
+      "size_bytes": 13242,
+      "sha256": "21e1a25cf644d5108beae14ac8b5b23bbf767170c3fc28b4b6166eb5121fac00"
+    },
+    "read_prediction/pipeline.py": {
+      "size_bytes": 16421,
+      "sha256": "ed69566d71f0d06a28af227c1713c9a66472d1fa275ab1b93da7b04211d740f4"
+    },
+    "results/prxy0-check/frozen.json": {
+      "size_bytes": 1749,
+      "sha256": "025a5d7adc5f5177dbb44b12516fe2440a22c42951e1aa6845c99693aebaff0e"
+    },
+    "results/prxy0-check/metrics.json": {
+      "size_bytes": 57764,
+      "sha256": "ec891d68fac0b8c3f57e9c35597514b2768758fa0ba1da5294cb60455cc1de4e"
+    }
+  }
+}

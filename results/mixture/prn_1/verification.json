@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "verified_windows": 8,
+  "methods_per_window": 5,
+  "mixtures_reconstructed_from_parent": true,
+  "checker_fingerprint": {
+    "size_bytes": 6225,
+    "sha256": "9f0704380243fcca89fa6ce5ef8b2b0a38ddfa610d0e59e53898394093ff3e8d"
+  },
+  "metrics_fingerprint": {
+    "size_bytes": 133493,
+    "sha256": "6b3b3c3a0f6681b6a54ee0ca976dd320eef1b0583b9b6bb08488076407a7cade"
+  }
+}

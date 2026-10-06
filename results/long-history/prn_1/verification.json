@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "verified_windows": 8,
+  "methods_per_window": 5,
+  "training_medians_recomputed": true,
+  "checker_fingerprint": {
+    "size_bytes": 9469,
+    "sha256": "f34065dc8351752b785d4543c7711253ead89409b0819d6dadf59ce69c5b5745"
+  },
+  "metrics_fingerprint": {
+    "size_bytes": 134067,
+    "sha256": "f952835efa9d0a2bb79756244fc3b53563dbd5c03838af0c33892fa7e1f6dfc3"
+  }
+}
