@@ -1,0 +1,53 @@
+{
+  "workload": "prxy_1",
+  "chosen": "gate_31/current/0.7",
+  "independent_holdout": false,
+  "selective": {
+    "selected_n": 716912,
+    "coverage": 0.15762706311770955,
+    "read_first_precision": 0.9900587519807172,
+    "read_first_recall": 0.3632101950722521,
+    "selected": {
+      "n": 716912,
+      "mae_seconds": 10.337227507991349,
+      "known_n": 716281,
+      "zero_interval_n": 30,
+      "known_passes": 706872,
+      "censored_certified_passes": 630,
+      "pass_lower_bound": 0.9868742607181914,
+      "pass_upper_bound": 0.9868756555895284,
+      "meets_90_percent": true
+    },
+    "qualifies_selective": true
+  },
+  "routed_all": {
+    "n": 4548153,
+    "mae_seconds": 4.7813004652849465,
+    "known_n": 4547484,
+    "zero_interval_n": 2931,
+    "known_passes": 3128361,
+    "censored_certified_passes": 667,
+    "pass_lower_bound": 0.6879777351377582,
+    "pass_upper_bound": 0.6879781748767027,
+    "meets_90_percent": false
+  },
+  "current_all": {
+    "n": 4548153,
+    "mae_seconds": 4.7813004652849465,
+    "known_n": 4547484,
+    "zero_interval_n": 2931,
+    "known_passes": 3128361,
+    "censored_certified_passes": 667,
+    "pass_lower_bound": 0.6879777351377582,
+    "pass_upper_bound": 0.6879781748767027,
+    "meets_90_percent": false
+  },
+  "coverage": {
+    "start_event": 144152571,
+    "end_event_exclusive": 168638964,
+    "writes": 8458026,
+    "observed_targets": 4548153,
+    "right_censored": 3909873,
+    "observed_fraction": 0.5377322084372879
+  }
+}

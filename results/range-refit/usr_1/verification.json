@@ -1,0 +1,11 @@
+{
+  "workload": "usr_1",
+  "verified": true,
+  "reference_sample": 32,
+  "reference_mismatches": 0,
+  "recomputed": {
+    "original_current_pass": 0.47493923885188966,
+    "original_routed_pass": 0.47493923885188966,
+    "range_routed_pass": 0.5560247036351731
+  }
+}

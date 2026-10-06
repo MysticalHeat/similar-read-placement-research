@@ -1,0 +1,46 @@
+{
+  "workload": "prxy_1",
+  "chosen": "gate_31/current/0.5",
+  "independent_holdout": false,
+  "all_write_selective": {
+    "selected_n": 2030118,
+    "all_writes": 8458026,
+    "coverage": 0.24002267195678992,
+    "read_first_lower": 0.9622682031290792,
+    "read_first_upper": 0.9995143139462829,
+    "selected_censored": 75614,
+    "selected_observed_read": 1954220,
+    "confirmed_error_lt_overwrite_lower": 0.9578911176591706,
+    "observed_selected_mae_seconds": 6.063935791576228,
+    "qualifies": true
+  },
+  "original_observed_routed": {
+    "n": 4548153,
+    "mae_seconds": 4.7813004652849465,
+    "known_n": 4547484,
+    "zero_interval_n": 2931,
+    "known_passes": 3128361,
+    "censored_certified_passes": 667,
+    "pass_lower_bound": 0.6879777351377582,
+    "pass_upper_bound": 0.6879781748767027,
+    "meets_90_percent": false
+  },
+  "original_observed_current": {
+    "n": 4548153,
+    "mae_seconds": 4.7813004652849465,
+    "known_n": 4547484,
+    "zero_interval_n": 2931,
+    "known_passes": 3128361,
+    "censored_certified_passes": 667,
+    "pass_lower_bound": 0.6879777351377582,
+    "pass_upper_bound": 0.6879781748767027,
+    "meets_90_percent": false
+  },
+  "outcomes": {
+    "all_writes": 8458026,
+    "read_first": 1954199,
+    "write_first": 6398319,
+    "censored": 105508,
+    "observed_reads": 4548153
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "workload": "prxy_1",
+  "known_read_first_selected": 1953034,
+  "known_read_first_recall": 0.9994038478169316,
+  "selected_write_request_bytes_fraction": 0.4013751070480576,
+  "zero_prediction_observed_mae_seconds": 55.703895095664,
+  "zero_prediction_certified_pass_lower": 0.9987379180454707
+}

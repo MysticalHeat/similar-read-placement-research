@@ -1,0 +1,11 @@
+{
+  "workload": "prxy_1",
+  "verified": true,
+  "reference_sample": 32,
+  "reference_mismatches": 0,
+  "recomputed": {
+    "original_current_pass": 0.6879777351377582,
+    "original_routed_pass": 0.6879777351377582,
+    "range_routed_pass": 0.687795605221226
+  }
+}

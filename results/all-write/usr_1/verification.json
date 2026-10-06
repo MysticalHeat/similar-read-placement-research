@@ -1,0 +1,11 @@
+{
+  "workload": "usr_1",
+  "all_write_rows": 2058990,
+  "validation_combinations_recounted": 42,
+  "day7_all_writes_recounted": 791213,
+  "original_cohort_preserved": true,
+  "source_feature_and_next_event_samples": 64,
+  "frozen_prediction_samples": 64,
+  "new_fits": 0,
+  "independent_holdout": false
+}

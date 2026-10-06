@@ -1,0 +1,8 @@
+{
+  "workload": "usr_1",
+  "validation_combinations_recounted": 42,
+  "all_write_day7_rows": 791213,
+  "planned_deadline_and_prediction_samples": 64,
+  "new_fits": 0,
+  "independent_holdout": false
+}

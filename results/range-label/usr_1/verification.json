@@ -1,0 +1,10 @@
+{
+  "workload": "usr_1",
+  "verified": true,
+  "reference_sample": 64,
+  "reference_mismatches": 0,
+  "criteria_recomputed": {
+    "old_observed_current_pass": 0.47493923885188966,
+    "range_observed_current_pass": 0.5560247036351731
+  }
+}

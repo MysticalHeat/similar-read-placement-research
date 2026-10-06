@@ -1,0 +1,90 @@
+{
+  "workload": "prxy_1",
+  "independent_holdout": false,
+  "source": {
+    "loaded_events": 168638964,
+    "first_timestamp": 128166391023873138,
+    "last_timestamp": 128172419991701745,
+    "stop_reason": "end_of_trace"
+  },
+  "slice": {
+    "begin_event": 144152571,
+    "end_event": 168638964,
+    "end_timestamp": 128172419991701745,
+    "block": 512,
+    "regions": 16
+  },
+  "old_outcomes": {
+    "read_first": 1954199,
+    "write_first": 6398319,
+    "censored": 105508,
+    "all_writes": 8458026
+  },
+  "range_outcomes": {
+    "read_first": 1954740,
+    "write_first": 6407430,
+    "censored": 95856,
+    "all_writes": 8458026
+  },
+  "state_transitions": {
+    "old-1_new-1": 95856,
+    "old-1_new0": 9645,
+    "old-1_new1": 7,
+    "old0_new-1": 0,
+    "old0_new0": 6397775,
+    "old0_new1": 544,
+    "old1_new-1": 0,
+    "old1_new0": 10,
+    "old1_new1": 1954189
+  },
+  "changed": {
+    "read_match_changed": 618191,
+    "read_match_changed_bytes": 34065868800,
+    "overwrite_match_changed": 144480,
+    "overwrite_match_changed_bytes": 2972865536,
+    "total_write_request_bytes": 116008008704
+  },
+  "partiality": {
+    "matched_reads": 4549353,
+    "matched_read_categories": {
+      "0": 3931142,
+      "1": 15,
+      "2": 5,
+      "3": 493622,
+      "4": 18,
+      "5": 124551
+    },
+    "read_first_with_intersecting_overwrite": 1954075,
+    "partial_overwrite_of_read_first": 11
+  },
+  "criteria": {
+    "old_observed_n": 4548153,
+    "old_observed_current_pass": 0.6879777351377582,
+    "old_observed_zero_pass": 0.42966804326943264,
+    "range_observed_n": 4549353,
+    "range_observed_current_pass": 0.687795605221226,
+    "range_observed_zero_pass": 0.42967428555225323,
+    "both_observed_n": 4548153,
+    "both_current_pass_old_target": 0.6879777351377582,
+    "both_current_pass_new_target": 0.6879753165735629,
+    "both_zero_pass_old_target": 0.42966804326943264,
+    "both_zero_pass_new_target": 0.4297861131760519,
+    "changed_read_n": 618191,
+    "changed_current_pass_old_target": 0.9980491466229693,
+    "changed_current_pass_new_target": 0.9980539994920664,
+    "published_old_pass_lower_bound": 0.6879777351377582
+  },
+  "input_hashes": {
+    "results/all-write/prxy_1/day7.predictions.npz": "e992183d564c1ff01cb8dd9fd9b54493ea83be7bb74af2a3938114607f281f2a",
+    "results/all-write/prxy_1/diagnostic.json": "b119d5403b4b9c1048cf0de48ce16437d4516d667a20f47e59da2b3096716744",
+    "results/all-write/prxy_1/events.bin": "76727778f66aad797c8a94a95bed0d34a2e98eb430332880e0252e5cb2d55560",
+    "results/all-write/prxy_1/meta.npy": "df110866a2587273b14f5d57dc0d652209774443860eeac44a0a2247f23e0e4b",
+    "results/all-write/prxy_1/source.json": "17e597bd73c27cb175a43c766767d1fab4ada3c651141d9b0655193fd0dcdad7"
+  },
+  "code_hashes": {
+    "docs/protocols/range-label-protocol.md": "cd3156df800b153b3001cdab07052b6fc75c30d6e9437c2a5186bc870aea5482",
+    "read_prediction/checks/range_label.py": "13ec4e18d400c7e823274980e63481aea6e36d4d2f313eaabb29fbbd494fb2fc",
+    "read_prediction/experiments/range_label.py": "79edca76e001773a98d7d89c2dec730d98a93b006545d106877a2d1e4b07a8c8",
+    "read_prediction/range_label.py": "5d9f1ef3c2ea5f5b2889f33ffd7c177ddddde5b18c68369dc3f5dac8b1cc5b0d"
+  }
+}

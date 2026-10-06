@@ -1,0 +1,38 @@
+{
+  "workload": "usr_1",
+  "chosen": "raw_l1_weighted",
+  "goal": 0.9,
+  "independent_holdout": false,
+  "diagnostic_day": 7,
+  "selected": {
+    "n": 272378,
+    "mae_seconds": 12051.666866201467,
+    "known_n": 248240,
+    "zero_interval_n": 2,
+    "known_passes": 112594,
+    "censored_certified_passes": 24072,
+    "pass_lower_bound": 0.5017512427582257,
+    "pass_upper_bound": 0.5019935530769739,
+    "meets_90_percent": false
+  },
+  "current": {
+    "n": 272378,
+    "mae_seconds": 19550.098813115037,
+    "known_n": 248240,
+    "zero_interval_n": 2,
+    "known_passes": 105252,
+    "censored_certified_passes": 24111,
+    "pass_lower_bound": 0.47493923885188966,
+    "pass_upper_bound": 0.4750383658004685,
+    "meets_90_percent": false
+  },
+  "coverage": {
+    "start_event": 33593512,
+    "end_event_exclusive": 45283980,
+    "writes": 791213,
+    "observed_targets": 272378,
+    "right_censored": 518835,
+    "observed_fraction": 0.3442536965393642
+  },
+  "new_model_fits": 5
+}

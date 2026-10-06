@@ -1,0 +1,71 @@
+{
+  "n": 4548153,
+  "known_failures": 1419123,
+  "groups": {
+    "zero": {
+      "n": 2931,
+      "share_of_all_examples": 0.000644437423279296,
+      "pass_fraction": 0.0,
+      "mae_seconds": 3.319861458606765,
+      "failures": 2931,
+      "share_of_known_failures": 0.002065360085066622
+    },
+    "0_to_1ms": {
+      "n": 1269970,
+      "share_of_all_examples": 0.27922763372296405,
+      "pass_fraction": 3.937100876398655e-06,
+      "mae_seconds": 3.4853349412825625,
+      "failures": 1269965,
+      "share_of_known_failures": 0.8948942410206867
+    },
+    "1ms_to_1s": {
+      "n": 50803,
+      "share_of_all_examples": 0.011170028800702175,
+      "pass_fraction": 0.04865854378678425,
+      "mae_seconds": 3.721718280857469,
+      "failures": 48331,
+      "share_of_known_failures": 0.03405694925668881
+    },
+    "1s_to_1min": {
+      "n": 2251988,
+      "share_of_all_examples": 0.49514341316134264,
+      "pass_fraction": 0.9568332513317123,
+      "mae_seconds": 3.8761641436087952,
+      "failures": 97211,
+      "share_of_known_failures": 0.06850075715776574
+    },
+    "1min_to_1h": {
+      "n": 971787,
+      "share_of_all_examples": 0.21366629486738903,
+      "pass_fraction": 0.9992951130237387,
+      "mae_seconds": 3.864902119705472,
+      "failures": 685,
+      "share_of_known_failures": 0.00048269247979209695
+    },
+    "over_1h": {
+      "n": 5,
+      "share_of_all_examples": 1.0993473614454044e-06,
+      "pass_fraction": 1.0,
+      "mae_seconds": 37729.26485603363,
+      "failures": 0,
+      "share_of_known_failures": 0.0
+    },
+    "read_before_overwrite": {
+      "n": 1953530,
+      "share_of_all_examples": 0.42952161020088814,
+      "pass_fraction": 0.9948395980609461,
+      "mae_seconds": 3.9001191493708114,
+      "failures": 10081,
+      "share_of_known_failures": 0.007103683049319897
+    },
+    "overwrite_before_read": {
+      "n": 2593954,
+      "share_of_all_examples": 0.5703312971221505,
+      "pass_fraction": 0.45679761476109443,
+      "mae_seconds": 3.731623274424877,
+      "failures": 1409042,
+      "share_of_known_failures": 0.9928963169506801
+    }
+  },
+  "reporter_sha256": "75454d7e29063a949324b5e20e446143d7e98a0284ba944186b5807f0d57ef72"
+}

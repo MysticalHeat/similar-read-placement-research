@@ -1,0 +1,38 @@
+{
+  "workload": "prxy_1",
+  "chosen": "current",
+  "goal": 0.9,
+  "independent_holdout": false,
+  "diagnostic_day": 7,
+  "selected": {
+    "n": 4548153,
+    "mae_seconds": 4.7813004652849465,
+    "known_n": 4547484,
+    "zero_interval_n": 2931,
+    "known_passes": 3128361,
+    "censored_certified_passes": 667,
+    "pass_lower_bound": 0.6879777351377582,
+    "pass_upper_bound": 0.6879781748767027,
+    "meets_90_percent": false
+  },
+  "current": {
+    "n": 4548153,
+    "mae_seconds": 4.7813004652849465,
+    "known_n": 4547484,
+    "zero_interval_n": 2931,
+    "known_passes": 3128361,
+    "censored_certified_passes": 667,
+    "pass_lower_bound": 0.6879777351377582,
+    "pass_upper_bound": 0.6879781748767027,
+    "meets_90_percent": false
+  },
+  "coverage": {
+    "start_event": 144152571,
+    "end_event_exclusive": 168638964,
+    "writes": 8458026,
+    "observed_targets": 4548153,
+    "right_censored": 3909873,
+    "observed_fraction": 0.5377322084372879
+  },
+  "new_model_fits": 4
+}

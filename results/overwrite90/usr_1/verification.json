@@ -1,0 +1,9 @@
+{
+  "workload": "usr_1",
+  "independent_holdout": false,
+  "new_fits": 0,
+  "validation_candidates_independently_recounted": 15,
+  "day7_rows_independently_recounted": 272378,
+  "causal_predictions_independently_rebuilt": 64,
+  "selection_verified": true
+}

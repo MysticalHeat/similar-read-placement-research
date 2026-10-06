@@ -1,0 +1,9 @@
+{
+  "workload": "usr_1",
+  "validation_combinations_recounted": 36,
+  "day7_rows_recounted": 272378,
+  "causal_gate_and_time_samples_rebuilt": 64,
+  "new_fits": 0,
+  "independent_holdout": false,
+  "selection_verified": true
+}

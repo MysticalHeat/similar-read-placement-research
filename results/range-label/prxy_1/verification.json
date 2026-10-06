@@ -1,0 +1,10 @@
+{
+  "workload": "prxy_1",
+  "verified": true,
+  "reference_sample": 64,
+  "reference_mismatches": 0,
+  "criteria_recomputed": {
+    "old_observed_current_pass": 0.6879777351377582,
+    "range_observed_current_pass": 0.687795605221226
+  }
+}

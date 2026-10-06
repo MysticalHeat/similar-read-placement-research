@@ -1,0 +1,8 @@
+{
+  "workload": "usr_1",
+  "known_read_first_selected": 30208,
+  "known_read_first_recall": 0.23720082919781393,
+  "selected_write_request_bytes_fraction": 0.05821942156080094,
+  "zero_prediction_observed_mae_seconds": 16057.989177255648,
+  "zero_prediction_certified_pass_lower": 0.45855154302715667
+}
