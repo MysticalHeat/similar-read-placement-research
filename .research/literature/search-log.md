@@ -68,3 +68,38 @@ User «ок» approves next documentation step, not execution. Librarian2/2Exa a
 
 ## Alternative-source discovery after approvedpivot2026-10-01
 User«да» approveddifferentcandidate/docs-only, approvednumericlimitsunchanged. Librarian3queries/5fetches budgetconsumed: Q1`Alibaba Cloud block storage trace dataset official release README block size LBA units`; Q2`SNIA IOTTA block I/O trace small dataset documented block size sector units timestamp`; Q3`Tencent cloud block storage trace dataset official release github read write offset length timestamp`; ExanumResults8, reports8snippets/query(nofullpaperreading), nofilters. FetchedAlibabaofficialREADME, IOTTAhistoricalalllisting, cacheMonREADME, S3indexJS-only(noobjectlistreadable), guessedCloudPhysicsprefixXMLKeyCount0(noactualfileabsenceproof). Threefamilycountagentgrouping(IOTTA+curatorgrouped), not systematicdenominator. Metadata-onlynogatepass; no sourcebytes. Orchestratorverification4fetches separately: sameAlibaba/cacheMonREADME, S3correctlinkedMSRprefix andTencentprefix XML(exactURLs/resultpairsin note); sizes>100MiBresolvedforspecificprefixes. S021officialdoc/S022catalog/S024curatordoc/S025–S026objectmetadataretained; S023snippetleadreservedUNVERIFIED; no duplicateDOI/arXiv orsameverifiedtitle, subordinateS3metadata not independentdatasets. C030/C031/C033–C036narrowed; C032globalabsence notpromoted. Fulltrailfailures/constraintsin alternative-read-source-discovery-2026-10-01.md+verificationsection. No furthersearch/runtime; source-routeoptionspreparednotapproved.
+
+## Conference Related Work expansion — learned storage/future-access prediction, 2026-10-07
+Owner librarian; sole new artifact conference-related-work-expansion-2026-10-07.md. Purpose: add 2–4 genuinely close refs to the English IACGN manuscript (Write→next matching Read issue-time / censoring / overwrite tolerance on MSR proj_1/prn_1), NOT a general survey. Budget consumed: 4 websearch attempts (hosted Exa, no filters), 10 fetches, public topic terms only; no shell/download/parser/execution.
+
+Queries: Q1 `learned prefetching disk block read prediction storage neural network 2026` (8 results); Q2 `predict next access time storage workload trace machine learning regression` (8); Q3 `"Learning I/O Access Patterns to Improve Prefetching in SSDs"` (8); Q4 `learning memory access patterns prefetcher CPU Hashemi neural network` FAILED HTTP 429 (no retry within budget, 0 results).
+
+Fetches: F1 doi.org/10.1145→ACM 403; F2 arxiv.org/abs/2007.15859 success (S031 metadata/abstract); F3 MLSys 2021 PDF raw bytes unreadable; F4 proceedings.mlr.press/v80/hashemi18a.html success (S008 refresh); F5 link.springer.com chapter JS challenge; F6 MLSys 2021 Abstract.html success (Zhou&Maas metadata/abstract); F7 par.nsf.gov/biblio/10187652 success (S030 official-repository record/abstract); F8 MLSys PDF format=text raw bytes unreadable (2nd attempt); F9 arxiv.org/html/2007.15859v1 success (S031 full text read); F10 dblp.org/rec/conf/pkdd/ChakraborttiiL20.html Anubis JS challenge.
+
+Screening (max5): include S030 Chakraborttii&Litz2020 (closest learned SSD block-access prediction); S031 Li&Gu2020 (learned forward-reuse-distance, same 13 MSR traces incl. proj/prn; full text readable); S008 refresh Hashemi2018 (foundational; CPU memory explicitly not disk). Exclude/deprioritize: Zhou&Maas MLSys2021 (direct time-to-next-access lead but full text unreadable this session; official abstract verified, time detail provider-extracted only — documented near-miss, not selected); GFPP2026 + streaming-ML 2025/26 (file-system offset/hotness, not seconds-to-next-access). Dedup: S030 is the paper previously reserved as unresolved lead S006 (same title/candidate DOI/author copy); never catalogued — orchestrator should promote S006 or record S030 and mark S006 superseded, not both. S031 is new; S008 refresh adds no ID.
+
+Selected records: S030 Chakraborttii&Litz, "Learning I/O Access Patterns to Improve Prefetching in SSDs", 2020; NSF PAR accepted manuscript; title/authors/year+abstract verified, venue string `ICML-PKDD` on NSF PAR, exact ECML/PKDD/LNCS12460/pages427–443 and DOI 10.1007/978-3-030-67667-4_26 UNVERIFIED (search leads; ACM403/Springer+DBLP blocked); body details provider-extracted, not quoted. S031 Li&Gu, "Learning Forward Reuse Distance", arXiv:2007.15859v1 (2020), DOI10.48550/arXiv.2007.15859, preprint/no venue; full-text verified: abstract "predict future data accesses"; §I "Forward reuse distance just foresees the future access time"; §VI-C traces from Narayanan et al.; Table II lists proj and prn. S008 refresh Hashemi et al., ICML2018 PMLR80:1919–1928 verified, abstract "learning memory access patterns … memory prefetchers".
+
+Limitations: bounded exploratory, not systematic or exhaustive; one provider 429; ACM/Springer/DBLP bibliographic routes blocked; S030 abstract-level with UNVERIFIED venue/pages/DOI and provider-extracted body; S031 preprint full text. No performance figures imported, no experiments proposed, no global C-IDs assigned. Artifacts/notes: conference-related-work-expansion-2026-10-07.md; papers.jsonl/claim map/manuscript NOT modified.
+
+### Orchestrator integration / targeted primary verification — 2026-10-07
+
+Four extra exact-URL fetches, no new web queries, all successful:
+1. https://api.crossref.org/works/10.1007%2F978-3-030-67667-4_26 — publisher-deposited
+   title/byline/pages427–443/DOI/publication2021; conference2020 assertions.
+2. https://arxiv.org/html/2007.15859v1 — S031 full HTML delivered with truncated
+   tail, inspected relevant §§I/III/IV/V/VI-C/TableII. Count-based target, not seconds;
+   families proj/prn not certification of identical proj_1/prn_1 files.
+3. https://arxiv.org/abs/2304.03864 — S007 title/sevenauthors/v2/2023/abstract graph
+   delta-stream/GNN prefetching; arXiv DOI, reported IJCNN acceptance not publisher check.
+4. https://par.nsf.gov/biblio/10187652-learning-access-patterns-improve-prefetching-ssds
+   — abstract narrow SSD neural prefetching/sparse spaces/timeliness support.
+
+Canonical final selection: promote reserved S006 instead of proposed duplicate S030;
+S031 new; S007 refreshed. S030 remains unassigned proposal alias. S008 CPU memory
+omitted to keep three storage-focused additions. Total manuscript references6.
+S006 NSF2020/ICML-PKDD metadata disagreement retained; cite Crossref publication2021
+and actual book title. Search-log F1 shorthand differs from expansion-note F1
+specific URL; original attempt not reconstructed, original records retained rather
+than silently reconciled. No scientific claim depends on that failed request.
+Current support C053–C055 in claims/conference-evidence-map-2026-10-07.md.

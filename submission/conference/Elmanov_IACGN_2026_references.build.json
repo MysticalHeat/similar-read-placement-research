@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-10-07T06:10:58.183841+00:00",
+  "source": ".research/writing/conference-article-2026-10-07.md",
+  "source_sha256": "83661f65c6f9e22572a93e5869740f031b469933ec7acf8c1c2fc17c243f8888",
+  "template_local": "c2feffd4-7038-4707-ac0c-180520464337.docx",
+  "template_sha256": "ab44acfcdff6c0218e727669c5274698fe3b01a54517e90e3b4b008368c05bb1",
+  "script_sha256": "e7e1dae944362dcaee1d0f50846293d9b3fc160d667026ecc890f09d8d5c118e",
+  "docx": "Elmanov_IACGN_2026_references.docx",
+  "docx_sha256": "16fb79942d5ea90f1c540f62a726bfed50560dc4cd4271785b108e1a8c9b4025",
+  "approx_word_count_including_tables": 2164,
+  "abstract_words": 87,
+  "paper": "Letter portrait",
+  "margins_inch": {
+    "top": 0.75,
+    "bottom": 1,
+    "left": 0.625,
+    "right": 0.625
+  },
+  "body_columns": 2,
+  "column_width_inch": 3.5,
+  "column_gap_inch": 0.25,
+  "font": "Times (locally resolves to Nimbus Roman; template permits Times)",
+  "body_pt": 10,
+  "body_exact_line_pt": 12,
+  "header_footer_page_numbers": false,
+  "template_normalizations": [
+    "Geometry follows visible instructions, not contradictory landscape attribute",
+    "Named styles use Times as explicitly allowed",
+    "No template sample text/figures/headers/footers retained"
+  ],
+  "pending": [
+    "PDF render/page-fit check",
+    "Declarations and final author submission approval"
+  ]
+}

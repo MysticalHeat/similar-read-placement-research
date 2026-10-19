@@ -1,6 +1,6 @@
 # Claim-to-evidence map
 
-Status: FINITE SYNTHETIC RESULTS E004/E005 OBSERVED AND INDEPENDENTLY REVIEWED, updated 2026-10-02 — E001 structural audit and B001 failure preserved. No real-read/SSD efficacy result.
+Status: HISTORICAL SYNTHETIC RESULTS PRESERVED; CURRENT EMPIRICAL SUBMISSION AND RELATED-WORK CONFERENCE MAP UPDATED 2026-10-07. Current C042–C055/S029/S006/S007/S031 are in conference-evidence-map-2026-10-07.md; real next-read development results exist, but no SSD efficacy result. Historical rows below remain bounded to their original stages.
 Metadata verified != exact support verified. Confidence is qualitative with a
 reason, not a synthetic score. Keep unsupported claims visible as UNVERIFIED.
 

@@ -1,5 +1,16 @@
 # Research brief
 
+## Current conference handoff — 2026-10-07
+
+User requests English IACGN article from current submission/ empirical MSR
+next-read results, not historical synthetic draft below. User supplied CFP and
+approved local document processing, bounded mean-vs90% focus and affiliation
+placeholder. Author Elmanov Ilia, Master's student, ilyaelmanov@gmail.com.
+Three-page Word/PDF: submission/conference/Elmanov_IACGN_2026_final.{docx,pdf}.
+Evidence/citation/document checks complete; author fields/declarations/final
+approval pending. Current C042–C052 map/reviews supersede historical absence
+of real results, without new research runs or SSD benefit claims. History below.
+
 Status: DRAFT — пользовательский контекст записан 2026-09-30; неизвестные параметры не являются допущениями.
 - Topic/motivation: Объект — SSD; предмет — методы оптимизации чтения данных. Цель пользователя — исследовать возможность улучшения производительности через предсказание следующей читаемой страницы и предварительное размещение будущих читаемых страниц для использования параллелизма.
 - Уточнение мотивации 2026-09-30: пользователь подтвердил labels hot/warm/cold ПО ЧТЕНИЯМ и прогноз БУДУЩЕЙ категории; группировка предназначена для использования в том числе параллелизма SSD. Это выбранное концептуальное направление, не точный next-read address. Горизонт, количественный критерий/thresholds, physical mapping и class-specific actions UNKNOWN; первоначальная формулировка сохранена как история.

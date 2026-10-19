@@ -1,0 +1,74 @@
+{
+  "scope": "Document consistency, formatting and copied numbers ONLY; no experimental rerun or raw-result integrity audit",
+  "passed": true,
+  "docx_sha256": "e313df34a7903f730a95466816aa8e9cc2522f1d285882892bc291edb61b6a3e",
+  "pdf_sha256": "601493584ae722d48fb387604d12dc4b779dcc5aa2a0894feb5dd327736b5636",
+  "pdf_pages": 3,
+  "docx_table_count": 3,
+  "all_tables_four_data_rows": true,
+  "body_font_times_pt": 10,
+  "body_exact_line_pt": 12,
+  "title_single_column_body_double_column": true,
+  "pdf_font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+NimbusRoman-Regular           Type 1            Builtin          yes yes yes    279  0\nCAAAAA+NimbusRoman-BoldItalic        Type 1            Builtin          yes yes yes    269  0\nDAAAAA+NimbusRoman-Bold              Type 1            Builtin          yes yes yes    264  0\nEAAAAA+NimbusRoman-Italic            Type 1            Builtin          yes yes yes    274  0\nFAAAAA+LiberationSerif-Italic        TrueType          WinAnsi          yes yes yes    259  0\nGAAAAA+LiberationSerif               TrueType          WinAnsi          yes yes yes    254  0\nHAAAAA+OpenSymbol                    TrueType          WinAnsi          yes yes yes    284  0\n",
+  "pdfinfo": "Creator:         Writer\nProducer:        LibreOffice 26.2.6.3 (X86_64)\nCreationDate:    Wed Oct  7 14:44:59 2026 KST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           3\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       130557 bytes\nOptimized:       no\nPDF version:     1.7\n",
+  "copied_pooled_values": [
+    {
+      "workload": "proj_1",
+      "rule": "same_start",
+      "values": [
+        "211,844",
+        "1,022,738",
+        "18,162.30",
+        "18,974.56",
+        "51.35–52.72%",
+        "188,375",
+        "1.3939"
+      ]
+    },
+    {
+      "workload": "proj_1",
+      "rule": "range",
+      "values": [
+        "236,034",
+        "1,022,738",
+        "17,146.95",
+        "16,275.23",
+        "45.79–47.17%",
+        "212,376",
+        "1.6227"
+      ]
+    },
+    {
+      "workload": "prn_1",
+      "rule": "same_start",
+      "values": [
+        "633,316",
+        "1,299,820",
+        "13,715.20",
+        "19,184.55",
+        "50.03–50.36%",
+        "522,581",
+        "1.3581"
+      ]
+    },
+    {
+      "workload": "prn_1",
+      "rule": "range",
+      "values": [
+        "684,054",
+        "1,299,820",
+        "13,741.74",
+        "16,475.83",
+        "46.19–46.51%",
+        "591,037",
+        "1.4644"
+      ]
+    }
+  ],
+  "source_sha256": "23550811aa9c9ef37e5cedebad8052c039862cd548d136b47240c5de45070933",
+  "full_university_affiliation_checked": true,
+  "remaining": [
+    "Author declarations/rights and final submission approval",
+    "R031 parent pass-array audit gap disclosed"
+  ]
+}

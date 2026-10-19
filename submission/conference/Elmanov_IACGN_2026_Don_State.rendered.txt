@@ -1,0 +1,174 @@
+          Predicting Next-Read Time at Write Arrival: Mean Error and
+                          Overwrite-Based Reliability
+                                               Elmanov Ilia — Master’s student
+                                Don State Technical University, Rostov-on-Don, Russia
+                                               Email: ilyaelmanov@gmail.com
+  Abstract — We examine next-Read issue-time prediction at           configuration. This limited comparison supports no novelty
+Write arrival using two MSR Cambridge workloads and two              claim.
+address-matching rules. In development evaluation, selected
+predictors satisfy mean absolute error below mean overwrite
+delay in three of four pooled comparisons, using censoring-                                   III. METHODS
+derived lower bounds. However, record-level pass fractions
+remain bounded between 45.79% and 52.72%, far below the 90%          A. Workloads and Event Definitions
+requirement. On the subset with both Read and overwrite
+observed, all four mean comparisons fail. These results                 Source records identify approximately seven days each of
+distinguish aggregate error from overwrite-based reliability; they   proj_1 and prn_1, with 23,639,742 and 11,233,411 loaded
+neither establish general learned-model superiority nor measure      events, respectively, ending at trace EOF. Requesting 168
+SSD performance.
+  Keywords — Censoring; Next-read prediction; Storage traces         hours does not certify exactly 168 observed hours or
+                                                                     uninterrupted capture.
+                                                                        The same-start screen covered 36 traces, recording eight
+                       I. INTRODUCTION                               eligible: two earlier controls and six new candidates. Range
+  Next-Read timing could inform storage policies. Predictors         confirmation covered only the six new candidates. Inspected
+at Write arrival must use available history, not future Reads.       code ranks label support within the initial 19.2 hours, not
+We evaluate prediction and error tolerance, not a deployed           subsequent-day prediction errors, with one excluded
+policy or device performance.                                        boundary-row lookahead. This does not certify historical non-
+  Our tolerance is the interval until the next matching Write.       access to later data.
+We ask whether mean absolute error (MAE) is below mean                  For a Write issued at t, target y is the next matching Read's
+overwrite delay, and whether individual errors are below their       issue timestamp minus t, in seconds. The README
+overwrite delays for at least 90% of records. Comparing              distinguishes issue Timestamp from completion-duration
+means does not establish reliability on most records, especially     ResponseTime, which label builders exclude. Thus y is issue-
+when delays vary or remain unobserved.                               to-issue, not request latency, service time or completion-to-
+  We evaluate proj_1 and prn_1 under same-start and range            completion time.
+matching. Three pooled mean comparisons succeed, none                   Same-start matching requires identical starting Offset,
+meets 90%, and four paired-cohort means fail. Undetermined           regardless of size. Range matching requires nonempty
+comparisons remain distinct from failures; no general                intersection of half-open byte ranges [offset, offset + size); an
+predictive advantage is claimed.                                     intersecting Write need not completely overwrite the query.
+                                                                     Next Read and next Write are found independently.
+                                                                     Intervening Writes do not cancel the Read target; multiple
+                      II. RELATED WORK                               Writes may share one target Read. This measures address
+   The MSR Cambridge documentation attributes the traces to          access, not necessarily consumption of the written data
+Narayanan, Donnelly and Rowstron's Write Off-Loading study           version. Equal timestamps follow source-row order; a later
+[1]. Its abstract describes one-week block-level traces from 36      row can yield a zero interval.
+enterprise volumes in a spinning-disk power-management               B. Features, Training and Selection
+setting, not a modern SSD benchmark.
+   SepBIT infers block-invalidation times and groups data with         The seven inputs are Offset, size, prior Read/Write counts,
+similar estimates to reduce write amplification in log-              time since prior Read/Write, and the most recent Read–Read
+structured storage [2]. This differs from next-Read prediction;      interval. History uses the same starting Offset even for range
+its outcomes cannot validate our predictor or equate address-        labels. Features precede the current Write's history update;
+level overwrite intervals with physical data-version lifetimes.      missing history is NaN. Equal-timestamp earlier rows can
+   LightGBM        is    a     gradient-boosted    decision-tree     contribute: “earlier” means source-row order, not strictly
+implementation [3], used alongside an address-median                 earlier timestamps. prn_1 inputs use log1p transforms.
+baseline. Features, losses and parameters follow our saved             Training uses [0, 72 hours), validation [72, 96 hours), and
+                                                                     daily evaluation windows on days 5–7. Labels require target
+Read issue before their window's exclusive end; unresolved          lies between q/N and (q + r)/N. These are censoring
+Writes are censored, not given artificial targets. Training spans   identification bounds, not confidence intervals. An upper
+72 hours versus at most 24 per evaluation window, with the          bound below 0.90 rules out the requirement within C, but says
+final boundary clipped to the recorded endpoint. Models and         nothing definitive about Writes without observed Reads.
+medians remain fixed after training; feature history updates.
+                                                                    D. Reproducibility Materials
+   Selection minimizes day-4 observed-Read validation MAE,
+breaking ties by method name, without a pass-count                     The package includes predict.py, models.json, two median
+constraint. proj_1 has three candidates per rule: log-L2, raw-      tables and four LightGBM files, with recorded sizes, hashes
+L1 and address median. prn_1 adds mixtures with log-L2              and parent paths. results.ipynb, overwrite-results.json and
+weights 0.75, 0.50 and 0.25, totaling six candidates. Earlier       linked mean-overwrite, long-history and mixture artifacts
+predictors/medians are benchmarks only, giving five evaluated       document outputs/protocols; pyproject.toml and uv.lock
+methods per proj_1 rule and eight per prn_1 rule, distinct from     provide dependency pointers. Review did not independently
+the selection pools.                                                rehash full data, audit all parent arrays or certify
+   The selected proj_1 predictors are per-address training          hardware/runtime provenance.
+medians with global-median fallback. Both selected prn_1
+predictors combine 0.25 log-L2 and 0.75 raw-L1 predictions
+                                                                                                  IV. RESULTS
+in seconds, not logarithms. Log-L2 trains on log1p target
+seconds and converts predictions back using expm1; raw-L1             For compact presentation, P-S denotes proj_1/same_start, P-
+trains on seconds. Predictions are nonnegative. Each learned        R proj_1/range, N-S prn_1/same_start and N-R prn_1/range.
+component uses 150 trees, 31 leaves, learning rate 0.05,            All tables pool days 5–7. Duration and error quantities are in
+minimum child samples 50, regularization lambda 1, seed 42          seconds; counts and ratios are dimensionless.
+and two threads, without early stopping.
+                                                                           TABLE I. OBSERVED-READ COVERAGE OF EVALUATION WRITES.
+   Current MAE selection differs from earlier maximum-
+lower-pass and pass-constrained mixture rules; historical            Key     Read-observed N            All Write N       Coverage
+selections remain preserved. Days 5–7 were already inspected         P-S          211,844                1,022,738         20.71%
+during development. Freezing the current choice does not
+                                                                     P-R          236,034                1,022,738         23.08%
+create an untouched confirmatory holdout.
+                                                                     N-S          633,316                1,299,820         48.72%
+C. Censoring-Aware Criteria
+                                                                     N-R          684,054                1,299,820         52.63%
+   Let C contain the N Writes with an observed next Read              Coverage is 20.71–23.08% for proj_1 versus 48.72–52.63%
+inside their own evaluation window, and let ei = |predictioni −     for prn_1. MAE is undefined for remaining Read-censored
+yi|. All mean comparisons use this same cohort. Partition C         records. Range matching changes both the target rule and the
+into K, with known overwrite delay Bi, and U, with                  evaluated cohort.
+unobserved overwrite delay. For i in U, let Li be the remaining
+time from Write issue to its observation boundary. Li is a                 TABLE II. MAE AND LOWER BOUND ON MEAN OVERWRITE DELAY
+                                                                                                 (SECONDS).
+lower bound, not an imputed overwrite delay.
+   The exact finite-cohort lower-bound calculation is:              Key      Predictor      MAE, s           ML, s     Mean criterion
+
+              Σ i ∈ K B i + Σ i ∈U Li                                P-S      Median        18,162.30      18,974.56      Satisfied
+        ML=                           ≤ meanC ( B ). (1)             P-R      Median        17,146.95      16,275.23   Undetermined
+                         N
+                                                                     N-S      Mixture       13,715.20      19,184.55      Satisfied
+  MAEC = Σ(i∈C) ei / N < ML therefore establishes MAEC <
+                                                                    N-R       Mixture       13,741.74      16,475.83      Satisfied
+meanC(B). If MAEC is not below ML and overwrite delays
+remain unknown, the comparison is undetermined, not                   Table II reports ML, the overwrite-mean lower bound;
+automatically failed. When all relevant overwrite delays are        “Satisfied” means MAE < ML. Three comparisons establish
+observed, the strict mean comparison is directly decidable.         MAE below the overwrite mean. P-R is undetermined: its
+Pooled values concatenate the daily records rather than             MAE exceeds the lower bound, not necessarily the actual
+averaging daily means.                                              mean. Both prn_1 rules also satisfy the mean condition on
+  Record-level reliability instead concerns the strict condition    each evaluation day, without establishing record-level
+ei < Bi. Known-delay records are decided directly, with             reliability.
+equality a failure. An unknown-delay record with ei < Li is a
+confirmed pass. Records with ei > Li can remain unresolved;
+equality ei = Li is conservatively unresolved unless strict
+boundary semantics establish Bi > Li. If q records are
+confirmed passes and r remain unresolved, the pass fraction
+       TABLE III. PASS BOUNDS AND PAIRED-COHORT CONTROL.          integrity, parent pass arrays and hardware/runtime provenance
+ Key     Pass bounds          Paired N          Paired ratio      remain incompletely verified.
+                                                                     Finally, overwrite delay here is an address-matching
+ P-S     51.35–52.72%         188,375              1.3939
+                                                                  interval, not a guaranteed lifetime of the written version. No
+ P-R     45.79–47.17%         212,376              1.6227         placement intervention, flash write amplification, throughput,
+ N-S     50.03–50.36%         522,581              1.3581         latency improvement or prediction overhead was measured.
+                                                                  Any SSD application remains a separate research goal.
+ N-R     46.19–46.51%         591,037              1.4644
+   All four upper pass bounds are below 90%, demonstrating
+failure on observed-Read records. The paired subset requires                            VII. FUTURE WORK
+both Read and overwrite observed; its ratio is paired MAE           Before accessing untouched workloads, fix matching rules,
+divided by exact paired mean overwrite delay. All four ratios     horizons, selection and both criteria. Retain Read-censored
+exceed one, failing the paired mean criterion; every saved        Writes and boundary semantics; address dependence through
+compared method also fails it. These denominators differ from     justified workload or temporal replication units, not individual
+Table II, so the findings do not contradict each other.           Writes.
+   Nor is the selected mixture universally MAE-best. On             Future work should distinguish address access from version
+pooled N-S records, raw-L1 gives 13,545.95 seconds versus         use and partial intersection from complete overwrite. An SSD
+the mixture's 13,715.20; on N-R, address median gives             placement study must separately measure device outcomes
+13,606.78 versus 13,741.74. These counterexamples do not          and inference/migration costs against baselines. Better MAE
+trigger retrospective reselection.                                or overwrite-criterion satisfaction alone does not demonstrate
+                                                                  storage benefit.
+                       V. INTERPRETATION
+   Mean success and reliability failure coexist because means                            VIII. CONCLUSION
+aggregate errors and overwrite delays separately, whereas the       Three of four development comparisons establish MAE
+pass fraction compares each error with its own delay.             below mean overwrite delay on observed-Read records;
+Favorable means do not establish operation within individual      proj_1/range remains undetermined. Every selected predictor
+overwrite budgets.                                                fails the 90% requirement, and every selected paired-cohort
+   Removing unknown overwrite delays changes the cohort           mean comparison fails. Aggregate mean success therefore
+and both means, without invalidating either analysis. Longer      does not establish overwrite-based reliability, general learned-
+tails or observed/censored-cohort differences could explain the   prediction advantage or measured SSD speedup.
+contrast; these summaries establish neither mechanism.
+   Range matching changes endpoint meaning: partial
+intersection can shorten a budget without replacing all bytes;                              REFERENCES
+same-start history omits intersecting accesses starting           [1] D. Narayanan, A. Donnelly, and A. Rowstron, “Write Off-
+elsewhere. These are not complete-invalidation results.                Loading: Practical Power Management for Enterprise Storage,”
+Aggregate error, censoring and individual tolerances require           in 6th USENIX Conference on File and Storage Technologies
+separate treatment before policy application.                          (FAST 08), 2008.
+                                                                  [2] Q. Wang, J. Li, P. P. C. Lee, T. Ouyang, C. Shi, and L. Huang,
+                                                                       “Separating Data via Block Invalidation Time Inference for
+                        VI. LIMITATIONS                                Write Amplification Reduction in Log-Structured Storage,” in
+                                                                       20th USENIX Conference on File and Storage Technologies
+   These two selected HDD-era traces do not represent current          (FAST 22), 2022, pp. 429–444.
+storage systems generally. Screening establishes label support,   [3] G. Ke, Q. Meng, T. Finley, T. Wang, W. Chen, W. Ma, Q. Ye,
+                                                                       and T.-Y. Liu, “LightGBM: A Highly Efficient Gradient
+not predictive validity. Writes, addresses, repeated target            Boosting Decision Tree,” in Advances in Neural Information
+Reads and adjacent days are dependent, not independent                 Processing Systems 30, 2017.
+replications. We report descriptive values and identification
+bounds without p-values or inferential confidence intervals.
+   Read censoring and unequal horizons restrict the evaluated
+cohorts. These MAEs do not identify performance on all
+Writes, including later or never-read Writes; approximate
+trace duration does not resolve this.
+   Development and changed selection preclude prospective
+confirmation. Prefix screening and earlier-row features certify
+neither historical non-access nor universal leakage freedom.
+Checker/export consistency is not replication; code-to-artifact
+

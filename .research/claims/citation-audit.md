@@ -94,3 +94,45 @@ C027/S019 independently checked at https://traces.cs.umass.edu/ Welcome section:
 | C036 | S026ListObjectsV2TencentprefixexactContentsREADME2052bytes/data137224724902bytes, IsTruncatedfalse | No objectdatafetched/actualschemaassertion |
 | C035 | Finite searchtrail+fourverificationfetches+gate/exclusionnotes | Scopednogatepass notuniversalabsence/notqualityresults |
 S023TencentSNIAparts lead snippet-only notpromoted; C032listing-globalabsence too broad notpromoted. S022librarian-onlycatalogaccessnotindependentperfileinspection. No primaryorconverteddata/quality/throughputresults. Designoptionssynthetic/local/bulk explicitlyproposed, humancheckpointpending.
+
+## Current empirical conference manuscript — 2026-10-07
+
+This later record supersedes historical no-real-result assertions only for
+current submission next-read development observations, not SSD efficacy.
+Support C042–C052/S029: conference-evidence-map-2026-10-07.md; section ledger:
+writing/conference-open-issues-2026-10-07.md. Independent reviewer:
+reviews/conference-manuscript-review-2026-10-07.md including final render/text
+follow-up. All three official-source citations freshly verified independently;
+abstract/metadata depth, not full-paper reading or replicated performance.
+
+| Current reference / claim | Identity and exact support | Verification / caveat |
+|---|---|---|
+| [1] S027; context/attribution C051 | Narayanan/Donnelly/Rowstron, Write Off-Loading, FAST08/2008; official abstract36volumes/oneweek/spinning disks; local S016 README §4 requests same citation | Fresh independent metadata/narrow support checks; no pages/DOI invented. Local attribution, not archive authentication |
+| [2] S009; related-work C052 | Official FAST22 landing/BibTeX sixauthors/fulltitle/2022/pp429–444; abstract infer BITs/group similar estimates for WA | Direct abstract context; no SepBIT performance transfer/novelty claim, officialPDF not read |
+| [3] S028; GBDTidentity C052 | Official NeurIPS2017 page eightauthors/title/Advances30; Abstract “We call our new GBDT implementation with GOSS and EFB LightGBM” | Direct exact identity sentence; reviewer wrong-www attempt retained then correctURL/R032resolved. No training-speed or current hyperparameter claim from paper |
+| C042–C044 methods | Local tar README §3 issued Timestamp/separate ResponseTime; code/protocol/config exact pointers in claimmap/static audit | Static support, no universal leakage/runtime certification. PublicREADME timed out; local cp1252 read succeeded after UTF8decodefailure |
+| C045–C048 results/negative controls | Current export/primary meanmetrics pointers in claimmap; all4cohorts/mean/passbounds/paired ratios | Independent stored consistency, no new raw joins/replication. Document verifier checks actual Word/PDF copied rounded numbers, not statistical validity |
+
+Final article3pages/two columns; development/observed-Read/dependent records;
+no SSD benefit. R031 full per-record pass-array/equality audit remains disclosed.
+Author affiliation/declarations/rights/final approval remain human pending.
+
+## Six-reference Related Work expansion — 2026-10-07
+
+Current deliverable: submission/conference/Elmanov_IACGN_2026_expanded.{docx,pdf}.
+Independent fresh source checks in reviews/conference-related-work-citation-review-2026-10-07.md,
+including concision and R033 closure; new context C053–C055 in current conference
+map. Historical three-source numbering below/above is not the current bibliography.
+
+| Current reference/claim | Exact support and identity check | Access/scope |
+|---|---|---|
+| [1] S027 | Dataset attribution/HDD-era context unchanged | Previous independent official abstract/BibTeX plus local README |
+| [2] S006/C053 | Crossref publisher deposit: title/byline/DOI/pages427–443/publication2021 and ECMLPKDDconference2020. NSF PAR10187652 abstract neural future-block prefetch/sparse spaces/timely prediction | Fresh independent metadata and narrow abstract support; no unparsed body claims. Proc.ECMLPKDD2020,2021 abbreviation preserves dates; optionalDOI retained catalog/ledger |
+| [3] S007/C054 | arXiv2304.03864v2 byline7authors/2023; Abstract weighted directed LBA-delta graph/GNN features for prefetch | Fresh independent primary abstract/version; arXivpreprint explicitly cited, not authenticated IEEE edition |
+| [4] S031/C055 | arXiv2007.15859v1 title/byline/2020; §§I/III access-count/logical-index distance, §IVLSTM, §Vcache replacement | Fresh independent relevant fullHTMLsections, tail truncated; no exhaustive reading/identical volume or performance claim |
+| [5] S009/C052 | BIT inference/grouping for WA reduction, metadata retained under Proc.FAST’22 | Prior independent official abstract/BibTeX. R033 “not predict Reads” removed: final wording compares documented objective, not exhaustive task absence |
+| [6] S028/C052 | GBDTidentity unchanged, reference renumbered | Prior independent official abstract/metadata, R032resolved |
+
+All six cited in first appearance order; no new novelty/comparative-superiority
+claim. Final empirical source regions unchanged automatically checked; document
+consistency is not replication/statistical validation. R031 remains disclosed.
