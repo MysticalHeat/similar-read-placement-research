@@ -1,9 +1,13 @@
 [project]
-name = "write-next-read"
+name = "overwrite-prediction"
 version = "0.1.0"
-description = "MSR Cambridge write-to-next-read prediction pilot"
+description = "I/O request counts until overwrite"
 requires-python = ">=3.12"
-dependencies = ["numpy>=2.0,<3", "lightgbm>=4.6,<5", "scikit-learn>=1.5,<2"]
+dependencies = [
+    "numpy==2.5.3",
+    "lightgbm==4.7.0",
+    "scipy==1.18.1",
+]
 
 [project.optional-dependencies]
 notebook = ["ipykernel>=6", "nbclient>=0.10", "nbformat>=5"]

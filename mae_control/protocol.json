@@ -1,0 +1,135 @@
+{
+  "schema": "observed-overwrite-mae-control-v1",
+  "purpose": "Comparison of direct raw-count L1 regression with simple causal baselines",
+  "target": "q = j - i, all host Read+Write events until next same-start Write, including terminal Write",
+  "scope": "Conditional benchmark on overwrites observed before each observation endpoint; not an all-Writes model-quality claim",
+  "training": {
+    "events": [
+      6000000,
+      8000000
+    ],
+    "anchors": [
+      6000000,
+      7900000
+    ],
+    "include": "observed exact targets only"
+  },
+  "validation": {
+    "events": [
+      8000000,
+      10000000
+    ],
+    "anchors": [
+      8000000,
+      9900000
+    ]
+  },
+  "evaluation": {
+    "events": [
+      10000000,
+      11000000
+    ],
+    "anchors": [
+      10000000,
+      10900000
+    ]
+  },
+  "subblocks": {
+    "validation": [
+      [
+        8000000,
+        8950000
+      ],
+      [
+        8950000,
+        9900000
+      ]
+    ],
+    "evaluation": [
+      [
+        10000000,
+        10450000
+      ],
+      [
+        10450000,
+        10900000
+      ]
+    ]
+  },
+  "extended_observation_end": {
+    "prxy_1": 12000000,
+    "prn_1": 11233411
+  },
+  "feature_order": [
+    "gap1",
+    "gap2",
+    "gap3",
+    "current_size",
+    "current_offset",
+    "past_W_100k",
+    "past_R_100k",
+    "read_age"
+  ],
+  "feature_transform": "Existing causal log1p/float32 features with missing-history NaN; only inputs are log-transformed",
+  "target_transform": "None: raw exact q, no upper clipping, no winsorization, no tail deletion",
+  "lightgbm": {
+    "objective": "regression_l1",
+    "metric": "None",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.05,
+    "num_leaves": 15,
+    "max_depth": 4,
+    "min_data_in_leaf": 100,
+    "lambda_l2": 10.0,
+    "feature_fraction": 1.0,
+    "bagging_fraction": 1.0,
+    "bagging_freq": 0,
+    "boost_from_average": true,
+    "seed": 42,
+    "num_threads": 1,
+    "deterministic": true,
+    "force_col_wise": true,
+    "verbosity": -1
+  },
+  "checkpoints": [
+    50,
+    100,
+    200
+  ],
+  "selection": "Single fixed configuration, train 200 rounds; select by observed validation MAE of rounded positive counts, ties prefer fewer rounds. Selection predates evaluation.",
+  "prediction": "Round to nearest integer and enforce minimum 1 only; no upper count cap",
+  "baselines": [
+    "previous_gap_else_observed_training_median",
+    "median_of_available_last_three_gaps_else_observed_training_median",
+    "observed_training_median"
+  ],
+  "median_history": "Use positive available gap1/gap2/gap3; ignore -1 missing; with two values average the middle pair; round positive count",
+  "distance_groups": [
+    [
+      1,
+      100
+    ],
+    [
+      101,
+      1000
+    ],
+    [
+      1001,
+      10000
+    ],
+    [
+      10001,
+      100000
+    ],
+    [
+      100001,
+      null
+    ]
+  ],
+  "short_long_boundary": 100000,
+  "internal_conditional_success": "Direct MAE must be strictly below all three baselines on pooled validation and each subblock of validation, original evaluation and extended evaluation.",
+  "reporting": "Same eligible Writes and exact-target mask for all methods in each view; show known/censored counts, MAE, median error, within-2x rate, tail errors, MAE/mean-q and distance groups",
+  "deployment": "LightGBM point predictions trained on observed overwrites only.",
+  "prior_exposure": "These traces and windows were previously inspected; this is a retrospective diagnostic.",
+  "original_protocol_sha256": "fcba77b63c46b99fe912d62de9b08d0f6de456651afd8ba63e41ef46fe528efb"
+}

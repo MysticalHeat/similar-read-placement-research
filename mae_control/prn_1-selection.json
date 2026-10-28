@@ -1,0 +1,10 @@
+{
+  "trace": "prn_1",
+  "scope": "Conditional control trained on observed overwrites; quality on censored outcomes is unknown",
+  "protocol_sha256": "3039c92325c23b4e0b1984437181deb55042ec25daed1ad06930b248e4b41553",
+  "frozen_at_utc": "2026-10-27T16:19:08.007993+00:00",
+  "rounds": 100,
+  "validation_mae": 158811.95494728998,
+  "model_sha256": "c457524091a505223678b2b7c277b4cdd059f1af2f36f938e2ee0e975f74b9ae",
+  "original_protocol_sha256": "fcba77b63c46b99fe912d62de9b08d0f6de456651afd8ba63e41ef46fe528efb"
+}

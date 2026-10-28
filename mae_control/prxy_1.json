@@ -1,0 +1,2127 @@
+{
+  "schema": "observed-overwrite-mae-control-result-v1",
+  "trace": "prxy_1",
+  "scope": "Conditional control trained on observed overwrites; quality on censored outcomes is unknown",
+  "protocol_sha256": "3039c92325c23b4e0b1984437181deb55042ec25daed1ad06930b248e4b41553",
+  "selection": {
+    "trace": "prxy_1",
+    "scope": "Conditional control trained on observed overwrites; quality on censored outcomes is unknown",
+    "protocol_sha256": "3039c92325c23b4e0b1984437181deb55042ec25daed1ad06930b248e4b41553",
+    "frozen_at_utc": "2026-10-27T16:18:39.095092+00:00",
+    "rounds": 200,
+    "validation_mae": 2208.1522957748466,
+    "model_sha256": "2fa557d523cd59b824e32d2b32589cfe575e3444f3d178d743e87388ffa04f6f",
+    "original_protocol_sha256": "fcba77b63c46b99fe912d62de9b08d0f6de456651afd8ba63e41ef46fe528efb"
+  },
+  "training": {
+    "total_writes": 654418,
+    "observed_count": 637706,
+    "censored_count": 16712,
+    "observed_fraction": 0.9744628051184411,
+    "target_min": 1.0,
+    "target_max": 1800728.0,
+    "target_median": 1965.0,
+    "target_mean": 16946.696999871416
+  },
+  "runtime": {
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.3"
+  },
+  "dataset_params": {
+    "max_bin": 63,
+    "bin_construct_sample_cnt": 200000,
+    "data_random_seed": 42,
+    "min_data_in_bin": 3,
+    "feature_pre_filter": false,
+    "enable_bundle": false,
+    "is_enable_sparse": false,
+    "use_missing": true,
+    "zero_as_missing": false
+  },
+  "train_params": {
+    "max_bin": 63,
+    "bin_construct_sample_cnt": 200000,
+    "data_random_seed": 42,
+    "min_data_in_bin": 3,
+    "feature_pre_filter": false,
+    "enable_bundle": false,
+    "is_enable_sparse": false,
+    "use_missing": true,
+    "zero_as_missing": false,
+    "objective": "regression_l1",
+    "metric": "None",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.05,
+    "num_leaves": 15,
+    "max_depth": 4,
+    "min_data_in_leaf": 100,
+    "lambda_l2": 10.0,
+    "feature_fraction": 1.0,
+    "bagging_fraction": 1.0,
+    "bagging_freq": 0,
+    "boost_from_average": true,
+    "seed": 42,
+    "num_threads": 1,
+    "deterministic": true,
+    "force_col_wise": true,
+    "verbosity": -1
+  },
+  "candidates": [
+    {
+      "rounds": 50,
+      "validation_mae": 7446.0938510312535
+    },
+    {
+      "rounds": 100,
+      "validation_mae": 4106.762845416208
+    },
+    {
+      "rounds": 200,
+      "validation_mae": 2208.1522957748466
+    }
+  ],
+  "followup": {
+    "trace": "prxy_1",
+    "source": "/home/nomli/workspace/bdss_lab/research1_legacy_2026-10-27/results/all-write/prxy_1/events.bin",
+    "events": [
+      11000000,
+      12000000
+    ],
+    "prefix_sha256": "58274611e15cd7c9075df2f1fd718c0f737d043cab0bea2beb7d1c9690a311e2",
+    "sha256": "f9db40737abe2bb3f8c0e01442ae905034e05e6af5cac62c28ac64d81c36bfbb",
+    "bytes": 32000000
+  },
+  "windows": {
+    "validation": {
+      "observation_end": 10000000,
+      "methods": {
+        "direct_mae": {
+          "observed_count": 638107,
+          "censored_count": 16650,
+          "mae": 2208.1522957748466,
+          "median_absolute_error": 156.0,
+          "within_factor_2": 0.852368019783516,
+          "observed_fraction": 0.9745707186024739,
+          "actual_mean": 16561.312981992047,
+          "actual_median": 1816.0,
+          "mae_over_actual_mean": 0.1333319585334739,
+          "p99_absolute_error": 14249.339999999385,
+          "max_prediction": 1605693.0,
+          "top_1_percent_error_share": 0.5379640463023411
+        },
+        "previous_gap": {
+          "observed_count": 638107,
+          "censored_count": 16650,
+          "mae": 6619.811294970906,
+          "median_absolute_error": 2767.0,
+          "within_factor_2": 0.25614983067103164,
+          "observed_fraction": 0.9745707186024739,
+          "actual_mean": 16561.312981992047,
+          "actual_median": 1816.0,
+          "mae_over_actual_mean": 0.39971536690170406,
+          "p99_absolute_error": 20472.0,
+          "max_prediction": 9387325.0,
+          "top_1_percent_error_share": 0.18542276542424285
+        },
+        "median_three_gaps": {
+          "observed_count": 638107,
+          "censored_count": 16650,
+          "mae": 4210.781226346052,
+          "median_absolute_error": 1480.0,
+          "within_factor_2": 0.36427589730249005,
+          "observed_fraction": 0.9745707186024739,
+          "actual_mean": 16561.312981992047,
+          "actual_median": 1816.0,
+          "mae_over_actual_mean": 0.2542540697663674,
+          "p99_absolute_error": 19077.939999999944,
+          "max_prediction": 9387325.0,
+          "top_1_percent_error_share": 0.18583628278234027
+        },
+        "training_median": {
+          "observed_count": 638107,
+          "censored_count": 16650,
+          "mae": 16494.11727813674,
+          "median_absolute_error": 1964.0,
+          "within_factor_2": 0.0717434536841,
+          "observed_fraction": 0.9745707186024739,
+          "actual_mean": 16561.312981992047,
+          "actual_median": 1816.0,
+          "mae_over_actual_mean": 0.9959426101101783,
+          "p99_absolute_error": 39836.57999999961,
+          "max_prediction": 1965.0,
+          "top_1_percent_error_share": 0.5951636080909042
+        }
+      },
+      "subblocks": [
+        {
+          "anchors": [
+            8000000,
+            8950000
+          ],
+          "methods": {
+            "direct_mae": {
+              "observed_count": 321125,
+              "censored_count": 6372,
+              "mae": 2604.237356169716,
+              "median_absolute_error": 166.0,
+              "within_factor_2": 0.8548758271701051,
+              "observed_fraction": 0.980543333221373,
+              "actual_mean": 25744.709558583105,
+              "actual_median": 2223.0,
+              "mae_over_actual_mean": 0.10115621426000829,
+              "p99_absolute_error": 15876.080000000075,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.5880398704069228
+            },
+            "previous_gap": {
+              "observed_count": 321125,
+              "censored_count": 6372,
+              "mae": 7147.6984507590505,
+              "median_absolute_error": 2975.0,
+              "within_factor_2": 0.26056520046710785,
+              "observed_fraction": 0.980543333221373,
+              "actual_mean": 25744.709558583105,
+              "actual_median": 2223.0,
+              "mae_over_actual_mean": 0.27763756411755897,
+              "p99_absolute_error": 20680.0,
+              "max_prediction": 8716057.0,
+              "top_1_percent_error_share": 0.2470474397785446
+            },
+            "median_three_gaps": {
+              "observed_count": 321125,
+              "censored_count": 6372,
+              "mae": 4472.5991810042815,
+              "median_absolute_error": 1548.0,
+              "within_factor_2": 0.37057532113662905,
+              "observed_fraction": 0.980543333221373,
+              "actual_mean": 25744.709558583105,
+              "actual_median": 2223.0,
+              "mae_over_actual_mean": 0.17372886537432886,
+              "p99_absolute_error": 19101.0,
+              "max_prediction": 8716057.0,
+              "top_1_percent_error_share": 0.2257825732317687
+            },
+            "training_median": {
+              "observed_count": 321125,
+              "censored_count": 6372,
+              "mae": 25657.04171272869,
+              "median_absolute_error": 1964.0,
+              "within_factor_2": 0.06999143635655897,
+              "observed_fraction": 0.980543333221373,
+              "actual_mean": 25744.709558583105,
+              "actual_median": 2223.0,
+              "mae_over_actual_mean": 0.9965947238342339,
+              "p99_absolute_error": 1606905.76,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.6286817383568526
+            }
+          }
+        },
+        {
+          "anchors": [
+            8950000,
+            9900000
+          ],
+          "methods": {
+            "direct_mae": {
+              "observed_count": 316982,
+              "censored_count": 10278,
+              "mae": 1806.8903470859543,
+              "median_absolute_error": 145.0,
+              "within_factor_2": 0.849827434996309,
+              "observed_fraction": 0.9685937786469474,
+              "actual_mean": 7257.888100901629,
+              "actual_median": 1455.0,
+              "mae_over_actual_mean": 0.24895538784367438,
+              "p99_absolute_error": 12455.330000000016,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.4638840488432513
+            },
+            "previous_gap": {
+              "observed_count": 316982,
+              "censored_count": 10278,
+              "mae": 6085.024578682701,
+              "median_absolute_error": 2566.0,
+              "within_factor_2": 0.25167675136127604,
+              "observed_fraction": 0.9685937786469474,
+              "actual_mean": 7257.888100901629,
+              "actual_median": 1455.0,
+              "mae_over_actual_mean": 0.8384015424441131,
+              "p99_absolute_error": 20331.0,
+              "max_prediction": 9387325.0,
+              "top_1_percent_error_share": 0.11206455515101597
+            },
+            "median_three_gaps": {
+              "observed_count": 316982,
+              "censored_count": 10278,
+              "mae": 3945.541273636989,
+              "median_absolute_error": 1422.0,
+              "within_factor_2": 0.35789413909938106,
+              "observed_fraction": 0.9685937786469474,
+              "actual_mean": 7257.888100901629,
+              "actual_median": 1455.0,
+              "mae_over_actual_mean": 0.5436211221204753,
+              "p99_absolute_error": 19062.0,
+              "max_prediction": 9387325.0,
+              "top_1_percent_error_share": 0.139961517322148
+            },
+            "training_median": {
+              "observed_count": 316982,
+              "censored_count": 10278,
+              "mae": 7211.432112864453,
+              "median_absolute_error": 1964.0,
+              "within_factor_2": 0.07351837012827227,
+              "observed_fraction": 0.9685937786469474,
+              "actual_mean": 7257.888100901629,
+              "actual_median": 1455.0,
+              "mae_over_actual_mean": 0.9935992416263066,
+              "p99_absolute_error": 21446.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.0911487611149579
+            }
+          }
+        }
+      ],
+      "distance_groups": [
+        {
+          "range": [
+            1,
+            100
+          ],
+          "observed_count": 300258,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 300258,
+              "censored_count": 0,
+              "mae": 12.088710375743528,
+              "median_absolute_error": 1.0,
+              "within_factor_2": 0.8511180384869013,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.016469169847265,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 1.7229050799074024,
+              "p99_absolute_error": 21.0,
+              "max_prediction": 10826.0,
+              "top_1_percent_error_share": 0.8195403958198567
+            },
+            "previous_gap": {
+              "observed_count": 300258,
+              "censored_count": 0,
+              "mae": 1747.5518887090436,
+              "median_absolute_error": 17.0,
+              "within_factor_2": 0.07620779462995157,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.016469169847265,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 249.06428666700526,
+              "p99_absolute_error": 13337.0,
+              "max_prediction": 20917.0,
+              "top_1_percent_error_share": 0.08367727418334057
+            },
+            "median_three_gaps": {
+              "observed_count": 300258,
+              "censored_count": 0,
+              "mae": 1664.0313796801418,
+              "median_absolute_error": 14.0,
+              "within_factor_2": 0.11378547782240607,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.016469169847265,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 237.16079118984635,
+              "p99_absolute_error": 12584.429999999993,
+              "max_prediction": 15201.0,
+              "top_1_percent_error_share": 0.08025966017278396
+            },
+            "training_median": {
+              "observed_count": 300258,
+              "censored_count": 0,
+              "mae": 1957.9835308301526,
+              "median_absolute_error": 1962.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.016469169847265,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 279.05538860548774,
+              "p99_absolute_error": 1964.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.010032130979696062
+            }
+          }
+        },
+        {
+          "range": [
+            101,
+            1000
+          ],
+          "observed_count": 8495,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 8495,
+              "censored_count": 0,
+              "mae": 4360.935373749265,
+              "median_absolute_error": 4135.0,
+              "within_factor_2": 0.00011771630370806356,
+              "observed_fraction": 1.0,
+              "actual_mean": 595.0114184814597,
+              "actual_median": 618.0,
+              "mae_over_actual_mean": 7.32916249721542,
+              "p99_absolute_error": 9662.899999999941,
+              "max_prediction": 204392.0,
+              "top_1_percent_error_share": 0.035632613443784406
+            },
+            "previous_gap": {
+              "observed_count": 8495,
+              "censored_count": 0,
+              "mae": 14534.95585638611,
+              "median_absolute_error": 16535.0,
+              "within_factor_2": 0.00494408475573867,
+              "observed_fraction": 1.0,
+              "actual_mean": 595.0114184814597,
+              "actual_median": 618.0,
+              "mae_over_actual_mean": 24.428028446044035,
+              "p99_absolute_error": 21396.059999999998,
+              "max_prediction": 1025331.0,
+              "top_1_percent_error_share": 0.02436169588121267
+            },
+            "median_three_gaps": {
+              "observed_count": 8495,
+              "censored_count": 0,
+              "mae": 3897.8397881106534,
+              "median_absolute_error": 3064.0,
+              "within_factor_2": 0.12713360800470866,
+              "observed_fraction": 1.0,
+              "actual_mean": 595.0114184814597,
+              "actual_median": 618.0,
+              "mae_over_actual_mean": 6.550865524662378,
+              "p99_absolute_error": 11170.719999999943,
+              "max_prediction": 1025331.0,
+              "top_1_percent_error_share": 0.07446478330355423
+            },
+            "training_median": {
+              "observed_count": 8495,
+              "censored_count": 0,
+              "mae": 1369.9885815185403,
+              "median_absolute_error": 1347.0,
+              "within_factor_2": 0.018952324896998236,
+              "observed_fraction": 1.0,
+              "actual_mean": 595.0114184814597,
+              "actual_median": 618.0,
+              "mae_over_actual_mean": 2.302457631846654,
+              "p99_absolute_error": 1851.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.013568764466015062
+            }
+          }
+        },
+        {
+          "range": [
+            1001,
+            10000
+          ],
+          "observed_count": 112555,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 112555,
+              "censored_count": 0,
+              "mae": 2169.7235040646797,
+              "median_absolute_error": 1728.0,
+              "within_factor_2": 0.7757629603305051,
+              "observed_fraction": 1.0,
+              "actual_mean": 4972.98362578295,
+              "actual_median": 4628.0,
+              "mae_over_actual_mean": 0.43630216130524196,
+              "p99_absolute_error": 8473.29999999996,
+              "max_prediction": 1285194.0,
+              "top_1_percent_error_share": 0.09373835763827519
+            },
+            "previous_gap": {
+              "observed_count": 112555,
+              "censored_count": 0,
+              "mae": 9484.168317711341,
+              "median_absolute_error": 9494.0,
+              "within_factor_2": 0.20400692994536004,
+              "observed_fraction": 1.0,
+              "actual_mean": 4972.98362578295,
+              "actual_median": 4628.0,
+              "mae_over_actual_mean": 1.9071384567887344,
+              "p99_absolute_error": 18256.459999999992,
+              "max_prediction": 1053028.0,
+              "top_1_percent_error_share": 0.02944147614082191
+            },
+            "median_three_gaps": {
+              "observed_count": 112555,
+              "censored_count": 0,
+              "mae": 2902.333596908178,
+              "median_absolute_error": 2243.0,
+              "within_factor_2": 0.6397405712762649,
+              "observed_fraction": 1.0,
+              "actual_mean": 4972.98362578295,
+              "actual_median": 4628.0,
+              "mae_over_actual_mean": 0.5836201796162626,
+              "p99_absolute_error": 11705.379999999976,
+              "max_prediction": 1945939.0,
+              "top_1_percent_error_share": 0.07149913277886388
+            },
+            "training_median": {
+              "observed_count": 112555,
+              "censored_count": 0,
+              "mae": 3113.9377104526675,
+              "median_absolute_error": 2663.0,
+              "within_factor_2": 0.40530407356403536,
+              "observed_fraction": 1.0,
+              "actual_mean": 4972.98362578295,
+              "actual_median": 4628.0,
+              "mae_over_actual_mean": 0.6261709156467224,
+              "p99_absolute_error": 7931.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.025665924900711436
+            }
+          }
+        },
+        {
+          "range": [
+            10001,
+            100000
+          ],
+          "observed_count": 212101,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 212101,
+              "censored_count": 0,
+              "mae": 3150.211413430394,
+              "median_absolute_error": 1016.0,
+              "within_factor_2": 0.9292742608474265,
+              "observed_fraction": 1.0,
+              "actual_mean": 18050.80331068689,
+              "actual_median": 18377.0,
+              "mae_over_actual_mean": 0.17451918118044787,
+              "p99_absolute_error": 39607.0,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.379139288485375
+            },
+            "previous_gap": {
+              "observed_count": 212101,
+              "censored_count": 0,
+              "mae": 9077.337197844423,
+              "median_absolute_error": 6198.0,
+              "within_factor_2": 0.5352308569973739,
+              "observed_fraction": 1.0,
+              "actual_mean": 18050.80331068689,
+              "actual_median": 18377.0,
+              "mae_over_actual_mean": 0.5028771873255209,
+              "p99_absolute_error": 26050.0,
+              "max_prediction": 8716057.0,
+              "top_1_percent_error_share": 0.07632813711779872
+            },
+            "median_three_gaps": {
+              "observed_count": 212101,
+              "censored_count": 0,
+              "mae": 7081.507564792245,
+              "median_absolute_error": 4263.0,
+              "within_factor_2": 0.5710439837624528,
+              "observed_fraction": 1.0,
+              "actual_mean": 18050.80331068689,
+              "actual_median": 18377.0,
+              "mae_over_actual_mean": 0.3923098292583839,
+              "p99_absolute_error": 22046.0,
+              "max_prediction": 8716057.0,
+              "top_1_percent_error_share": 0.08020175909579493
+            },
+            "training_median": {
+              "observed_count": 212101,
+              "censored_count": 0,
+              "mae": 16085.80331068689,
+              "median_absolute_error": 16412.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 18050.80331068689,
+              "actual_median": 18377.0,
+              "mae_over_actual_mean": 0.8911405788330411,
+              "p99_absolute_error": 38084.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.034546033154046474
+            }
+          }
+        },
+        {
+          "range": [
+            100001,
+            null
+          ],
+          "observed_count": 4698,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 4698,
+              "censored_count": 0,
+              "mae": 97059.45913154534,
+              "median_absolute_error": 9515.0,
+              "within_factor_2": 0.8365261813537676,
+              "observed_fraction": 1.0,
+              "actual_mean": 1313835.837590464,
+              "actual_median": 1611680.5,
+              "mae_over_actual_mean": 0.07387487565383322,
+              "p99_absolute_error": 1144053.0899999987,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.1386929306514392
+            },
+            "previous_gap": {
+              "observed_count": 4698,
+              "censored_count": 0,
+              "mae": 124128.17773520647,
+              "median_absolute_error": 8278.0,
+              "within_factor_2": 0.8603661132396765,
+              "observed_fraction": 1.0,
+              "actual_mean": 1313835.837590464,
+              "actual_median": 1611680.5,
+              "mae_over_actual_mean": 0.09447769210105722,
+              "p99_absolute_error": 1610410.48,
+              "max_prediction": 5450501.0,
+              "top_1_percent_error_share": 0.1709444853348123
+            },
+            "median_three_gaps": {
+              "observed_count": 4698,
+              "censored_count": 0,
+              "mae": 69287.16453810132,
+              "median_absolute_error": 6384.5,
+              "within_factor_2": 0.867816091954023,
+              "observed_fraction": 1.0,
+              "actual_mean": 1313835.837590464,
+              "actual_median": 1611680.5,
+              "mae_over_actual_mean": 0.052736546344459546,
+              "p99_absolute_error": 1180681.46,
+              "max_prediction": 4024432.0,
+              "top_1_percent_error_share": 0.22340219495864255
+            },
+            "training_median": {
+              "observed_count": 4698,
+              "censored_count": 0,
+              "mae": 1311870.837590464,
+              "median_absolute_error": 1609715.5,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 1313835.837590464,
+              "actual_median": 1611680.5,
+              "mae_over_actual_mean": 0.9985043793571625,
+              "p99_absolute_error": 1619667.09,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.012490415330874265
+            }
+          }
+        }
+      ],
+      "short_long": {
+        "short": {
+          "observed_count": 633409,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 633409,
+              "censored_count": 0,
+              "mae": 1504.639337300228,
+              "median_absolute_error": 139.0,
+              "within_factor_2": 0.8524855188353813,
+              "observed_fraction": 1.0,
+              "actual_mean": 6939.416677060161,
+              "actual_median": 1612.0,
+              "mae_over_actual_mean": 0.21682504557971846,
+              "p99_absolute_error": 11370.360000000335,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.3601030517851082
+            },
+            "previous_gap": {
+              "observed_count": 633409,
+              "censored_count": 0,
+              "mae": 5748.25073057061,
+              "median_absolute_error": 2723.0,
+              "within_factor_2": 0.2516683533072628,
+              "observed_fraction": 1.0,
+              "actual_mean": 6939.416677060161,
+              "actual_median": 1612.0,
+              "mae_over_actual_mean": 0.8283478277897299,
+              "p99_absolute_error": 20197.0,
+              "max_prediction": 8716057.0,
+              "top_1_percent_error_share": 0.0678044960125003
+            },
+            "median_three_gaps": {
+              "observed_count": 633409,
+              "censored_count": 0,
+              "mae": 3728.109131698476,
+              "median_absolute_error": 1454.0,
+              "within_factor_2": 0.36054113534856624,
+              "observed_fraction": 1.0,
+              "actual_mean": 6939.416677060161,
+              "actual_median": 1612.0,
+              "mae_over_actual_mean": 0.537236673512141,
+              "p99_absolute_error": 18800.0,
+              "max_prediction": 8716057.0,
+              "top_1_percent_error_share": 0.0897084006449232
+            },
+            "training_median": {
+              "observed_count": 633409,
+              "censored_count": 0,
+              "mae": 6886.297003989524,
+              "median_absolute_error": 1964.0,
+              "within_factor_2": 0.07227557549703273,
+              "observed_fraction": 1.0,
+              "actual_mean": 6939.416677060161,
+              "actual_median": 1612.0,
+              "mae_over_actual_mean": 0.9923452250322081,
+              "p99_absolute_error": 21024.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.051987798287532805
+            }
+          }
+        },
+        "long": {
+          "observed_count": 4698,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 4698,
+              "censored_count": 0,
+              "mae": 97059.45913154534,
+              "median_absolute_error": 9515.0,
+              "within_factor_2": 0.8365261813537676,
+              "observed_fraction": 1.0,
+              "actual_mean": 1313835.837590464,
+              "actual_median": 1611680.5,
+              "mae_over_actual_mean": 0.07387487565383322,
+              "p99_absolute_error": 1144053.0899999987,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.1386929306514392
+            },
+            "previous_gap": {
+              "observed_count": 4698,
+              "censored_count": 0,
+              "mae": 124128.17773520647,
+              "median_absolute_error": 8278.0,
+              "within_factor_2": 0.8603661132396765,
+              "observed_fraction": 1.0,
+              "actual_mean": 1313835.837590464,
+              "actual_median": 1611680.5,
+              "mae_over_actual_mean": 0.09447769210105722,
+              "p99_absolute_error": 1610410.48,
+              "max_prediction": 5450501.0,
+              "top_1_percent_error_share": 0.1709444853348123
+            },
+            "median_three_gaps": {
+              "observed_count": 4698,
+              "censored_count": 0,
+              "mae": 69287.16453810132,
+              "median_absolute_error": 6384.5,
+              "within_factor_2": 0.867816091954023,
+              "observed_fraction": 1.0,
+              "actual_mean": 1313835.837590464,
+              "actual_median": 1611680.5,
+              "mae_over_actual_mean": 0.052736546344459546,
+              "p99_absolute_error": 1180681.46,
+              "max_prediction": 4024432.0,
+              "top_1_percent_error_share": 0.22340219495864255
+            },
+            "training_median": {
+              "observed_count": 4698,
+              "censored_count": 0,
+              "mae": 1311870.837590464,
+              "median_absolute_error": 1609715.5,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 1313835.837590464,
+              "actual_median": 1611680.5,
+              "mae_over_actual_mean": 0.9985043793571625,
+              "p99_absolute_error": 1619667.09,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.012490415330874265
+            }
+          }
+        }
+      }
+    },
+    "evaluation": {
+      "observation_end": 11000000,
+      "methods": {
+        "direct_mae": {
+          "observed_count": 301121,
+          "censored_count": 9589,
+          "mae": 1710.6069653063055,
+          "median_absolute_error": 132.0,
+          "within_factor_2": 0.8661601150368125,
+          "observed_fraction": 0.9691384248978147,
+          "actual_mean": 7201.908003759286,
+          "actual_median": 1923.0,
+          "mae_over_actual_mean": 0.2375213574532464,
+          "p99_absolute_error": 11541.799999999988,
+          "max_prediction": 1605693.0,
+          "top_1_percent_error_share": 0.45963905471655503
+        },
+        "previous_gap": {
+          "observed_count": 301121,
+          "censored_count": 9589,
+          "mae": 5933.250484024695,
+          "median_absolute_error": 3044.0,
+          "within_factor_2": 0.2457118566954812,
+          "observed_fraction": 0.9691384248978147,
+          "actual_mean": 7201.908003759286,
+          "actual_median": 1923.0,
+          "mae_over_actual_mean": 0.8238442480697655,
+          "p99_absolute_error": 20243.0,
+          "max_prediction": 9288527.0,
+          "top_1_percent_error_share": 0.10127664698305612
+        },
+        "median_three_gaps": {
+          "observed_count": 301121,
+          "censored_count": 9589,
+          "mae": 3826.443927856244,
+          "median_absolute_error": 1381.0,
+          "within_factor_2": 0.3633987666087719,
+          "observed_fraction": 0.9691384248978147,
+          "actual_mean": 7201.908003759286,
+          "actual_median": 1923.0,
+          "mae_over_actual_mean": 0.531309748174914,
+          "p99_absolute_error": 19061.79999999999,
+          "max_prediction": 9288527.0,
+          "top_1_percent_error_share": 0.13379971895743598
+        },
+        "training_median": {
+          "observed_count": 301121,
+          "censored_count": 9589,
+          "mae": 7142.563789971473,
+          "median_absolute_error": 1964.0,
+          "within_factor_2": 0.0711209115272598,
+          "observed_fraction": 0.9691384248978147,
+          "actual_mean": 7201.908003759286,
+          "actual_median": 1923.0,
+          "mae_over_actual_mean": 0.9917599317074258,
+          "p99_absolute_error": 21578.79999999999,
+          "max_prediction": 1965.0,
+          "top_1_percent_error_share": 0.08949623688627528
+        }
+      },
+      "subblocks": [
+        {
+          "anchors": [
+            10000000,
+            10450000
+          ],
+          "methods": {
+            "direct_mae": {
+              "observed_count": 149956,
+              "censored_count": 4761,
+              "mae": 1993.8164795006535,
+              "median_absolute_error": 167.0,
+              "within_factor_2": 0.8617061004561338,
+              "observed_fraction": 0.9692276866795504,
+              "actual_mean": 7362.3335711808795,
+              "actual_median": 1879.5,
+              "mae_over_actual_mean": 0.2708131138346202,
+              "p99_absolute_error": 13209.850000000151,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.47899881473551037
+            },
+            "previous_gap": {
+              "observed_count": 149956,
+              "censored_count": 4761,
+              "mae": 5976.200072021126,
+              "median_absolute_error": 3130.0,
+              "within_factor_2": 0.2538077836165275,
+              "observed_fraction": 0.9692276866795504,
+              "actual_mean": 7362.3335711808795,
+              "actual_median": 1879.5,
+              "mae_over_actual_mean": 0.8117263384281262,
+              "p99_absolute_error": 20918.45000000001,
+              "max_prediction": 7681944.0,
+              "top_1_percent_error_share": 0.11675993116006726
+            },
+            "median_three_gaps": {
+              "observed_count": 149956,
+              "censored_count": 4761,
+              "mae": 3990.901411080584,
+              "median_absolute_error": 1533.0,
+              "within_factor_2": 0.36659420096561657,
+              "observed_fraction": 0.9692276866795504,
+              "actual_mean": 7362.3335711808795,
+              "actual_median": 1879.5,
+              "mae_over_actual_mean": 0.5420701700752285,
+              "p99_absolute_error": 19458.800000000047,
+              "max_prediction": 7681944.0,
+              "top_1_percent_error_share": 0.15154024462389284
+            },
+            "training_median": {
+              "observed_count": 149956,
+              "censored_count": 4761,
+              "mae": 7305.14512923791,
+              "median_absolute_error": 1964.0,
+              "within_factor_2": 0.06409213369254982,
+              "observed_fraction": 0.9692276866795504,
+              "actual_mean": 7362.3335711808795,
+              "actual_median": 1879.5,
+              "mae_over_actual_mean": 0.992232294096694,
+              "p99_absolute_error": 22146.900000000023,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.1106815948114592
+            }
+          }
+        },
+        {
+          "anchors": [
+            10450000,
+            10900000
+          ],
+          "methods": {
+            "direct_mae": {
+              "observed_count": 151165,
+              "censored_count": 4828,
+              "mae": 1429.6625277015182,
+              "median_absolute_error": 111.0,
+              "within_factor_2": 0.8705785069295141,
+              "observed_fraction": 0.9690498932644414,
+              "actual_mean": 7042.765501273443,
+              "actual_median": 1950.0,
+              "mae_over_actual_mean": 0.20299732078868915,
+              "p99_absolute_error": 10002.359999999986,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.4310482779404011
+            },
+            "previous_gap": {
+              "observed_count": 151165,
+              "censored_count": 4828,
+              "mae": 5890.6444018125885,
+              "median_absolute_error": 2939.0,
+              "within_factor_2": 0.23768068005159926,
+              "observed_fraction": 0.9690498932644414,
+              "actual_mean": 7042.765501273443,
+              "actual_median": 1950.0,
+              "mae_over_actual_mean": 0.8364106970120568,
+              "p99_absolute_error": 19620.359999999986,
+              "max_prediction": 9288527.0,
+              "top_1_percent_error_share": 0.08527860658636016
+            },
+            "median_three_gaps": {
+              "observed_count": 151165,
+              "censored_count": 4828,
+              "mae": 3663.3017563589456,
+              "median_absolute_error": 1256.0,
+              "within_factor_2": 0.3602288889623921,
+              "observed_fraction": 0.9690498932644414,
+              "actual_mean": 7042.765501273443,
+              "actual_median": 1950.0,
+              "mae_over_actual_mean": 0.5201510338086031,
+              "p99_absolute_error": 18423.359999999986,
+              "max_prediction": 9288527.0,
+              "top_1_percent_error_share": 0.1143180383247339
+            },
+            "training_median": {
+              "observed_count": 151165,
+              "censored_count": 4828,
+              "mae": 6981.282757252009,
+              "median_absolute_error": 1964.0,
+              "within_factor_2": 0.07809347401845665,
+              "observed_fraction": 0.9690498932644414,
+              "actual_mean": 7042.765501273443,
+              "actual_median": 1950.0,
+              "mae_over_actual_mean": 0.9912700850240836,
+              "p99_absolute_error": 20734.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.06707051592744066
+            }
+          }
+        }
+      ],
+      "distance_groups": [
+        {
+          "range": [
+            1,
+            100
+          ],
+          "observed_count": 142741,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 142741,
+              "censored_count": 0,
+              "mae": 10.492325260436735,
+              "median_absolute_error": 1.0,
+              "within_factor_2": 0.8550801801864916,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.0987522856081995,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 1.4780520348214663,
+              "p99_absolute_error": 21.0,
+              "max_prediction": 8297.0,
+              "top_1_percent_error_share": 0.788093624493802
+            },
+            "previous_gap": {
+              "observed_count": 142741,
+              "censored_count": 0,
+              "mae": 1703.9382868271905,
+              "median_absolute_error": 17.0,
+              "within_factor_2": 0.07571055267932829,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.0987522856081995,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 240.03349015033314,
+              "p99_absolute_error": 12986.0,
+              "max_prediction": 21290.0,
+              "top_1_percent_error_share": 0.08186110577933056
+            },
+            "median_three_gaps": {
+              "observed_count": 142741,
+              "censored_count": 0,
+              "mae": 1637.6717341198394,
+              "median_absolute_error": 15.0,
+              "within_factor_2": 0.11282672812996966,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.0987522856081995,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 230.69853239420772,
+              "p99_absolute_error": 11614.0,
+              "max_prediction": 13975.0,
+              "top_1_percent_error_share": 0.07665783117570055
+            },
+            "training_median": {
+              "observed_count": 142741,
+              "censored_count": 0,
+              "mae": 1957.9012477143917,
+              "median_absolute_error": 1962.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.0987522856081995,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 275.80920828633265,
+              "p99_absolute_error": 1964.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.010035295673265242
+            }
+          }
+        },
+        {
+          "range": [
+            101,
+            1000
+          ],
+          "observed_count": 3734,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 3734,
+              "censored_count": 0,
+              "mae": 4479.029191215855,
+              "median_absolute_error": 4269.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 557.4689341189073,
+              "actual_median": 543.0,
+              "mae_over_actual_mean": 8.03458079380704,
+              "p99_absolute_error": 9583.01,
+              "max_prediction": 75561.0,
+              "top_1_percent_error_share": 0.038364645812674014
+            },
+            "previous_gap": {
+              "observed_count": 3734,
+              "censored_count": 0,
+              "mae": 14121.414301017676,
+              "median_absolute_error": 15682.0,
+              "within_factor_2": 0.0029459025174076057,
+              "observed_fraction": 1.0,
+              "actual_mean": 557.4689341189073,
+              "actual_median": 543.0,
+              "mae_over_actual_mean": 25.331302673102137,
+              "p99_absolute_error": 24307.02,
+              "max_prediction": 39512.0,
+              "top_1_percent_error_share": 0.018819514994691477
+            },
+            "median_three_gaps": {
+              "observed_count": 3734,
+              "censored_count": 0,
+              "mae": 3784.2841456882697,
+              "median_absolute_error": 3346.0,
+              "within_factor_2": 0.1031065881092662,
+              "observed_fraction": 1.0,
+              "actual_mean": 557.4689341189073,
+              "actual_median": 543.0,
+              "mae_over_actual_mean": 6.788331894528651,
+              "p99_absolute_error": 12420.390000000001,
+              "max_prediction": 39489.0,
+              "top_1_percent_error_share": 0.045096439146564846
+            },
+            "training_median": {
+              "observed_count": 3734,
+              "censored_count": 0,
+              "mae": 1407.5310658810927,
+              "median_absolute_error": 1422.0,
+              "within_factor_2": 0.010176754151044456,
+              "observed_fraction": 1.0,
+              "actual_mean": 557.4689341189073,
+              "actual_median": 543.0,
+              "mae_over_actual_mean": 2.5248600948602244,
+              "p99_absolute_error": 1855.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.013447631637980783
+            }
+          }
+        },
+        {
+          "range": [
+            1001,
+            10000
+          ],
+          "observed_count": 54368,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 54368,
+              "censored_count": 0,
+              "mae": 2051.1047123307826,
+              "median_absolute_error": 1631.0,
+              "within_factor_2": 0.828557239552678,
+              "observed_fraction": 1.0,
+              "actual_mean": 5005.959663772807,
+              "actual_median": 4533.5,
+              "mae_over_actual_mean": 0.40973256879679704,
+              "p99_absolute_error": 8057.290000000023,
+              "max_prediction": 1413994.0,
+              "top_1_percent_error_share": 0.10037069542039037
+            },
+            "previous_gap": {
+              "observed_count": 54368,
+              "censored_count": 0,
+              "mae": 9465.10462036492,
+              "median_absolute_error": 9483.0,
+              "within_factor_2": 0.1722336668628605,
+              "observed_fraction": 1.0,
+              "actual_mean": 5005.959663772807,
+              "actual_median": 4533.5,
+              "mae_over_actual_mean": 1.8907672566485323,
+              "p99_absolute_error": 18000.33,
+              "max_prediction": 356021.0,
+              "top_1_percent_error_share": 0.025202539917270853
+            },
+            "median_three_gaps": {
+              "observed_count": 54368,
+              "censored_count": 0,
+              "mae": 2682.169474690995,
+              "median_absolute_error": 2182.0,
+              "within_factor_2": 0.6664949970570924,
+              "observed_fraction": 1.0,
+              "actual_mean": 5005.959663772807,
+              "actual_median": 4533.5,
+              "mae_over_actual_mean": 0.5357952630144731,
+              "p99_absolute_error": 10686.990000000005,
+              "max_prediction": 356021.0,
+              "top_1_percent_error_share": 0.06215420774838523
+            },
+            "training_median": {
+              "observed_count": 54368,
+              "censored_count": 0,
+              "mae": 3121.4476346380225,
+              "median_absolute_error": 2568.5,
+              "within_factor_2": 0.3932092407298411,
+              "observed_fraction": 1.0,
+              "actual_mean": 5005.959663772807,
+              "actual_median": 4533.5,
+              "mae_over_actual_mean": 0.6235463016666624,
+              "p99_absolute_error": 7870.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.025509987471632335
+            }
+          }
+        },
+        {
+          "range": [
+            10001,
+            100000
+          ],
+          "observed_count": 99873,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 99873,
+              "censored_count": 0,
+              "mae": 2977.8811590720215,
+              "median_absolute_error": 1064.0,
+              "within_factor_2": 0.9363892143021637,
+              "observed_fraction": 1.0,
+              "actual_mean": 17965.86993481722,
+              "actual_median": 18295.0,
+              "mae_over_actual_mean": 0.1657521272210144,
+              "p99_absolute_error": 34269.28,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.38674380150561555
+            },
+            "previous_gap": {
+              "observed_count": 99873,
+              "censored_count": 0,
+              "mae": 9069.346910576432,
+              "median_absolute_error": 6064.0,
+              "within_factor_2": 0.5365714457360848,
+              "observed_fraction": 1.0,
+              "actual_mean": 17965.86993481722,
+              "actual_median": 18295.0,
+              "mae_over_actual_mean": 0.5048097834105076,
+              "p99_absolute_error": 22406.79999999999,
+              "max_prediction": 2645323.0,
+              "top_1_percent_error_share": 0.08033252480845067
+            },
+            "median_three_gaps": {
+              "observed_count": 99873,
+              "censored_count": 0,
+              "mae": 7003.85066033863,
+              "median_absolute_error": 4581.0,
+              "within_factor_2": 0.5655382335566169,
+              "observed_fraction": 1.0,
+              "actual_mean": 17965.86993481722,
+              "actual_median": 18295.0,
+              "mae_over_actual_mean": 0.3898419996220398,
+              "p99_absolute_error": 21796.559999999998,
+              "max_prediction": 1242316.0,
+              "top_1_percent_error_share": 0.08690282683517239
+            },
+            "training_median": {
+              "observed_count": 99873,
+              "censored_count": 0,
+              "mae": 16000.869934817218,
+              "median_absolute_error": 16330.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 17965.86993481722,
+              "actual_median": 18295.0,
+              "mae_over_actual_mean": 0.8906259475812022,
+              "p99_absolute_error": 36402.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.034228460224917066
+            }
+          }
+        },
+        {
+          "range": [
+            100001,
+            null
+          ],
+          "observed_count": 405,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 405,
+              "censored_count": 0,
+              "mae": 217167.6888888889,
+              "median_absolute_error": 118332.0,
+              "within_factor_2": 0.48641975308641977,
+              "observed_fraction": 1.0,
+              "actual_mean": 244645.74074074073,
+              "actual_median": 180898.0,
+              "mae_over_actual_mean": 0.8876822798195729,
+              "p99_absolute_error": 1364505.5199999993,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.08084196050627726
+            },
+            "previous_gap": {
+              "observed_count": 405,
+              "censored_count": 0,
+              "mae": 173563.97777777776,
+              "median_absolute_error": 81373.0,
+              "within_factor_2": 0.5382716049382716,
+              "observed_fraction": 1.0,
+              "actual_mean": 244645.74074074073,
+              "actual_median": 180898.0,
+              "mae_over_actual_mean": 0.7094502330278021,
+              "p99_absolute_error": 1350854.599999998,
+              "max_prediction": 2642481.0,
+              "top_1_percent_error_share": 0.13369329879296937
+            },
+            "median_three_gaps": {
+              "observed_count": 405,
+              "censored_count": 0,
+              "mae": 145702.3135802469,
+              "median_absolute_error": 82921.0,
+              "within_factor_2": 0.5407407407407407,
+              "observed_fraction": 1.0,
+              "actual_mean": 244645.74074074073,
+              "actual_median": 180898.0,
+              "mae_over_actual_mean": 0.5955644808656306,
+              "p99_absolute_error": 1026531.5999999996,
+              "max_prediction": 3999367.0,
+              "top_1_percent_error_share": 0.13834673596360528
+            },
+            "training_median": {
+              "observed_count": 405,
+              "censored_count": 0,
+              "mae": 242680.74074074073,
+              "median_absolute_error": 178933.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 244645.74074074073,
+              "actual_median": 180898.0,
+              "mae_over_actual_mean": 0.9919679778848781,
+              "p99_absolute_error": 793773.0799999998,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.042624369567495574
+            }
+          }
+        }
+      ],
+      "short_long": {
+        "short": {
+          "observed_count": 300716,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 300716,
+              "censored_count": 0,
+              "mae": 1420.432454541827,
+              "median_absolute_error": 129.0,
+              "within_factor_2": 0.8666715439151891,
+              "observed_fraction": 1.0,
+              "actual_mean": 6882.122052035807,
+              "actual_median": 1858.0,
+              "mae_over_actual_mean": 0.20639454572324062,
+              "p99_absolute_error": 10500.54999999993,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.3581204732801372
+            },
+            "previous_gap": {
+              "observed_count": 300716,
+              "censored_count": 0,
+              "mae": 5707.487822397212,
+              "median_absolute_error": 3034.0,
+              "within_factor_2": 0.24531784141848123,
+              "observed_fraction": 1.0,
+              "actual_mean": 6882.122052035807,
+              "actual_median": 1858.0,
+              "mae_over_actual_mean": 0.8293209244536537,
+              "p99_absolute_error": 19928.849999999977,
+              "max_prediction": 2645323.0,
+              "top_1_percent_error_share": 0.06848570428971813
+            },
+            "median_three_gaps": {
+              "observed_count": 300716,
+              "censored_count": 0,
+              "mae": 3635.367539472459,
+              "median_absolute_error": 1377.0,
+              "within_factor_2": 0.36315992497905,
+              "observed_fraction": 1.0,
+              "actual_mean": 6882.122052035807,
+              "actual_median": 1858.0,
+              "mae_over_actual_mean": 0.5282335175089022,
+              "p99_absolute_error": 18833.0,
+              "max_prediction": 1242316.0,
+              "top_1_percent_error_share": 0.09318642731152205
+            },
+            "training_median": {
+              "observed_count": 300716,
+              "censored_count": 0,
+              "mae": 6825.344348155735,
+              "median_absolute_error": 1964.0,
+              "within_factor_2": 0.07121669615185092,
+              "observed_fraction": 1.0,
+              "actual_mean": 6882.122052035807,
+              "actual_median": 1858.0,
+              "mae_over_actual_mean": 0.9917499713822604,
+              "p99_absolute_error": 21019.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.05005301874147611
+            }
+          }
+        },
+        "long": {
+          "observed_count": 405,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 405,
+              "censored_count": 0,
+              "mae": 217167.6888888889,
+              "median_absolute_error": 118332.0,
+              "within_factor_2": 0.48641975308641977,
+              "observed_fraction": 1.0,
+              "actual_mean": 244645.74074074073,
+              "actual_median": 180898.0,
+              "mae_over_actual_mean": 0.8876822798195729,
+              "p99_absolute_error": 1364505.5199999993,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.08084196050627726
+            },
+            "previous_gap": {
+              "observed_count": 405,
+              "censored_count": 0,
+              "mae": 173563.97777777776,
+              "median_absolute_error": 81373.0,
+              "within_factor_2": 0.5382716049382716,
+              "observed_fraction": 1.0,
+              "actual_mean": 244645.74074074073,
+              "actual_median": 180898.0,
+              "mae_over_actual_mean": 0.7094502330278021,
+              "p99_absolute_error": 1350854.599999998,
+              "max_prediction": 2642481.0,
+              "top_1_percent_error_share": 0.13369329879296937
+            },
+            "median_three_gaps": {
+              "observed_count": 405,
+              "censored_count": 0,
+              "mae": 145702.3135802469,
+              "median_absolute_error": 82921.0,
+              "within_factor_2": 0.5407407407407407,
+              "observed_fraction": 1.0,
+              "actual_mean": 244645.74074074073,
+              "actual_median": 180898.0,
+              "mae_over_actual_mean": 0.5955644808656306,
+              "p99_absolute_error": 1026531.5999999996,
+              "max_prediction": 3999367.0,
+              "top_1_percent_error_share": 0.13834673596360528
+            },
+            "training_median": {
+              "observed_count": 405,
+              "censored_count": 0,
+              "mae": 242680.74074074073,
+              "median_absolute_error": 178933.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 244645.74074074073,
+              "actual_median": 180898.0,
+              "mae_over_actual_mean": 0.9919679778848781,
+              "p99_absolute_error": 793773.0799999998,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.042624369567495574
+            }
+          }
+        }
+      }
+    },
+    "evaluation_extended": {
+      "observation_end": 12000000,
+      "methods": {
+        "direct_mae": {
+          "observed_count": 305162,
+          "censored_count": 5548,
+          "mae": 3010.844525203007,
+          "median_absolute_error": 169.0,
+          "within_factor_2": 0.8670476664853423,
+          "observed_fraction": 0.982144121528113,
+          "actual_mean": 27740.37989985647,
+          "actual_median": 2313.0,
+          "mae_over_actual_mean": 0.10853652819724308,
+          "p99_absolute_error": 23734.90000000014,
+          "max_prediction": 1605693.0,
+          "top_1_percent_error_share": 0.6246343357312881
+        },
+        "previous_gap": {
+          "observed_count": 305162,
+          "censored_count": 5548,
+          "mae": 7270.198914019439,
+          "median_absolute_error": 3158.0,
+          "within_factor_2": 0.254946552978418,
+          "observed_fraction": 0.982144121528113,
+          "actual_mean": 27740.37989985647,
+          "actual_median": 2313.0,
+          "mae_over_actual_mean": 0.2620800054024154,
+          "p99_absolute_error": 23255.0,
+          "max_prediction": 9288527.0,
+          "top_1_percent_error_share": 0.24147366365909953
+        },
+        "median_three_gaps": {
+          "observed_count": 305162,
+          "censored_count": 5548,
+          "mae": 4500.905512481895,
+          "median_absolute_error": 1460.0,
+          "within_factor_2": 0.3714387767808574,
+          "observed_fraction": 0.982144121528113,
+          "actual_mean": 27740.37989985647,
+          "actual_median": 2313.0,
+          "mae_over_actual_mean": 0.16225104085561506,
+          "p99_absolute_error": 23323.390000000014,
+          "max_prediction": 9288527.0,
+          "top_1_percent_error_share": 0.21543344533717018
+        },
+        "training_median": {
+          "observed_count": 305162,
+          "censored_count": 5548,
+          "mae": 27655.80071240849,
+          "median_absolute_error": 1964.0,
+          "within_factor_2": 0.07017911797668124,
+          "observed_fraction": 0.982144121528113,
+          "actual_mean": 27740.37989985647,
+          "actual_median": 2313.0,
+          "mae_over_actual_mean": 0.9969510443709382,
+          "p99_absolute_error": 1582646.9500000002,
+          "max_prediction": 1965.0,
+          "top_1_percent_error_share": 0.5740332391373955
+        }
+      },
+      "subblocks": [
+        {
+          "anchors": [
+            10000000,
+            10450000
+          ],
+          "methods": {
+            "direct_mae": {
+              "observed_count": 153892,
+              "censored_count": 825,
+              "mae": 4201.5674953863745,
+              "median_absolute_error": 256.0,
+              "within_factor_2": 0.8640085254594131,
+              "observed_fraction": 0.9946676835771118,
+              "actual_mean": 47619.84615184675,
+              "actual_median": 2768.0,
+              "mae_over_actual_mean": 0.08823143783347634,
+              "p99_absolute_error": 79398.26999999999,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.6237829234668696
+            },
+            "previous_gap": {
+              "observed_count": 153892,
+              "censored_count": 825,
+              "mae": 8267.836970082915,
+              "median_absolute_error": 3339.0,
+              "within_factor_2": 0.2717490187923999,
+              "observed_fraction": 0.9946676835771118,
+              "actual_mean": 47619.84615184675,
+              "actual_median": 2768.0,
+              "mae_over_actual_mean": 0.1736216648772663,
+              "p99_absolute_error": 28989.98999999996,
+              "max_prediction": 7681944.0,
+              "top_1_percent_error_share": 0.3153447196349253
+            },
+            "median_three_gaps": {
+              "observed_count": 153892,
+              "censored_count": 825,
+              "mae": 5019.897967405713,
+              "median_absolute_error": 1662.0,
+              "within_factor_2": 0.38240454344605307,
+              "observed_fraction": 0.9946676835771118,
+              "actual_mean": 47619.84615184675,
+              "actual_median": 2768.0,
+              "mae_over_actual_mean": 0.10541608957321327,
+              "p99_absolute_error": 27246.089999999997,
+              "max_prediction": 7681944.0,
+              "top_1_percent_error_share": 0.23524772956085824
+            },
+            "training_median": {
+              "observed_count": 153892,
+              "censored_count": 825,
+              "mae": 47513.86279988563,
+              "median_absolute_error": 1964.0,
+              "within_factor_2": 0.06245288903906636,
+              "observed_fraction": 0.9946676835771118,
+              "actual_mean": 47619.84615184675,
+              "actual_median": 2768.0,
+              "mae_over_actual_mean": 0.9977743869305422,
+              "p99_absolute_error": 1586654.09,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.3346227073280888
+            }
+          }
+        },
+        {
+          "anchors": [
+            10450000,
+            10900000
+          ],
+          "methods": {
+            "direct_mae": {
+              "observed_count": 151270,
+              "censored_count": 4723,
+              "mae": 1799.48246182323,
+              "median_absolute_error": 112.0,
+              "within_factor_2": 0.8701394856878429,
+              "observed_fraction": 0.9697230003910432,
+              "actual_mean": 7516.337985059827,
+              "actual_median": 1971.5,
+              "mae_over_actual_mean": 0.23940946580636063,
+              "p99_absolute_error": 10664.719999999972,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.544361377241215
+            },
+            "previous_gap": {
+              "observed_count": 151270,
+              "censored_count": 4723,
+              "mae": 6255.268552918622,
+              "median_absolute_error": 2944.0,
+              "within_factor_2": 0.23785284590467376,
+              "observed_fraction": 0.9697230003910432,
+              "actual_mean": 7516.337985059827,
+              "actual_median": 1971.5,
+              "mae_over_actual_mean": 0.8322228943605485,
+              "p99_absolute_error": 19662.309999999998,
+              "max_prediction": 9288527.0,
+              "top_1_percent_error_share": 0.1371872306144703
+            },
+            "median_three_gaps": {
+              "observed_count": 151270,
+              "censored_count": 4723,
+              "mae": 3972.917234084749,
+              "median_absolute_error": 1260.0,
+              "within_factor_2": 0.36028293779334963,
+              "observed_fraction": 0.9697230003910432,
+              "actual_mean": 7516.337985059827,
+              "actual_median": 1971.5,
+              "mae_over_actual_mean": 0.5285708601690995,
+              "p99_absolute_error": 18594.929999999993,
+              "max_prediction": 9288527.0,
+              "top_1_percent_error_share": 0.18091306347520303
+            },
+            "training_median": {
+              "observed_count": 151270,
+              "censored_count": 4723,
+              "mae": 7453.533965756594,
+              "median_absolute_error": 1964.0,
+              "within_factor_2": 0.07803926753487142,
+              "observed_fraction": 0.9697230003910432,
+              "actual_mean": 7516.337985059827,
+              "actual_median": 1971.5,
+              "mae_over_actual_mean": 0.9916443327285085,
+              "p99_absolute_error": 20759.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.12487301652115806
+            }
+          }
+        }
+      ],
+      "distance_groups": [
+        {
+          "range": [
+            1,
+            100
+          ],
+          "observed_count": 142741,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 142741,
+              "censored_count": 0,
+              "mae": 10.492325260436735,
+              "median_absolute_error": 1.0,
+              "within_factor_2": 0.8550801801864916,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.0987522856081995,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 1.4780520348214663,
+              "p99_absolute_error": 21.0,
+              "max_prediction": 8297.0,
+              "top_1_percent_error_share": 0.788093624493802
+            },
+            "previous_gap": {
+              "observed_count": 142741,
+              "censored_count": 0,
+              "mae": 1703.9382868271905,
+              "median_absolute_error": 17.0,
+              "within_factor_2": 0.07571055267932829,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.0987522856081995,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 240.03349015033314,
+              "p99_absolute_error": 12986.0,
+              "max_prediction": 21290.0,
+              "top_1_percent_error_share": 0.08186110577933056
+            },
+            "median_three_gaps": {
+              "observed_count": 142741,
+              "censored_count": 0,
+              "mae": 1637.6717341198394,
+              "median_absolute_error": 15.0,
+              "within_factor_2": 0.11282672812996966,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.0987522856081995,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 230.69853239420772,
+              "p99_absolute_error": 11614.0,
+              "max_prediction": 13975.0,
+              "top_1_percent_error_share": 0.07665783117570055
+            },
+            "training_median": {
+              "observed_count": 142741,
+              "censored_count": 0,
+              "mae": 1957.9012477143917,
+              "median_absolute_error": 1962.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 7.0987522856081995,
+              "actual_median": 3.0,
+              "mae_over_actual_mean": 275.80920828633265,
+              "p99_absolute_error": 1964.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.010035295673265242
+            }
+          }
+        },
+        {
+          "range": [
+            101,
+            1000
+          ],
+          "observed_count": 3734,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 3734,
+              "censored_count": 0,
+              "mae": 4479.029191215855,
+              "median_absolute_error": 4269.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 557.4689341189073,
+              "actual_median": 543.0,
+              "mae_over_actual_mean": 8.03458079380704,
+              "p99_absolute_error": 9583.01,
+              "max_prediction": 75561.0,
+              "top_1_percent_error_share": 0.038364645812674014
+            },
+            "previous_gap": {
+              "observed_count": 3734,
+              "censored_count": 0,
+              "mae": 14121.414301017676,
+              "median_absolute_error": 15682.0,
+              "within_factor_2": 0.0029459025174076057,
+              "observed_fraction": 1.0,
+              "actual_mean": 557.4689341189073,
+              "actual_median": 543.0,
+              "mae_over_actual_mean": 25.331302673102137,
+              "p99_absolute_error": 24307.02,
+              "max_prediction": 39512.0,
+              "top_1_percent_error_share": 0.018819514994691477
+            },
+            "median_three_gaps": {
+              "observed_count": 3734,
+              "censored_count": 0,
+              "mae": 3784.2841456882697,
+              "median_absolute_error": 3346.0,
+              "within_factor_2": 0.1031065881092662,
+              "observed_fraction": 1.0,
+              "actual_mean": 557.4689341189073,
+              "actual_median": 543.0,
+              "mae_over_actual_mean": 6.788331894528651,
+              "p99_absolute_error": 12420.390000000001,
+              "max_prediction": 39489.0,
+              "top_1_percent_error_share": 0.045096439146564846
+            },
+            "training_median": {
+              "observed_count": 3734,
+              "censored_count": 0,
+              "mae": 1407.5310658810927,
+              "median_absolute_error": 1422.0,
+              "within_factor_2": 0.010176754151044456,
+              "observed_fraction": 1.0,
+              "actual_mean": 557.4689341189073,
+              "actual_median": 543.0,
+              "mae_over_actual_mean": 2.5248600948602244,
+              "p99_absolute_error": 1855.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.013447631637980783
+            }
+          }
+        },
+        {
+          "range": [
+            1001,
+            10000
+          ],
+          "observed_count": 54368,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 54368,
+              "censored_count": 0,
+              "mae": 2051.1047123307826,
+              "median_absolute_error": 1631.0,
+              "within_factor_2": 0.828557239552678,
+              "observed_fraction": 1.0,
+              "actual_mean": 5005.959663772807,
+              "actual_median": 4533.5,
+              "mae_over_actual_mean": 0.40973256879679704,
+              "p99_absolute_error": 8057.290000000023,
+              "max_prediction": 1413994.0,
+              "top_1_percent_error_share": 0.10037069542039037
+            },
+            "previous_gap": {
+              "observed_count": 54368,
+              "censored_count": 0,
+              "mae": 9465.10462036492,
+              "median_absolute_error": 9483.0,
+              "within_factor_2": 0.1722336668628605,
+              "observed_fraction": 1.0,
+              "actual_mean": 5005.959663772807,
+              "actual_median": 4533.5,
+              "mae_over_actual_mean": 1.8907672566485323,
+              "p99_absolute_error": 18000.33,
+              "max_prediction": 356021.0,
+              "top_1_percent_error_share": 0.025202539917270853
+            },
+            "median_three_gaps": {
+              "observed_count": 54368,
+              "censored_count": 0,
+              "mae": 2682.169474690995,
+              "median_absolute_error": 2182.0,
+              "within_factor_2": 0.6664949970570924,
+              "observed_fraction": 1.0,
+              "actual_mean": 5005.959663772807,
+              "actual_median": 4533.5,
+              "mae_over_actual_mean": 0.5357952630144731,
+              "p99_absolute_error": 10686.990000000005,
+              "max_prediction": 356021.0,
+              "top_1_percent_error_share": 0.06215420774838523
+            },
+            "training_median": {
+              "observed_count": 54368,
+              "censored_count": 0,
+              "mae": 3121.4476346380225,
+              "median_absolute_error": 2568.5,
+              "within_factor_2": 0.3932092407298411,
+              "observed_fraction": 1.0,
+              "actual_mean": 5005.959663772807,
+              "actual_median": 4533.5,
+              "mae_over_actual_mean": 0.6235463016666624,
+              "p99_absolute_error": 7870.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.025509987471632335
+            }
+          }
+        },
+        {
+          "range": [
+            10001,
+            100000
+          ],
+          "observed_count": 99873,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 99873,
+              "censored_count": 0,
+              "mae": 2977.8811590720215,
+              "median_absolute_error": 1064.0,
+              "within_factor_2": 0.9363892143021637,
+              "observed_fraction": 1.0,
+              "actual_mean": 17965.86993481722,
+              "actual_median": 18295.0,
+              "mae_over_actual_mean": 0.1657521272210144,
+              "p99_absolute_error": 34269.28,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.38674380150561555
+            },
+            "previous_gap": {
+              "observed_count": 99873,
+              "censored_count": 0,
+              "mae": 9069.346910576432,
+              "median_absolute_error": 6064.0,
+              "within_factor_2": 0.5365714457360848,
+              "observed_fraction": 1.0,
+              "actual_mean": 17965.86993481722,
+              "actual_median": 18295.0,
+              "mae_over_actual_mean": 0.5048097834105076,
+              "p99_absolute_error": 22406.79999999999,
+              "max_prediction": 2645323.0,
+              "top_1_percent_error_share": 0.08033252480845067
+            },
+            "median_three_gaps": {
+              "observed_count": 99873,
+              "censored_count": 0,
+              "mae": 7003.85066033863,
+              "median_absolute_error": 4581.0,
+              "within_factor_2": 0.5655382335566169,
+              "observed_fraction": 1.0,
+              "actual_mean": 17965.86993481722,
+              "actual_median": 18295.0,
+              "mae_over_actual_mean": 0.3898419996220398,
+              "p99_absolute_error": 21796.559999999998,
+              "max_prediction": 1242316.0,
+              "top_1_percent_error_share": 0.08690282683517239
+            },
+            "training_median": {
+              "observed_count": 99873,
+              "censored_count": 0,
+              "mae": 16000.869934817218,
+              "median_absolute_error": 16330.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 17965.86993481722,
+              "actual_median": 18295.0,
+              "mae_over_actual_mean": 0.8906259475812022,
+              "p99_absolute_error": 36402.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.034228460224917066
+            }
+          }
+        },
+        {
+          "range": [
+            100001,
+            null
+          ],
+          "observed_count": 4446,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 4446,
+              "censored_count": 0,
+              "mae": 110582.22469635628,
+              "median_absolute_error": 20349.0,
+              "within_factor_2": 0.8924876293297346,
+              "observed_fraction": 1.0,
+              "actual_mean": 1438539.2703553757,
+              "actual_median": 1586934.0,
+              "mae_over_actual_mean": 0.07687118938994146,
+              "p99_absolute_error": 1159928.1,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.11950523700393303
+            },
+            "previous_gap": {
+              "observed_count": 4446,
+              "censored_count": 0,
+              "mae": 112967.95614035087,
+              "median_absolute_error": 21855.5,
+              "within_factor_2": 0.9062078272604588,
+              "observed_fraction": 1.0,
+              "actual_mean": 1438539.2703553757,
+              "actual_median": 1586934.0,
+              "mae_over_actual_mean": 0.07852962965164194,
+              "p99_absolute_error": 1643219.05,
+              "max_prediction": 4837723.0,
+              "top_1_percent_error_share": 0.1958133629958438
+            },
+            "median_three_gaps": {
+              "observed_count": 4446,
+              "censored_count": 0,
+              "mae": 63043.66689158794,
+              "median_absolute_error": 23363.5,
+              "within_factor_2": 0.9313990103463787,
+              "observed_fraction": 1.0,
+              "actual_mean": 1438539.2703553757,
+              "actual_median": 1586934.0,
+              "mae_over_actual_mean": 0.043824779893574736,
+              "p99_absolute_error": 1205332.4500000011,
+              "max_prediction": 4830244.0,
+              "top_1_percent_error_share": 0.25407270870236276
+            },
+            "training_median": {
+              "observed_count": 4446,
+              "censored_count": 0,
+              "mae": 1436574.2703553757,
+              "median_absolute_error": 1584969.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 1438539.2703553757,
+              "actual_median": 1586934.0,
+              "mae_over_actual_mean": 0.998634031033776,
+              "p99_absolute_error": 1593680.55,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.011361096040355387
+            }
+          }
+        }
+      ],
+      "short_long": {
+        "short": {
+          "observed_count": 300716,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 300716,
+              "censored_count": 0,
+              "mae": 1420.432454541827,
+              "median_absolute_error": 129.0,
+              "within_factor_2": 0.8666715439151891,
+              "observed_fraction": 1.0,
+              "actual_mean": 6882.122052035807,
+              "actual_median": 1858.0,
+              "mae_over_actual_mean": 0.20639454572324062,
+              "p99_absolute_error": 10500.54999999993,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.3581204732801372
+            },
+            "previous_gap": {
+              "observed_count": 300716,
+              "censored_count": 0,
+              "mae": 5707.487822397212,
+              "median_absolute_error": 3034.0,
+              "within_factor_2": 0.24531784141848123,
+              "observed_fraction": 1.0,
+              "actual_mean": 6882.122052035807,
+              "actual_median": 1858.0,
+              "mae_over_actual_mean": 0.8293209244536537,
+              "p99_absolute_error": 19928.849999999977,
+              "max_prediction": 2645323.0,
+              "top_1_percent_error_share": 0.06848570428971813
+            },
+            "median_three_gaps": {
+              "observed_count": 300716,
+              "censored_count": 0,
+              "mae": 3635.367539472459,
+              "median_absolute_error": 1377.0,
+              "within_factor_2": 0.36315992497905,
+              "observed_fraction": 1.0,
+              "actual_mean": 6882.122052035807,
+              "actual_median": 1858.0,
+              "mae_over_actual_mean": 0.5282335175089022,
+              "p99_absolute_error": 18833.0,
+              "max_prediction": 1242316.0,
+              "top_1_percent_error_share": 0.09318642731152205
+            },
+            "training_median": {
+              "observed_count": 300716,
+              "censored_count": 0,
+              "mae": 6825.344348155735,
+              "median_absolute_error": 1964.0,
+              "within_factor_2": 0.07121669615185092,
+              "observed_fraction": 1.0,
+              "actual_mean": 6882.122052035807,
+              "actual_median": 1858.0,
+              "mae_over_actual_mean": 0.9917499713822604,
+              "p99_absolute_error": 21019.0,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.05005301874147611
+            }
+          }
+        },
+        "long": {
+          "observed_count": 4446,
+          "methods": {
+            "direct_mae": {
+              "observed_count": 4446,
+              "censored_count": 0,
+              "mae": 110582.22469635628,
+              "median_absolute_error": 20349.0,
+              "within_factor_2": 0.8924876293297346,
+              "observed_fraction": 1.0,
+              "actual_mean": 1438539.2703553757,
+              "actual_median": 1586934.0,
+              "mae_over_actual_mean": 0.07687118938994146,
+              "p99_absolute_error": 1159928.1,
+              "max_prediction": 1605693.0,
+              "top_1_percent_error_share": 0.11950523700393303
+            },
+            "previous_gap": {
+              "observed_count": 4446,
+              "censored_count": 0,
+              "mae": 112967.95614035087,
+              "median_absolute_error": 21855.5,
+              "within_factor_2": 0.9062078272604588,
+              "observed_fraction": 1.0,
+              "actual_mean": 1438539.2703553757,
+              "actual_median": 1586934.0,
+              "mae_over_actual_mean": 0.07852962965164194,
+              "p99_absolute_error": 1643219.05,
+              "max_prediction": 4837723.0,
+              "top_1_percent_error_share": 0.1958133629958438
+            },
+            "median_three_gaps": {
+              "observed_count": 4446,
+              "censored_count": 0,
+              "mae": 63043.66689158794,
+              "median_absolute_error": 23363.5,
+              "within_factor_2": 0.9313990103463787,
+              "observed_fraction": 1.0,
+              "actual_mean": 1438539.2703553757,
+              "actual_median": 1586934.0,
+              "mae_over_actual_mean": 0.043824779893574736,
+              "p99_absolute_error": 1205332.4500000011,
+              "max_prediction": 4830244.0,
+              "top_1_percent_error_share": 0.25407270870236276
+            },
+            "training_median": {
+              "observed_count": 4446,
+              "censored_count": 0,
+              "mae": 1436574.2703553757,
+              "median_absolute_error": 1584969.0,
+              "within_factor_2": 0.0,
+              "observed_fraction": 1.0,
+              "actual_mean": 1438539.2703553757,
+              "actual_median": 1586934.0,
+              "mae_over_actual_mean": 0.998634031033776,
+              "p99_absolute_error": 1593680.55,
+              "max_prediction": 1965.0,
+              "top_1_percent_error_share": 0.011361096040355387
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "event_index": 10000001,
+      "integer_features": [
+        19886,
+        17354,
+        20015,
+        61440,
+        5633736192,
+        5,
+        12,
+        1
+      ],
+      "actual": 21620,
+      "predictions": {
+        "direct_mae": 18897,
+        "previous_gap": 19886,
+        "median_three_gaps": 19886,
+        "training_median": 1965
+      }
+    },
+    {
+      "event_index": 10000002,
+      "integer_features": [
+        19886,
+        17354,
+        20015,
+        61440,
+        5633797632,
+        5,
+        0,
+        -1
+      ],
+      "actual": 21620,
+      "predictions": {
+        "direct_mae": 19142,
+        "previous_gap": 19886,
+        "median_three_gaps": 19886,
+        "training_median": 1965
+      }
+    },
+    {
+      "event_index": 10000012,
+      "integer_features": [
+        10367,
+        1,
+        9517,
+        8192,
+        30190366720,
+        15,
+        6,
+        23
+      ],
+      "actual": 1267,
+      "predictions": {
+        "direct_mae": 6181,
+        "previous_gap": 10367,
+        "median_three_gaps": 9517,
+        "training_median": 1965
+      }
+    },
+    {
+      "event_index": 10000014,
+      "integer_features": [
+        10371,
+        1,
+        9513,
+        8192,
+        840241152,
+        15,
+        12,
+        1
+      ],
+      "actual": 1263,
+      "predictions": {
+        "direct_mae": 5860,
+        "previous_gap": 10371,
+        "median_three_gaps": 9513,
+        "training_median": 1965
+      }
+    },
+    {
+      "event_index": 10000026,
+      "integer_features": [
+        19886,
+        17330,
+        20037,
+        61440,
+        869812224,
+        5,
+        12,
+        1
+      ],
+      "actual": 21652,
+      "predictions": {
+        "direct_mae": 18812,
+        "previous_gap": 19886,
+        "median_three_gaps": 19886,
+        "training_median": 1965
+      }
+    }
+  ],
+  "internal_conditional_criterion_passed": true,
+  "all_writes_quality_established": false,
+  "deployment": "lightgbm"
+}

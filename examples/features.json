@@ -1,0 +1,22 @@
+[
+  {
+    "gap1": null,
+    "gap2": null,
+    "gap3": null,
+    "current_size": 4096,
+    "current_offset": 0,
+    "past_W_100k": 0,
+    "past_R_100k": 0,
+    "read_age": null
+  },
+  {
+    "gap1": 100,
+    "gap2": 1000,
+    "gap3": 10000,
+    "current_size": 4096,
+    "current_offset": 1048576,
+    "past_W_100k": 3,
+    "past_R_100k": 2,
+    "read_age": 50
+  }
+]

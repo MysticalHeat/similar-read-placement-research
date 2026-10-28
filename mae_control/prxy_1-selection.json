@@ -1,0 +1,10 @@
+{
+  "trace": "prxy_1",
+  "scope": "Conditional control trained on observed overwrites; quality on censored outcomes is unknown",
+  "protocol_sha256": "3039c92325c23b4e0b1984437181deb55042ec25daed1ad06930b248e4b41553",
+  "frozen_at_utc": "2026-10-27T16:18:39.095092+00:00",
+  "rounds": 200,
+  "validation_mae": 2208.1522957748466,
+  "model_sha256": "2fa557d523cd59b824e32d2b32589cfe575e3444f3d178d743e87388ffa04f6f",
+  "original_protocol_sha256": "fcba77b63c46b99fe912d62de9b08d0f6de456651afd8ba63e41ef46fe528efb"
+}
